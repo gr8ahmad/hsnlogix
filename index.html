@@ -3,31 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HSN Logix - Shopify Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personal Branding - Home</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Updated Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: transparent;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            box-shadow: none;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0d203b;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #0d203b;
+            font-weight: 500;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #5e17eb;
+        }
+
+        header .cta-button {
+            background: #5e17eb;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        header .cta-button:hover {
+            background: #0d203b;
+        }
+
+        /* Banner Section */
+        .banner {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            color: #0d203b;
+        }
+
+        .banner p {
+            font-size: 1.5rem;
+            color: #5e17eb;
+            margin: 20px 0;
+        }
+
+        .banner .badges {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .banner .badges img {
+            height: 50px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 50px 20px;
+            background: #ffffff;
+        }
+
+        .services h2 {
+            text-align: center;
+            color: #0d203b;
+            margin-bottom: 20px;
+        }
+
+        .services .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .services .card {
+            border: 1px solid #e3e3e3;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .services .card:hover {
+            transform: scale(1.05);
+        }
+
+        .services .card h3 {
+            color: #5e17eb;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 50px 20px;
+            background: #f4f4f9;
+        }
+
+        .skills h2 {
+            text-align: center;
+            color: #0d203b;
+            margin-bottom: 20px;
+        }
+
+        .skills .list {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skills .list .skill {
+            background: #5e17eb;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 50px 20px;
+            background: #ffffff;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            color: #0d203b;
+            margin-bottom: 20px;
+        }
+
+        .testimonials .testimonial {
+            text-align: center;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            background: #0d203b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>HSN Logix</h1>
-        <p>Expert Shopify Developer | Custom Stores & Solutions</p>
-        <a href="https://www.upwork.com/freelancers/~yourprofile" class="cta-button">Hire Me on Upwork</a>
+        <div class="logo">HSNLogix</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="cta-button">Get in Touch</button>
     </header>
-    
-    <section id="services">
-        <h2>My Services</h2>
-        <ul>
-            <li>Shopify Theme Customization</li>
-            <li>Shopify App Integration</li>
-            <li>Custom Shopify Development</li>
-            <li>Performance Optimization</li>
-        </ul>
+
+    <section class="banner" id="home">
+        <h1>Welcome to My Personal Branding Site</h1>
+        <p>Empowering Your Business with Shopify and Web Solutions</p>
+        <div class="badges">
+            <img src="shopify-partner.png" alt="Shopify Partner">
+            <img src="upwork-top-rated.png" alt="Upwork Top Rated">
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: contact@hsnlogix.com</p>
+
+    <section class="services" id="services">
+        <h2>Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Shopify Theme Development</h3>
+                <p>Custom themes tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <h3>Shopify Store Customization</h3>
+                <p>Enhance your store's functionality and design.</p>
+            </div>
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Modern and responsive web solutions.</p>
+            </div>
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>Improving user experience with intuitive design.</p>
+            </div>
+            <div class="card">
+                <h3>SEO Optimization</h3>
+                <p>Boost your online visibility.</p>
+            </div>
+            <div class="card">
+                <h3>Performance Optimization</h3>
+                <p>Faster loading times for better conversions.</p>
+            </div>
+        </div>
     </section>
-    
-    <script src="script.js"></script>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">WordPress</div>
+            <div class="skill">Shopify</div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            "HSNLogix transformed our online store, and their support was incredible!" - Client A
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HSNLogix. All rights reserved.</p>
+    </footer>
 </body>
 </html>
