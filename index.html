@@ -1,265 +1,767 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Branding - Home</title>
-    <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hussain A | Seniour Shopify Developer </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-        /* Updated Header Styles */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: transparent;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            box-shadow: none;
-        }
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        header .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #0d203b;
-        }
+  <style>
 
-        header nav {
-            display: flex;
-            gap: 20px;
-        }
 
-        header nav a {
-            text-decoration: none;
-            color: #0d203b;
-            font-weight: 500;
-            font-size: 16px;
-            transition: color 0.3s ease;
-        }
 
-        header nav a:hover {
-            color: #5e17eb;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Manrope", sans-serif;
+    }
 
-        header .cta-button {
-            background: #5e17eb;
-            color: #ffffff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+    /* ========= GLOBAL CONTAINERS ========= */
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
 
-        header .cta-button:hover {
-            background: #0d203b;
-        }
+    /* ========= HEADER ========= */
+    .site-header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
 
-        /* Banner Section */
-        .banner {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f4f9;
-            text-align: center;
-            padding: 20px;
-        }
+    .site-header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 30px 0;
+    }
 
-        .banner h1 {
-            font-size: 3rem;
-            color: #0d203b;
-        }
+    .site-header__logo {
+      max-width: 80px;
+    }
 
-        .banner p {
-            font-size: 1.5rem;
-            color: #5e17eb;
-            margin: 20px 0;
-        }
+    .site-header__btn a {
+      background-color: rgb(130, 255, 31);
+      border-radius: 30px;
+      height: 48px;
+      padding: 16px 24px;
+      border: none;
+      font-family: "Manrope", sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 15px;
+      color: #2f2f2f;
+    }
 
-        .banner .badges {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-        }
+    .site-header__btn {
+      border: none;
+    }
 
-        .banner .badges img {
-            height: 50px;
-        }
+    /* ========= BANNER ========= */
+    .banner {
+      display: flex;
+      gap: 20px;
+      padding: 50px 0;
+    }
 
-        /* Services Section */
-        .services {
-            padding: 50px 20px;
-            background: #ffffff;
-        }
+    .banner__intro_left,
+    .banner__intro_footer {
+      display: flex;
+      gap: 26px;
+      margin-bottom: 70px;
+    }
+	.banner__intro_left {
+		min-width: 330px;
+		gap: 20px;
+	}
+    .banner__avatar {
+      width: 90px;
+      height: 90px;
+    }
 
-        .services h2 {
-            text-align: center;
-            color: #0d203b;
-            margin-bottom: 20px;
-        }
+    .developer__name {
+      font-family: "Manrope", sans-serif;
+      color: #2f2f2f;
+      font-size: 22px;
+      line-height: 1.4em;
+    }
 
-        .services .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
+    .developer__role {
+      font-family: "Manrope", sans-serif;
+      color: #2f2f2f;
+      opacity: 0.5;
+      font-size: 15px;
+      line-height: 1.4em;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
 
-        .services .card {
-            border: 1px solid #e3e3e3;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
+    .developer__logo {
+      max-width: 35px;
+    }
 
-        .services .card:hover {
-            transform: scale(1.05);
-        }
+    .availability {
+      text-align: center;
+      color: #2f2f2f;
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      margin-bottom: 50px;
+    }
+.banner__headline * {
 
-        .services .card h3 {
-            color: #5e17eb;
-        }
+}
+    .banner__headline {
+      font-size: 82px;
+      color: #2f2f2f;
+      font-family: "Manrope", sans-serif;
+      line-height: 1.2;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
 
-        /* Skills Section */
-        .skills {
-            padding: 50px 20px;
-            background: #f4f4f9;
-        }
+    .TextShape-node-container {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    position: relative;
+    }
+    span.build-scale {
+    font-size: 80px;
+    line-height: initial;
+}
+    .hsn-logix-avatar {
+  display: flex;
+  position: relative;
+  flex-flow: row;
+  place-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  width: min-content;
+  height: min-content;
+  overflow: hidden;
+}
 
-        .skills h2 {
-            text-align: center;
-            color: #0d203b;
-            margin-bottom: 20px;
-        }
+/* Circle wrappers */
+.hsn-logix-circle {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  place-content: flex-start center;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  height: 90px;
+}
 
-        .skills .list {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
+.hsn-logix-circle.circle1 {
+  width: 11px;
+}
+.hsn-logix-circle.circle2 {
+  width: 22px;
+}
+.hsn-logix-circle.circle3 {
+  width: 32px;
+}
 
-        .skills .list .skill {
-            background: #5e17eb;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 20px;
-            font-size: 1rem;
-        }
+/* Green dot */
+.hsn-logix-dot {
+  width: 90px;
+  height: 90px;
+  border-radius: 45px;
+  background-color: #DEBE1A;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
 
-        /* Testimonials Section */
-        .testimonials {
-            padding: 50px 20px;
-            background: #ffffff;
-        }
+/* Profile picture */
+.hsn-logix-profile-pic {
+  width: 90px;
+  height: 90px;
+  aspect-ratio: 1;
+  border-radius: 45px;
+  position: relative;
+  overflow: visible;
+}
 
-        .testimonials h2 {
-            text-align: center;
-            color: #0d203b;
-            margin-bottom: 20px;
-        }
+.hsn-logix-img-wrapper {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
 
-        .testimonials .testimonial {
-            text-align: center;
-            padding: 20px;
-            margin: 0 auto;
-            max-width: 800px;
-            font-style: italic;
-        }
+.hsn-logix-img-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
 
-        /* Footer */
-        footer {
-            background: #0d203b;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+
+    /* ========= BUTTONS ========= */
+    .btn--outline,
+    .btn--dark,
+    .btn--light,
+    .btn--primary {
+      font-family: "Manrope", sans-serif;
+      font-weight: 600;
+      border-radius: 110px;
+      cursor: pointer;
+      padding: 10px 25px;
+      vertical-align: middle;
+    }
+
+
+    .btn--outline {
+      font-size: 42px;
+      width: fit-content;
+      background: #fff;
+      border: 2px solid gray;
+    }
+
+    .btn--dark {
+      font-size: 42px;
+      width: fit-content;
+      padding: 20px 26px;
+      background: #2f2f2f;
+      color: #fff;
+      border: none;
+    }
+
+    .btn--light {
+      font-size: 42px;
+      padding: 20px 26px;
+      width: fit-content;
+      background: #fff;
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn--primary {
+      font-size: 20px;
+      padding: 20px 26px;
+      background: #82ff1f;
+      border: none;
+      color: #2f2f2f;
+    }
+
+    .banner__subtext {
+      font-size: 24px;
+      font-weight: 600;
+      color: #9c9c9c;
+      font-family: "Manrope", sans-serif;
+      margin-bottom: 20px;
+    }
+
+    /* ========= CARDS ========= */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 50px;
+    }
+
+    .stats__card {
+      width: 398px;
+      height: 280px;
+      padding: 50px;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .stats__card--green {
+      background: #82ff1f;
+    }
+
+    .stats__card--dark {
+      background: #1a1a1a;
+    }
+
+    .stats__card--light {
+      background: #fff;
+      border: 1px solid gray;
+    }
+
+    .stats__number {
+      font-size: 78px;
+      font-family: "Manrope", sans-serif;
+    }
+
+    .stats__label,
+    .stats__meta {
+      font-family: "Manrope", sans-serif;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .stats__label {
+      font-size: 17px;
+      color: #2f2f2f;
+    }
+
+    .stats__meta {
+      font-size: 24px;
+      color: #2f2f2f99;
+    }
+
+    /* ========= FOOTER ========= */
+    footer {
+      background: #000;
+    }
+
+    .footer__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 0;
+    }
+
+    .footer__content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 100px 0;
+      opacity: 0.9;
+    }
+
+    .footer__headline {
+      font-size: 92px;
+      color: #fff;
+      font-family: "Manrope", sans-serif;
+      margin-bottom: 80px;
+    }
+
+    .footer__subtext {
+      font-size: 22px;
+      color: #ffffff80;
+      font-weight: 600;
+    }
+
+    .footer__highlight {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .footer__copyright {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+    }
+
+    .footer__copyright p a {
+      color: #ffffff66;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .TextShape-node-container1 {
+    position: relative;
+    font-size: 50px;
+    width: fit-content;
+
+}
+.TextShape-node-container1.helping-bsns .TextShape-node {
+    left: 180px;
+    top: -11px;
+}
+.line-two {
+    margin-bottom: 20px;
+}
+.bold-text {
+  font-weight: bold;
+}
+/* Portfolio Slider */
+section.hsnlogix-portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-width: 1600px;
+
+}
+
+  .hsnlogix-portfolio-header{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .hsnlogix-portfolio-header h2,
+  .hsnlogix-heading h2{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 42px;
+  }
+  #hsnlogix-portfolio-slider {
+    height: 380px;
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .hsnlogix-slider-track {
+    display: flex;
+    align-items: center;
+    will-change: transform;
+    overflow: visible;
+  }
+
+  .hsnlogix-slider-item {
+    flex: 0 0 auto;
+    margin: 0 5px;
+    overflow: visible;
+  }
+
+  .hsnlogix-slider-item img {
+    display: block;
+    height: 380px;
+    width: auto;
+    transform: scale(0.95);
+    transform-origin: center center;
+    transition: transform 300ms ease;
+    border-radius: 20px;
+  }
+
+  .hsnlogix-slider-item:hover img {
+    transform: scale(1);
+  }
+
+  @media (max-width: 768px) {
+    #hsnlogix-portfolio-slider {
+      height: 175px;
+    }
+    .hsnlogix-slider-item img {
+      height: 175px;
+    }
+  }
+
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="hsnlogix_logo.png" / class="logo"></div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button class="cta-button">Get in Touch</button>
-    </header>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <img src="./img/hsn-logo-new.png" alt="Site Logo" class="site-header__logo">
+      <button class="site-header__btn"><a href="#">Projects</a></button>
+    </div>
+  </header>
 
-    <section class="banner" id="home">
-        <h1>Welcome to My Personal Branding Site</h1>
-        <p>Empowering Your Business with Shopify and Web Solutions</p>
-        <div class="badges">
-            <img src="shopify-partner.png" alt="Shopify Partner">
-            <img src="upwork-top-rated.png" alt="Upwork Top Rated">
+  <!-- HERO / BANNER -->
+  <main>
+    <section class="container">
+      <div class="banner">
+        <div class="banner__intro_left">
+          <div class="hsn-logix-avatar">
+  <div class="hsn-logix-circle circle1">
+    <div class="hsn-logix-dot" data-aos="fade-left" data-aos-duration="750" data-aos-delay="350"></div>
+  </div>
+  <div class="hsn-logix-circle circle2">
+    <div class="hsn-logix-dot" data-aos="fade-left" data-aos-duration="750" data-aos-delay="250"></div>
+  </div>
+  <div class="hsn-logix-circle circle3">
+    <div class="hsn-logix-dot" data-aos="fade-left" data-aos-duration="750"  data-aos-delay="150"></div>
+  </div>
+  <div class="hsn-logix-profile-pic">
+    <div class="hsn-logix-img-wrapper"  data-aos="fade-left" data-aos-duration="750"  data-aos-delay="150">
+      <img
+        src="./img/avatar.png"
+        alt="Profile Avatar"
+      />
+    </div>
+  </div>
+</div>
+
+          <div class="developer">
+            <h3 class="developer__name">Hussain</h3>
+            <p class="developer__role">Web Designer/Developer,<br> UI/UX Expert</p>
+            <img src="./img/up-logo.png" alt="Upwork Logo" class="developer__logo">
+          </div>
         </div>
+        <div class="banner_intro_right">
+          <div class="banner__headline">
+            <div class="line-one">Hi! I'm
+            <span><button class="btn--light">Hussain A.</button></span>
+          </div>
+          <div class="line-two">
+            a <span><button class="btn--dark" data-aos="fade-in" data-aos-duration="750">Shopify Developer</button></span>
+            </div>
+            <div class="line-three">
+
+<div class="TextShape-node-container1 helping-bsns">
+
+            <span style="font-size: 52px;">helping</span>
+<div class="TextShape-node"
+    style="font-size: 23px; 
+           --stroke: red; 
+           --stroke-width: 0.1em; 
+           --stroke-linecap: round; 
+           --stroke-linejoin: round; 
+           --opacity: 1; 
+           width: 450px;
+    height: 90px;
+           position: absolute;">
+
+  <svg viewBox="0 0 470 100" preserveAspectRatio="xMidYMid meet">
+    <path d="M153,95
+             C253,100 467,95 467,50
+             C467,5 323,0 221,0
+             S-15,5 -15,50
+             S98,100 345,100"
+          vector-effect="non-scaling-stroke"/>
+  </svg>
+</div>
+
+<span class="bold-text">100+ businesses</span>
+
+</div>
+
+<style>
+.TextShape-node svg {
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  stroke: var(--stroke);
+  stroke-width: var(--stroke-width);
+  stroke-linecap: var(--stroke-linecap);
+  stroke-linejoin: var(--stroke-linejoin);
+  fill: none;
+  opacity: var(--opacity);
+}
+
+.TextShape-node path {
+  stroke-dasharray: 1200;   /* approximate total path length */
+  stroke-dashoffset: 1200;  /* fully hidden */
+  animation: drawCircle 2s ease forwards;
+}
+
+@keyframes drawCircle {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+</style>
+
+</div>
+<div class="line-four">
+
+
+             <div class="TextShape-node-container">
+  <div class="TextShape-node build-and-scale" 
+    style="font-size: 56px; 
+           --stroke: red; 
+           --stroke-width: 0.1em; 
+           --stroke-linecap: square; 
+           --stroke-linejoin: bevel; 
+           --opacity: 1; 
+           width: 100%; 
+           height: 80px; 
+           line-height: 0;">
+
+    <!-- Updated width + proportional height -->
+    <svg viewBox="0 0 488 80" preserveAspectRatio="xMidYMid meet">
+      <path d="M 0,78
+               C 61,75 122,70 244,68
+               C 366,66 427,69 488,70
+               C 493,70.1 485,72 484.7,72.2"
+            vector-effect="non-scaling-stroke" />
+    </svg>
+
+  <span class="build-scale">build & scale</span>
+
+ <span class="on-shopify" style="font-size: 56px;">on <span class="btn--dark aos-init aos-animate" style="
+    display: inline-block;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+">Shopify</span></span>
+  </div>
+</div>
+
+<style>
+.TextShape-node svg {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  stroke: var(--stroke);
+  stroke-width: max(1px, var(--stroke-width));
+  stroke-linecap: var(--stroke-linecap);
+  stroke-linejoin: var(--stroke-linejoin);
+  fill: none;
+  opacity: var(--opacity);
+
+}
+.build-and-scale svg {
+    max-width: 470px;
+    top: auto;
+    bottom: -30px;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const path = document.querySelector(".TextShape-node path");
+  const length = path.getTotalLength();
+
+  path.style.strokeDasharray = length;
+  path.style.strokeDashoffset = length;
+
+  path.animate(
+    [{ strokeDashoffset: length }, { strokeDashoffset: 0 }],
+    { duration: 1500, easing: "ease", fill: "forwards" }
+  );
+});
+</script>
+
+</div>
+          </div>
+          <p class="banner__subtext">
+            I’m dedicated to crafting websites that bring your ideas to life, combining<br> design and development to deliver fast, impactful results.
+          </p>
+          <button class="btn--primary">Visit my profile on Upwork</button>
+        </div>
+      </div>
     </section>
 
-    <section class="services" id="services">
-        <h2>Services</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>Shopify Theme Development</h3>
-                <p>Custom themes tailored to your needs.</p>
-            </div>
-            <div class="card">
-                <h3>Shopify Store Customization</h3>
-                <p>Enhance your store's functionality and design.</p>
-            </div>
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Modern and responsive web solutions.</p>
-            </div>
-            <div class="card">
-                <h3>UI/UX Design</h3>
-                <p>Improving user experience with intuitive design.</p>
-            </div>
-            <div class="card">
-                <h3>SEO Optimization</h3>
-                <p>Boost your online visibility.</p>
-            </div>
-            <div class="card">
-                <h3>Performance Optimization</h3>
-                <p>Faster loading times for better conversions.</p>
-            </div>
-        </div>
-    </section>
+<section class="hsnlogix-portfolio">
+    <div class="hsnlogix-portfolio-header">
+        <h2>Portfolio</h2>
+    </div>
+<div id="hsnlogix-portfolio-slider">
+  <div class="hsnlogix-slider-track">
+    <!-- Portfolio items -->
+    <a class="hsnlogix-slider-item" href="https://makexnow.com/portfolio/argenta" target="_blank" rel="noopener noreferrer">
+      <img src="./img/clients/feedback3.png" />
+    </a>
+    <a class="hsnlogix-slider-item" href="https://makexnow.com/portfolio/argenta" target="_blank" rel="noopener noreferrer">
+      <img src="./img/clients/feedback2.png" />
+    </a>
+    <a class="hsnlogix-slider-item" href="https://makexnow.com/portfolio/argenta" target="_blank" rel="noopener noreferrer">
+      <img src="./img/clients/feedback3.png" />
+    </a>
+    <a class="hsnlogix-slider-item" href="https://makexnow.com/portfolio/argenta" target="_blank" rel="noopener noreferrer">
+      <img src="./img/clients/feedback2.png" />
+    </a>
+    <a class="hsnlogix-slider-item" href="https://makexnow.com/portfolio/argenta" target="_blank" rel="noopener noreferrer">
+      <img src="./img/clients/feedback3.png" />
+    </a>
+  </div>
+</div>
+    
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.getElementById('hsnlogix-portfolio-slider');
+    const track = slider.querySelector('.hsnlogix-slider-track');
+    const items = Array.from(track.children);
 
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <div class="list">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">WordPress</div>
-            <div class="skill">Shopify</div>
-        </div>
-    </section>
+    let loopWidth = 0;
+    items.forEach(item => {
+      const style = getComputedStyle(item);
+      loopWidth += item.offsetWidth + parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+    });
 
-    <section class="testimonials" id="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial">
-            "HSNLogix transformed our online store, and their support was incredible!" - Client A
-        </div>
-    </section>
+    items.forEach(item => track.appendChild(item.cloneNode(true)));
 
-    <footer>
-        <p>&copy; 2025 HSNLogix. All rights reserved.</p>
-    </footer>
+    let pos = 0;
+    let currentRate = 1, targetRate = 1;
+    const baseSpeed = window.innerWidth <= 768
+      ? loopWidth / 40
+      : loopWidth / 50;
+    let lastTime = performance.now();
+
+    function animate(time) {
+      const dt = (time - lastTime) / 1000;
+      lastTime = time;
+      currentRate += (targetRate - currentRate) * 0.25;
+      pos = (pos + baseSpeed * currentRate * dt) % loopWidth;
+      track.style.transform = `translateX(${-pos}px)`;
+      requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+
+    slider.addEventListener('mouseenter', () => targetRate = 0.35);
+    slider.addEventListener('mouseleave', () => targetRate = 1);
+  });
+</script>
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stats__card stats__card--green">
+        <p class="stats__number">95+</p>
+        <div>
+          <p class="stats__label">Percent</p>
+          <p class="stats__meta">customer satisfaction</p>
+        </div>
+      </div>
+      <div class="stats__card stats__card--dark">
+        <p class="stats__number" style="color:#fff;">5+</p>
+        <div>
+          <p class="stats__label" style="color:#fff;">Years</p>
+          <p class="stats__meta">of experience</p>
+        </div>
+      </div>
+      <div class="stats__card stats__card--light">
+        <p class="stats__number">65+</p>
+        <div>
+          <p class="stats__label">Projects</p>
+          <p class="stats__meta">completed</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer__top">
+      <p>Available for freelance</p>
+      <button>Back to top</button>
+    </div>
+    <hr>
+    <div class="footer__content container">
+      <div>
+        <p class="footer__headline">Let's create<br> something<br> extraordinary<br> together.</p>
+        <p class="footer__subtext">Let’s make an impact</p>
+      </div>
+      <div>
+        <div class="banner__intro_footer">
+          <img src="framer.png" alt="Framer Logo" class="banner__avatar">
+          <div class="developer">
+            <h3 class="developer__name">Haris</h3>
+            <p class="developer__role">Web Designer/Developer,<br> UI/UX Expert</p>
+            <img src="upwork-logo.png" alt="Upwork Logo">
+          </div>
+        </div>
+        <p class="footer__subtext">
+          Hit me up if you’re looking for a <span class="footer__highlight">fast, reliable<br> web-designer</span> who can bring your vision to life
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="footer__copyright container">
+      <img src="wow.png" alt="WOW Logo">
+      <p><a href="#">Copyright © WorksofWeb, 2025</a></p>
+    </div>
+  </footer>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
