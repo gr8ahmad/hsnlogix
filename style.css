@@ -3801,3 +3801,38 @@ footer .profile-name h3{
   }
 }
 
+
+
+/* Hero circle animation (was inline style on .TextShape-node) */
+.hero-circle-anim {
+    font-size: 23px;
+    --stroke: red;
+    --stroke-width: 0.1em;
+    --stroke-linecap: round;
+    --stroke-linejoin: round;
+    --opacity: 1;
+    width: 450px;
+    height: 90px;
+    position: absolute;
+}
+
+/* Shopify badge in hero (was inline style) */
+.shopify-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 32px;
+}
+
+.shopify-badge img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* On Shopify text size (was inline style) */
+.on-shopify {
+    font-size: 56px;
+}
+
