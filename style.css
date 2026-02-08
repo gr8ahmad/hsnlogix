@@ -40,20 +40,22 @@ body {
 
 .site-header__menu {
   display: flex;
-  gap: 38px;
+  gap: 30px;
+  align-items: center;
 }
 
 .site-header__link {
   font-family: 'Manrope', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
   color: #2f2f2f;
   text-decoration: none;
   transition: color 0.2s ease;
+  text-transform: uppercase;
 }
 
 .site-header__link:hover {
-  color: rgba(47, 47, 47, 0.6);
+  color: rgb(130 255 31);
 }
 
 .site-header__link.active {
@@ -73,7 +75,7 @@ body {
  display: flex;
  align-items: center;
  justify-content: space-between;
- padding: 20px 0;
+ padding: 20px 40px;
  }
 .site-header__logo {
  max-width: 120px;
@@ -93,6 +95,32 @@ body {
 .site-header__btn {
  border: none;
  }
+
+
+ .logo a{
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            white-space: nowrap;
+            font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            text-decoration: none;
+        }
+        
+        .logo-hsn {
+            font-size: 32px;
+            font-weight: 800;
+            color: #2B2B2B;
+            letter-spacing: -2px;
+            line-height: 1;
+        }
+        
+        .logo-logix {
+            font-size: 27px;
+            font-weight: 800;
+            color: #debe1b;
+            letter-spacing: -.5px;
+            line-height: 1;
+        }
 /* ========= BANNER ========= */
 
  /* Projects Section Styles */
@@ -498,12 +526,11 @@ span.build-scale {
 }
 /* Profile picture */
 .hsn-logix-profile-pic {
- width: 90px;
- height: 120px;
- aspect-ratio: 1;
- border-radius: 45px;
- position: relative;
- overflow: visible;
+ width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    position: relative;
+    overflow: visible;
 }
 .hsn-logix-img-wrapper {
  position: absolute;
@@ -515,8 +542,8 @@ span.build-scale {
  width: 100%;
  height: 100%;
  border-radius: inherit;
- object-fit: contain;
- object-position: center;
+    object-fit: cover;
+    object-position: 0px 17%;
 }
 /* ========= BUTTONS ========= */
  .btn--outline,
@@ -560,6 +587,10 @@ margin-left: 10px;
 .TextShape-node-container1.helping-bsns .TextShape-node {
  left: 187px;
  top: -4px;
+ display: none;
+}
+.line-four {
+    margin-top: -13px;
 }
 .bold-text {
  font-weight: bold;
@@ -945,12 +976,11 @@ body {
  }
 .hero-grid {
  flex: 1;
- max-width: 1320px;
- padding: 30px 0;
+ max-width: 1180px;
+ padding: 60px 0;
  display: grid;
  grid-template-rows: 500px 238px;
  grid-template-columns: repeat(3, 1fr);
- gap: 24px;
  justify-content: center;
  }
 /* Profile section */
@@ -967,7 +997,7 @@ body {
 .profile-content {
  display: flex;
  align-items: center;
- gap: 26px;
+ gap: 20px;
   }
 .avatar-container {
  display: flex;
@@ -1018,7 +1048,7 @@ body {
  }
 .title-text {
  font-weight: 600;
- font-size: 15px;
+ font-size: 16px;
  letter-spacing: -0.6px;
  line-height: 19.5px;
  color: #2F2F2F;
@@ -1049,12 +1079,6 @@ body {
  align-items: center;
  gap: 8px;
  height: 20px;
- }
-.availability-dot {
- width: 10px;
- height: 10px;
- background-color: #82FF1F;
- border-radius: 50%;
  }
 .availability-text {
  font-weight: 600;
@@ -1107,9 +1131,9 @@ body {
  display: flex;
  flex-wrap: wrap;
  align-items: center;
- gap: 4px;
+ gap: 0px;
  width: 100%;
- padding: 4px 0 0;
+ padding: 6px 0 0;
  }
 .profession-group {
  display: flex;
@@ -1177,7 +1201,6 @@ body {
  justify-content: flex-start;
  gap: 50px;
  width: 100%;
- padding-top: 25px;
  place-self: center;
  }
 .testimonials-header .description {
@@ -2197,7 +2220,7 @@ body {
  overflow: visible;
 }
 .availability-dot {
- background-color: rgb(130, 255, 31);
+ background-color: rgb(130 255 31);
  border-radius: 100%;
  box-shadow: rgba(130, 255, 31, 0.32) 0 0 12px 0;
  aspect-ratio: 1 / 1;
@@ -2426,7 +2449,7 @@ body {
  font-family: 'Manrope', sans-serif;
  font-style: normal;
  font-weight: 600;
- font-size: 22px;
+ font-size: 24px;
  letter-spacing: -0.88px;
  line-height: 30.8px;
  text-wrap: nowrap;
@@ -2505,7 +2528,7 @@ footer .profile-name h3{
  color: rgb(255, 255, 255);
 }
 .cta-button {
- background-color: rgb(130, 255, 31);
+ background-color: #82FF1F;
  border-radius: 35px;
  box-shadow: rgba(132, 255, 31, 0.32) 0 12px 40px 0;
  gap: normal;
@@ -2521,6 +2544,7 @@ footer .profile-name h3{
  position: relative;
  overflow: visible;
  will-change: transform;
+ transition: transform .2s ease;
 }
 .button-text {
  padding: 0 18px 0 0;
@@ -2539,7 +2563,7 @@ footer .profile-name h3{
  font-family: 'Manrope', sans-serif;
  font-style: normal;
  font-weight: 600;
- color: rgb(47, 47, 47);
+ color: #2F2F2F;
  font-size: 19px;
  letter-spacing: -0.76px;
  line-height: 20px;
@@ -3800,39 +3824,3 @@ footer .profile-name h3{
      padding: 12px 20px;
   }
 }
-
-
-
-/* Hero circle animation (was inline style on .TextShape-node) */
-.hero-circle-anim {
-    font-size: 23px;
-    --stroke: red;
-    --stroke-width: 0.1em;
-    --stroke-linecap: round;
-    --stroke-linejoin: round;
-    --opacity: 1;
-    width: 450px;
-    height: 90px;
-    position: absolute;
-}
-
-/* Shopify badge in hero (was inline style) */
-.shopify-badge {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    font-size: 32px;
-}
-
-.shopify-badge img {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
-}
-
-/* On Shopify text size (was inline style) */
-.on-shopify {
-    font-size: 56px;
-}
-
