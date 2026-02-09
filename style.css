@@ -2642,27 +2642,11 @@ footer .profile-name h3{
  object-fit: contain;
 }
 .copyright {
- cursor: pointer;
- will-change: transform;
- display: flex;
- flex-flow: row nowrap;
- flex: 0 0 auto;
- justify-content: flex-start;
- align-items: center;
- gap: 6px;
- width: min-content;
- height: 15px;
- padding: 0px;
- text-decoration: none;
- position: relative;
- overflow: visible;
-}
-.copyright p {
  font-family: 'Manrope', sans-serif;
  font-style: normal;
- font-weight: 600;
+ font-weight: 500;
  color: #fff;
- font-size: 15px;
+ font-size: 14px;
  letter-spacing: -0.45px;
  line-height: 15px;
  text-wrap: nowrap;
