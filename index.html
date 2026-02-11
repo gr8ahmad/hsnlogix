@@ -1275,6 +1275,36 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".site-header");
+  let lastScroll = 0;
+  const scrollThreshold = 50;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    // Always show full header at top of page
+    if (currentScroll <= scrollThreshold) {
+      header.classList.remove("header-hidden");
+      return;
+    }
+
+    // Scrolling down — hide nav links
+    if (currentScroll > lastScroll) {
+      header.classList.add("header-hidden");
+    }
+
+    // Scrolling up — show nav links
+    if (currentScroll < lastScroll) {
+      header.classList.remove("header-hidden");
+    }
+
+    lastScroll = currentScroll;
+  });
+});
+
+
   </script>
 
 <script src="hsnlogix-tracking.js"></script>
