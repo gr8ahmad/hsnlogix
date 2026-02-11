@@ -102,7 +102,7 @@ body {
  .logo a{
             display: flex;
             align-items: baseline;
-            gap: 4px;
+            gap: 2px;
             white-space: nowrap;
             font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             text-decoration: none;
@@ -119,7 +119,7 @@ body {
         .logo-logix {
             font-size: 27px;
             font-weight: 800;
-            color: #debe1b;
+            color: #82ff1f;
             letter-spacing: -.5px;
             line-height: 1;
         }
@@ -176,7 +176,7 @@ body {
     font-size: 22px;
   }
   .logo a {
-    gap: 3px;
+    gap: 2px;
   }
 
   .site-header__menu {
@@ -208,6 +208,23 @@ body {
 }
 
 
+
+/* Header scroll states */
+.site-header {
+  transition: transform 0.3s ease;
+}
+
+.site-header.header-hidden .site-header__menu {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.site-header__menu {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
 /* ========= BANNER ========= */
 
  /* Projects Section Styles */
@@ -231,6 +248,7 @@ body {
 */
     width: 100%;
 }
+
 .projects-grid {
  display: grid;
  grid-template-columns: repeat(2, 1fr);
