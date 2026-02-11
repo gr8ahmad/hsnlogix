@@ -1281,22 +1281,7 @@ body {
  height: 92px;
  }
 /* Experience section */
- .experience-section {
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- gap: 10px;
- width: 100%;
- height: 50px;
- padding-top: 50px;
- place-self: start;
- }
-.experience-text {
- font-weight: 600;
- font-size: 0px;
- color: #2F2F2F;
- line-height: 0px;
- }
+
 /* Description and CTA section */
  .cta-section {
  display: flex;
@@ -3705,8 +3690,14 @@ footer .profile-name h3{
 }
 
 @media (max-width: 768px) {
+  .hsn-logix-profile-pic {
+    width: 80px;
+    height: 80px;
+  }
   .profile-section {
     margin-top: 40px;
+    padding-left: 0;
+    order: 1;
   }
   a.cta-button.header-cta {
     margin-left: auto;
@@ -3789,8 +3780,8 @@ footer .profile-name h3{
   .hero-grid {
     grid-template-columns: 1fr;
      grid-template-rows: auto;
-     gap: 40px;
-     padding: 30px 0 100px;
+     gap: 30px;
+     padding: 50px 0 100px;
   }
   .heading-section,
  .cta-section {
@@ -3829,7 +3820,7 @@ footer .profile-name h3{
   height: initial;
 }
 span.build-scale {
-    font-size: 60px;
+    font-size: 30px;
   }
 .TextShape-node-container1 {
     font-size: 30px;
@@ -3837,6 +3828,11 @@ span.build-scale {
   .on-shopify {
     display: inline-block;
     margin-top: 30px;
+    font-size: 28px !important;
+  }
+  .shopify-badge {
+    height: 50px !important;
+    font-size: 20px !important;
   }
   .profile-content {
      align-items: flex-start;
@@ -3844,6 +3840,10 @@ span.build-scale {
   }
   .cta-section {
     gap: 40px;
+    order: 2;
+  }
+  .heading-section {
+    gap: 30px;
   }
   .description {
     font-size: 20px;
@@ -3915,6 +3915,15 @@ span.build-scale {
   .logos-column {
     height: 200px;
   }
+
+.build-and-scale svg {
+    max-width: 171px !important;
+    top:auto !important;
+    bottom: -25px !important;
+}
+
+
+
 }
 
 @media (max-width: 992px) {
