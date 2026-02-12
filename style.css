@@ -409,6 +409,7 @@ body {
  width: 100%;
 }
 .project-services {
+  display: none;
  font-weight: 600;
  font-size: 15px;
  letter-spacing: -0.6px;
@@ -3654,12 +3655,13 @@ footer .profile-name h3{
      letter-spacing: -0.8px;
   }
   .cta-button {
-    height: 60px;
+    height: 40px;
      padding: 25px 20px;
   }
   .cta-text {
-    font-size: 18px;
+    font-size: 16px;
   }
+
   .headline-text {
     font-size: 28px;
      line-height: 32px;
@@ -3672,6 +3674,7 @@ footer .profile-name h3{
   }
   .accordion-question {
     gap: 16px;
+    padding: 15px 0;
   }
   .service-description {
     font-size: 14px;
@@ -3690,6 +3693,95 @@ footer .profile-name h3{
 }
 
 @media (max-width: 768px) {
+
+  .footer-container,
+  .contact-info {
+    flex-direction: column;
+    width: initial;
+}
+.cta-buttons {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-title {
+    font-size: 38px;
+    letter-spacing: 0px;
+    line-height: 47px;
+}
+  .project-text,
+  .project-content,
+  .project-card,
+  .project-card-small,
+  .faq-heading {
+    height: initial;
+  }
+  .question-title {
+    text-wrap: initial;
+  }
+  .faq-container {
+    padding-top: 40px;
+  }
+  .faq-question {
+    padding: 15px 10px 15px 20px;
+  }
+  .faq-section {
+    padding: 0 20px 60px;
+  }
+      .question-title {
+        font-size: 16px;
+      }
+  .faq-heading {
+    padding-bottom: 40px;
+  }
+  .faq-title {
+    font-size: 40px;
+    letter-spacing: -0.5px;
+  }
+
+  .projects-small-container {
+    flex-direction: column;
+}
+  .project-card {
+    padding-bottom: 60px;
+  }
+  span.site-title {
+    left: 50%;
+    top: 41px;
+    font-size: 30px;
+  }
+  .animated-grid {
+    display: none;
+  }
+  .process-header {
+    padding: 0 40px 60px;
+  }
+  .ticker-label {
+    letter-spacing: -0.96px;
+  }
+  .ticker-icon {
+ width: 20px;
+ height: 20px;
+ display: none;
+}
+.ticker-list {
+  gap: 50px;
+}
+.cta-section .cta-icon {
+  transform: rotate(135deg);
+  width: 35px;
+  height: 35px;
+}
+.cta-section .cta-icon svg {
+width: 18px;
+height: 18px;
+}
+.ticker-label,
+.ticker-number {
+  font-size: 24px;
+}
+.ticker-content {
+  gap: 5px;
+}
   .availability {
     display: none;
   }
@@ -3706,7 +3798,7 @@ footer .profile-name h3{
     margin-left: auto;
   }
   .projects-section {
-    padding: 0 16px;
+    padding: 40px 16px;
      height: auto;
   }
   .project-text,
@@ -3725,20 +3817,22 @@ footer .profile-name h3{
      height: auto;
   }
   .view-all-content {
-    flex-direction: column;
      gap: 15px;
      height: auto;
+     width: fit-content;
   }
+
   .view-all-text {
     font-size: 18px;
      line-height: 24px;
   }
   #hsnlogix-portfolio-slider {
-    height: 175px;
+    /*height: 175px;*/
   }
   .hsnlogix-slider-item img {
-    height: 175px;
+    /*height: 175px;*/
   }
+
   .process-step {
     flex-direction: column;
      gap: 30px;
@@ -3758,10 +3852,16 @@ footer .profile-name h3{
   .testimonials-header {
     padding: 0 16px 30px;
   }
-  .headline-text {
+.services-section .headline-text {
     font-size: 36px;
      line-height: 40px;
      letter-spacing: -1.44px;
+  }
+  .headline-container {
+    height: initial;
+  }
+  .header-content {
+    margin-bottom: 0px;
   }
   .tag-badge {
     gap: 16px;
@@ -3784,7 +3884,7 @@ footer .profile-name h3{
     grid-template-columns: 1fr;
      grid-template-rows: auto;
      gap: 30px;
-     padding: 50px 0 100px;
+     padding: 50px 0 60px;
   }
   .heading-section,
  .cta-section {
@@ -3862,18 +3962,17 @@ span.build-scale {
      letter-spacing: -1.44px;
   }
   .question-title {
-    font-size: 20px;
+    font-size: 18px;
      line-height: 26px;
      letter-spacing: -0.8px;
   }
   .answer-content {
-    flex-direction: column;
      align-items: flex-start;
      gap: 20px;
      height: auto;
   }
   .answer-images {
-    width: 100%;
+    width: initial;
      justify-content: center;
   }
   .answer-text {
@@ -3881,6 +3980,10 @@ span.build-scale {
      align-items: flex-start;
      gap: 15px;
      height: auto;
+     margin-left: 70px;
+  }
+  .accordion-answer {
+    padding: 30px 20px 20px 0px;
   }
   .service-description {
     width: 100%;
