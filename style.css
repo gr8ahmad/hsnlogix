@@ -3839,7 +3839,7 @@ span.build-scale {
      height: auto;
   }
   .cta-section {
-    gap: 40px;
+    gap: 30px;
     order: 2;
   }
   .heading-section {
@@ -3922,7 +3922,9 @@ span.build-scale {
     bottom: -25px !important;
 }
 
-
+.cta-section .description {
+      font-size: 16px;
+}
 
 }
 
