@@ -3690,6 +3690,9 @@ footer .profile-name h3{
 }
 
 @media (max-width: 768px) {
+  .availability {
+    display: none;
+  }
   .hsn-logix-profile-pic {
     width: 80px;
     height: 80px;
