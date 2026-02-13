@@ -3665,11 +3665,18 @@ border: 0;
 .cta-buttons {
   flex-direction: column;
   align-items: flex-start;
+  padding: 0 20px;
 }
 .footer-title {
-    font-size: 38px;
-    letter-spacing: 0px;
-    line-height: 47px;
+            font-size: 66px;
+        letter-spacing: 0px;
+        line-height: 72px;
+        text-wrap: inherit;
+        word-wrap: initial;
+        padding: 0 20px;
+}
+.contact-description {
+    padding: 0 20px;
 }
   .project-text,
   .project-content,
@@ -3709,6 +3716,9 @@ border: 0;
   .project-card {
     padding-top: 60px;
     padding-bottom: 60px;
+           padding-left: 0;
+        padding-right: 0;
+
   }
   span.site-title {
     left: 50%;
@@ -3719,7 +3729,7 @@ border: 0;
     display: none;
   }
   .process-header {
-    padding: 0 40px 30px;
+    padding: 0 20px 30px;
   }
   .ticker-label {
     letter-spacing: -0.96px;
@@ -3757,9 +3767,16 @@ height: 18px;
   }
   .profile-section {
     margin-top: 40px;
-    padding-left: 0;
+    padding-left: 20px;
     order: 1;
   }
+  .footer-bottom .footer-container {
+    flex-direction: initial;
+    padding: 15px 0;
+}
+.footer-bottom {
+    padding: 20px;
+}
   a.cta-button.header-cta {
     margin-left: auto;
   }
@@ -3920,7 +3937,7 @@ span.build-scale {
      letter-spacing: -0.8px;
   }
   .services-section {
-    padding: 40px 16px;
+    padding: 40px 20px;
   }
   .headline-text {
     font-size: 36px;
@@ -4000,11 +4017,19 @@ span.build-scale {
 .view-all-container {
           height: initial;
         border: 0;
+        padding-left: 0;
+        padding-right: 0;
         padding-top: 60px;
 }
 a.project-card-small {
   padding-top: 60px;
   padding-bottom: 60px;
+         padding-left: 0;
+        padding-right: 0;
+
+}
+.services-container {
+  padding-top: 20px;
 }
 
 }
