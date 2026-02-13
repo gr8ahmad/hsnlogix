@@ -3482,6 +3482,36 @@ footer .profile-name h3{
 }
 
 
+
+       .header-cta:hover {
+  /*transform: translateY(-1px);*/
+}
+.header-cta {
+    height: 30px;
+    padding: 20px 16px;
+}
+.header-cta .button-text p {
+    font-size: 16px;
+}
+.header-cta .button-text {
+  padding: 0 10px 0 0;
+}
+.header-cta .button-icon {
+    width: 25px;
+    height: 25px;
+}
+.header-cta .button-icon svg {
+    width: 15px;
+}
+.TextShape-node.hero-circle-anim {
+    display: ;
+}
+
+
+
+/**** Media Queries ****/
+
+
 @media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -3610,89 +3640,22 @@ footer .profile-name h3{
   }
 }
 
-@media (max-width: 480px) {
-  .project-text,
- .project-text-small {
-    padding: 0 0 20px 20px;
-  }
-  .project-title {
-    font-size: 20px;
-     line-height: 26px;
-     letter-spacing: -0.8px;
-  }
-  .category-bracket,
- .category-name {
-    font-size: 14px;
-     line-height: 21px;
-     letter-spacing: -0.56px;
-  }
-  .project-date {
-    font-size: 14px;
-     line-height: 14px;
-     letter-spacing: -0.56px;
-  }
-  .project-services {
-    font-size: 13px;
-     line-height: 16.9px;
-     letter-spacing: -0.52px;
-  }
-  .hero-container {
-    padding: 0 16px;
-  }
-  .greeting,
- .profession-text,
- .location-text,
- .tagline {
-    font-size: 36px;
-     line-height: 36px;
-     letter-spacing: -1.44px;
-  }
-  .name-pill-text,
- .profession-pill-text,
- .location-pill-text {
-    font-size: 20px;
-     line-height: 20px;
-     letter-spacing: -0.8px;
-  }
-  .cta-button {
-    height: 40px;
-     padding: 25px 20px;
-  }
-  .cta-text {
-    font-size: 16px;
-  }
 
-  .headline-text {
+@media (max-width: 992px) {
+  .btn--dark, .btn--light {
     font-size: 28px;
-     line-height: 32px;
-     letter-spacing: -1.12px;
-  }
-  .question-title {
-    font-size: 18px;
-     line-height: 24px;
-     letter-spacing: -0.72px;
-  }
-  .accordion-question {
-    gap: 16px;
-    padding: 15px 0;
-  }
-  .service-description {
-    font-size: 14px;
-     line-height: 22px;
-     letter-spacing: -0.28px;
-  }
-  .badge-text {
-    font-size: 14px;
-     letter-spacing: -0.56px;
-  }
-  .header-description {
-    font-size: 18px;
-     line-height: 24px;
-     letter-spacing: -0.72px;
+     padding: 12px 20px;
   }
 }
 
 @media (max-width: 768px) {
+
+  .project-card,
+  .project-card-small {
+
+border: 0;
+ border-bottom: 1px solid #262626;
+}
 
   .footer-container,
   .contact-info {
@@ -3712,7 +3675,9 @@ footer .profile-name h3{
   .project-content,
   .project-card,
   .project-card-small,
-  .faq-heading {
+  .faq-heading,
+  .project-text-small,
+  .project-content-small {
     height: initial;
   }
   .question-title {
@@ -3742,6 +3707,7 @@ footer .profile-name h3{
     flex-direction: column;
 }
   .project-card {
+    padding-top: 60px;
     padding-bottom: 60px;
   }
   span.site-title {
@@ -3753,7 +3719,7 @@ footer .profile-name h3{
     display: none;
   }
   .process-header {
-    padding: 0 40px 60px;
+    padding: 0 40px 30px;
   }
   .ticker-label {
     letter-spacing: -0.96px;
@@ -3798,7 +3764,7 @@ height: 18px;
     margin-left: auto;
   }
   .projects-section {
-    padding: 40px 16px;
+    padding: 60px 15px 40px;
      height: auto;
   }
   .project-text,
@@ -4031,40 +3997,104 @@ span.build-scale {
 .cta-section .description {
       font-size: 16px;
 }
+.view-all-container {
+          height: initial;
+        border: 0;
+        padding-top: 60px;
+}
+a.project-card-small {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 }
 
-@media (max-width: 992px) {
-  .btn--dark, .btn--light {
+
+@media (max-width: 480px) {
+  .project-text,
+ .project-text-small {
+    padding: 0 0 20px 20px;
+  }
+  .project-title {
+    font-size: 20px;
+     line-height: 26px;
+     letter-spacing: -0.8px;
+  }
+  .category-bracket,
+ .category-name {
+    font-size: 14px;
+     line-height: 21px;
+     letter-spacing: -0.56px;
+  }
+  .project-date {
+    font-size: 14px;
+     line-height: 14px;
+     letter-spacing: -0.56px;
+  }
+  .project-services {
+    font-size: 13px;
+     line-height: 16.9px;
+     letter-spacing: -0.52px;
+  }
+  .hero-container {
+    padding: 0 20px;
+  }
+  .greeting,
+ .profession-text,
+ .location-text,
+ .tagline {
+    font-size: 36px;
+     line-height: 36px;
+     letter-spacing: -1.44px;
+  }
+  .name-pill-text,
+ .profession-pill-text,
+ .location-pill-text {
+    font-size: 20px;
+     line-height: 20px;
+     letter-spacing: -0.8px;
+  }
+  .cta-button {
+    height: 40px;
+     padding: 25px 20px;
+  }
+  .cta-text {
+    font-size: 16px;
+  }
+
+  .headline-text {
     font-size: 28px;
-     padding: 12px 20px;
+     line-height: 32px;
+     letter-spacing: -1.12px;
+  }
+  .question-title {
+    font-size: 18px;
+     line-height: 24px;
+     letter-spacing: -0.72px;
+  }
+  .accordion-question {
+    gap: 16px;
+    padding: 15px 0;
+  }
+  .service-description {
+    font-size: 14px;
+     line-height: 22px;
+     letter-spacing: -0.28px;
+  }
+  .badge-text {
+    font-size: 14px;
+     letter-spacing: -0.56px;
+  }
+  .header-description {
+    font-size: 18px;
+     line-height: 24px;
+     letter-spacing: -0.72px;
   }
 }
 
 
 
 
-       .header-cta:hover {
-  /*transform: translateY(-1px);*/
-}
-.header-cta {
-    height: 30px;
-    padding: 20px 16px;
-}
-.header-cta .button-text p {
-    font-size: 16px;
-}
-.header-cta .button-text {
-  padding: 0 10px 0 0;
-}
-.header-cta .button-icon {
-    width: 25px;
-    height: 25px;
-}
-.header-cta .button-icon svg {
-    width: 15px;
-}
-.TextShape-node.hero-circle-anim {
-    display: ;
-}
+
+
 
