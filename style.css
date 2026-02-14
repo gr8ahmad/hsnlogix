@@ -4118,8 +4118,10 @@ a.project-card-small {
 }
 
 
-
-
-
-
-
+@media (max-width: 420px) {
+    .TextShape-node-container1,
+    span.build-scale,
+        .on-shopify {
+        font-size: 23px !important;
+    }
+}
