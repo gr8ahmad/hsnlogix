@@ -2404,7 +2404,6 @@ body {
  flex: 1 0 0;
  justify-content: space-between;
  align-items: center;
- gap: 58px;
  width: 1px;
  max-width: 1320px;
  padding: 60px 0 30px;
@@ -3677,6 +3676,7 @@ border: 0;
 }
 .contact-description {
     padding: 0 20px;
+    width: initial;
 }
   .project-text,
   .project-content,
@@ -4126,3 +4126,9 @@ a.project-card-small {
         font-size: 23px !important;
     }
 }
+
+
+
+
+
+
