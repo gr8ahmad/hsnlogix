@@ -1287,7 +1287,7 @@ body {
  .cta-section {
  display: flex;
  flex-direction: column;
- grid-column: span 2;
+ grid-column: 2 / -1;
  align-items: flex-start;
  justify-content: flex-start;
  gap: 50px;
@@ -4126,9 +4126,3 @@ a.project-card-small {
         font-size: 23px !important;
     }
 }
-
-
-
-
-
-
