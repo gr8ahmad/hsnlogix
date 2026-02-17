@@ -1,4 +1,31 @@
 /* ==== OPTIMIZED STYLES (generated) ==== */
+/* latin */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/bebas-neue.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(./fonts/inter.woff2) format('woff2');
+}
+
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(./fonts/manrope.woff2) format('woff2');
+}
+
 * {
  margin: 0px;
  padding: 0px;
@@ -4126,3 +4153,9 @@ a.project-card-small {
         font-size: 23px !important;
     }
 }
+
+
+
+
+
+
