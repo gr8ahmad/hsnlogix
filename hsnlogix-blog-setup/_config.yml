@@ -1,0 +1,20 @@
+title: HSNLOGIX Blog
+description: Shopify and web development insights from HSNLOGIX
+url: "https://hsnlogix.com"
+
+# Only these paths get Jekyll processing; everything else (index.html, css, js,
+# images already in the repo) is left completely untouched.
+collections:
+  posts:
+    output: true
+
+permalink: /blog/:title/
+
+# Keep Jekyll from trying to process files it doesn't need to
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# GitHub Pages builds this automatically on every push to main. No extra
+# build step, no separate hosting needed.
