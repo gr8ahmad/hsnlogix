@@ -1,0 +1,188 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://hsnlogix.com{{ page.url }}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}HSNLOGIX Blog{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}HSNLOGIX Blog</title>
+
+  <!-- Same stylesheets as the main site, so header/footer/fonts match exactly -->
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style-additions.css">
+  <link rel="stylesheet" href="/blog.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XBBSKSGBJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2XBBSKSGBJ');
+  </script>
+</head>
+<body>
+  <!-- HEADER (same markup as the main site) -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="logo">
+        <a href="/">
+          <span class="logo-hsn">HSN</span>
+          <span class="logo-logix">Logix</span>
+        </a>
+      </div>
+
+      <nav class="site-header__menu">
+        <a href="/#projects" class="site-header__link">Projects</a>
+        <a href="/#testimonials" class="site-header__link">Testimonials</a>
+        <a href="/#faqs" class="site-header__link">FAQs</a>
+        <a href="/#contact" class="site-header__link">Contact</a>
+        <a href="/blog/" class="site-header__link">Blog</a>
+      </nav>
+
+      <a href="/#contact" rel="noopener" class="cta-button header-cta">
+        <div class="button-text">
+          <p>Book a Call</p>
+        </div>
+        <div class="button-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="blog-main container">
+    {{ content }}
+  </main>
+
+  <!-- FOOTER (same markup as the main site) -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <div class="footer-container">
+          <div class="footer-heading">
+            <h2 class="footer-title">Let's build a Shopify store that truly stands out.</h2>
+          </div>
+          <div class="contact-info">
+            <div class="profile-section">
+              <div class="hsn-logix-avatar">
+                <div class="hsn-logix-profile-pic">
+                  <div class="hsn-logix-img-wrapper">
+                    <img src="/hussain-profile-picture.webp" alt="Hussain A - Senior Shopify Developer">
+                  </div>
+                </div>
+              </div>
+              <div class="profile-details">
+                <div class="profile-name">
+                  <h3>Hussain A</h3>
+                  <div class="profile-role">
+                    <p>Shopify Theme Developer & Front-End Specialist</p>
+                  </div>
+                  <a href="https://www.upwork.com/freelancers/~01e91c15509859436e" target="_blank" rel="noopener" class="upwork-link">
+                    <img src="/upwork-icon.webp" alt="Upwork">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-description">
+              <h3><span class="highlight">Book a free consultation</span> — I'll walk you through custom themes, integrations, and how we can <span class="highlight">elevate your store's design & conversions.</span></h3>
+            </div>
+            <div class="cta-buttons">
+              <a href="/#contact" rel="noopener" class="cta-button">
+                <div class="button-text">
+                  <p>Book a Call</p>
+                </div>
+                <div class="button-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                  </svg>
+                </div>
+              </a>
+              <a href="https://www.upwork.com/freelancers/~01e91c15509859436e" rel="noopener" class="cta-button" target="_blank">
+                <div class="button-text">
+                  <p>View my Upwork profile</p>
+                </div>
+                <div class="button-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-container">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <div class="logo">
+                <a href="/">
+                  <span class="logo-hsn">HSN</span>
+                  <span class="logo-logix">Logix</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <p class="copyright">Copyright © HSNLogix, 2026</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".site-header__menu");
+    if (toggleBtn && navMenu) {
+      toggleBtn.addEventListener("click", () => {
+        toggleBtn.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const header = document.querySelector(".site-header");
+      let lastScroll = 0;
+      const scrollThreshold = 50;
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.scrollY;
+        if (currentScroll <= scrollThreshold) {
+          header.classList.remove("header-hidden");
+          return;
+        }
+        if (currentScroll > lastScroll) {
+          header.classList.add("header-hidden");
+        }
+        if (currentScroll < lastScroll) {
+          header.classList.remove("header-hidden");
+        }
+        lastScroll = currentScroll;
+      });
+    });
+  </script>
+
+  <script src="/hsnlogix-tracking.js"></script>
+</body>
+</html>
