@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="blog-post">
+  <p class="blog-back"><a href="/blog/">&larr; Back to blog</a></p>
+  <h1 class="blog-post-title">{{ page.title }}</h1>
+  <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+  <div class="blog-post-body">
+    {{ content }}
+  </div>
+</article>
