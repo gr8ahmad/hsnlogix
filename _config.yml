@@ -1,0 +1,16 @@
+title: HSNLOGIX Blog
+description: Shopify and web development insights from HSNLOGIX
+url: "https://hsnlogix.com"
+
+# Clean URLs: no date, no .html extension.
+# Example: hsnlogix.com/blog/post-title/
+permalink: /blog/:title/
+
+collections:
+  posts:
+    output: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
