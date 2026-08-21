@@ -9,11 +9,18 @@ permalink: /blog/
 
   <div class="blog-post-list">
     {% for post in site.posts %}
-    <a class="blog-post-card" href="{{ post.url }}">
-      <h2>{{ post.title }}</h2>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-      <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-      <span class="blog-read-more">Read more &rarr;</span>
+    <a class="blog-post-card{% if post.image %} has-image{% endif %}" href="{{ post.url }}">
+      {% if post.image %}
+      <div class="blog-post-card-image">
+        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+      </div>
+      {% endif %}
+      <div class="blog-post-card-content">
+        <h2>{{ post.title }}</h2>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        <span class="blog-read-more">Read more &rarr;</span>
+      </div>
     </a>
     {% endfor %}
   </div>
