@@ -2,6 +2,8 @@
 layout: post
 title: "How Much Does a Custom Shopify Store Actually Cost in 2026?"
 date: 2026-08-16
+image: /blog-images/shopify-store-cost-2026.jpg
+excerpt: "Discover how much a custom Shopify store costs in 2026, including Shopify plans, themes, development, custom functionality, apps, integrations, and ongoing maintenance. Compare realistic Shopify development budgets by store complexity and business stage."
 ---
 
 Building a Shopify store in 2026 can cost anywhere from a few hundred dollars to tens of thousands, depending on what you're actually building.
