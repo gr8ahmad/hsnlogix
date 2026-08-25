@@ -2,7 +2,7 @@
 layout: post
 title: "How Much Does a Custom Shopify Store Actually Cost in 2026?"
 date: 2026-08-16
-image: /blog-images/shopify-store-cost-2026.jpg
+image: /blog-images/featured-shopify-cost-2026.jpg
 excerpt: "Discover how much a custom Shopify store costs in 2026, including Shopify plans, themes, development, custom functionality, apps, integrations, and ongoing maintenance. Compare realistic Shopify development budgets by store complexity and business stage."
 ---
 
@@ -17,6 +17,8 @@ You don't necessarily need a $10,000+ ecommerce project to launch a professional
 In this guide, we will break down what actually goes into the cost of a custom Shopify store in 2026, what you can expect at different price points, which features increase the budget, what you'll continue paying after the build, and where it's worth investing, and where it isn't.
 
 ## The Real Four Cost Components
+
+![Four cost components of a Shopify store: subscription, theme and design, custom development, apps and maintenance](/blog-images/inbody-1-cost-components.jpg)
 
 **1. Shopify subscription**
 
@@ -55,6 +57,8 @@ These costs aren't necessarily required on day one, but they can become part of 
 Before calculating the cost of building a Shopify store, you need to account for Shopify's own subscription. This is an ongoing platform cost rather than a development expense: it covers the infrastructure you use to host your store, manage products and orders, process checkout, and run the business from Shopify's admin. Shopify also includes hosting, unlimited bandwidth, and SSL with its plans, so you don't need to purchase conventional web hosting separately.
 
 As of August 2026, Shopify's main plans are:
+
+![Shopify plan pricing comparison: Basic $39, Grow $105, Advanced $399, Plus from $2,300 per month](/blog-images/inbody-2-plan-pricing.jpg)
 
 | Plan | Monthly billing | Annual billing* | Best suited for |
 |---|---|---|---|
@@ -97,7 +101,11 @@ The initial development cost is only part of the total cost of running a Shopify
 
 ## A Realistic Budget by Business Stage
 
-Your budget should match the stage of your business rather than paying for complexity you don't need yet. A new business can often launch a professional Shopify store for around $400–$700 if branding, products, content, and assets are already prepared. A growing business that needs more customization, better UX, custom sections, and integrations may realistically budget $700–$1,500. Businesses with more complex catalogs, custom functionality, or multiple integrations should expect $1,500+ for development. The goal is to build what your business needs today while leaving room to expand later.
+Your budget should match the stage of your business rather than paying for complexity you don't need yet.
+
+![Realistic Shopify budget by business stage: new business $400-$700, growing business $700-$1,500, complex catalog $1,500+](/blog-images/inbody-3-budget-by-stage.jpg)
+
+A new business can often launch a professional Shopify store for around $400–$700 if branding, products, content, and assets are already prepared. A growing business that needs more customization, better UX, custom sections, and integrations may realistically budget $700–$1,500. Businesses with more complex catalogs, custom functionality, or multiple integrations should expect $1,500+ for development. The goal is to build what your business needs today while leaving room to expand later.
 
 ## Shopify vs. Alternatives: Brief Cost Comparison
 
