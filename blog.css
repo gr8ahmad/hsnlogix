@@ -283,3 +283,66 @@
     .blog-post-card-content { padding: 18px 20px 22px; }
     .blog-post-featured-image { margin: 18px 0 28px; border-radius: 12px; }
 }
+
+/* ---------- Case studies ---------- */
+.case-study-meta-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.case-study-tag {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #0A0A0A;
+    background: #F0FFDF;
+    border: 1px solid #82FF1F;
+    border-radius: 999px;
+    padding: 4px 12px;
+}
+
+.case-study-client {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 14px;
+}
+
+.case-study-client strong {
+    color: #0A0A0A;
+}
+
+.case-study .blog-post-title {
+    margin-bottom: 10px;
+}
+
+.case-study-results {
+    background: #F7F7F7;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin: 28px 0;
+}
+
+.case-study-results-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #0A0A0A;
+    margin-bottom: 10px;
+}
+
+.case-study-results p {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.case-study-cta {
+    margin-top: 40px;
+}
