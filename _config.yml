@@ -9,6 +9,9 @@ permalink: /blog/:title/
 collections:
   posts:
     output: true
+  case_studies:
+    output: true
+    permalink: /case-studies/:path/
 
 exclude:
   - README.md
