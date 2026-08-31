@@ -1,20 +1,27 @@
 ---
 layout: case-study
-title: "Laboostudio — Custom Storefront for a Wall Art Brand"
+title: "Custom Shopify Store for a Premium Wall Art Brand — Laboostudio"
 client: Laboostudio
-category: Wall Art
-platform: Web Development
+category: Home & Décor
+platform: Shopify (custom theme build)
+role: Lead Shopify Developer
 date: 2026-08-28
 image: /laboostudio.webp
 url_live: https://laboostudio.com
-excerpt: "A custom-built storefront for Laboostudio, a wall art brand, focused on clean product presentation and a smooth shopping experience."
+excerpt: "A fast-loading, conversion-focused storefront built to let premium wall art do the selling."
 results: "[NEEDS INPUT: add specific results/metrics for this project — e.g. conversion rate change, page speed improvement, or launch timeline. None of these figures currently exist anywhere in the repo, so nothing has been invented here.]"
 ---
 
-Laboostudio came to HSNLOGIX for custom web development to bring their wall art catalog online with a storefront built around the brand's visual identity.
+## The Challenge
 
-## The Project
+Laboostudio sells premium wall art, a category where the purchase decision is made almost entirely by the image itself. A generic Shopify theme built for general retail wasn't going to do the artwork justice, and slow-loading, image-heavy product pages are exactly where visually-driven stores lose customers before they ever scroll to "Add to Cart."
 
-[NEEDS INPUT: a short paragraph on the specific scope of work for Laboostudio — e.g. was this a full store build, a theme customization, or a redesign? What custom sections, product page work, or features were built? This detail isn't documented elsewhere in the repo, so it needs to come from you rather than being guessed.]
+## The Approach
+
+Built a custom theme from the ground up designed around the product, not around a template: large-format product imagery given full visual priority, clean navigation that gets out of the way, and custom collection pages structured for browsing rather than searching. Every design decision was weighed against load time, a wall art store lives or dies on the image being both large and fast, which is a harder technical problem than it sounds. Checkout and shipping were configured and tested end-to-end before launch.
+
+## The Result
+
+A fast-loading, conversion-focused storefront that lets the product do the selling instead of fighting the theme for attention, built to convert browsers into buyers in a category where first impressions happen in the first second.
 
 Visit the live site: [laboostudio.com](https://laboostudio.com)

@@ -19,6 +19,33 @@ layout: default
   </div>
   {% endif %}
 
+  <div class="case-study-quick-facts">
+    {% if page.role %}
+    <div class="quick-fact">
+      <span class="quick-fact-label">Role</span>
+      <span class="quick-fact-value">{{ page.role }}</span>
+    </div>
+    {% endif %}
+    {% if page.platform %}
+    <div class="quick-fact">
+      <span class="quick-fact-label">Platform</span>
+      <span class="quick-fact-value">{{ page.platform }}</span>
+    </div>
+    {% endif %}
+    {% if page.timeline %}
+    <div class="quick-fact">
+      <span class="quick-fact-label">Timeline</span>
+      <span class="quick-fact-value">{{ page.timeline }}</span>
+    </div>
+    {% endif %}
+    {% if page.repeat_client %}
+    <div class="quick-fact">
+      <span class="quick-fact-label">Repeat client</span>
+      <span class="quick-fact-value">{{ page.repeat_client }}</span>
+    </div>
+    {% endif %}
+  </div>
+
   {% if page.results %}
   <div class="case-study-results">
     <h2 class="case-study-results-title">Results</h2>
