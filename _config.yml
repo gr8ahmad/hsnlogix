@@ -12,6 +12,9 @@ collections:
   case_studies:
     output: true
     permalink: /case-studies/:path/
+  services:
+    output: true
+    permalink: /services/:path/
 
 exclude:
   - README.md
