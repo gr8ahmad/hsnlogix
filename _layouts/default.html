@@ -14,11 +14,11 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://hsnlogix.com{{ page.url }}">
-  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX Blog{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}HSNLOGIX Blog{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
-  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX Blog{% else %}HSNLOGIX Blog{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}HSNLOGIX Blog</title>
 
   <!-- Same stylesheets as the main site, so header/footer/fonts match exactly -->
   <link rel="stylesheet" href="/style.css">
@@ -52,6 +52,7 @@
       </div>
 
       <nav class="site-header__menu">
+        <a href="/#projects" class="site-header__link">Projects</a>
         <a href="/#testimonials" class="site-header__link">Testimonials</a>
         <a href="/#faqs" class="site-header__link">FAQs</a>
         
