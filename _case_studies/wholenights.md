@@ -14,12 +14,7 @@ date: 2026-08-31
 image: /whole-nights.webp
 url_live: https://wholenights.com/
 excerpt: "A single store that genuinely serves two different customer types without either one feeling like an afterthought."
-# NOTE: Rohan's reply confirmed the timeline (2 weeks, on schedule) but did not include
-# a distinct outcome metric the way the other three projects did (no wholesale signup
-# count, no conversion figure). Leaving "results" as delivery-confirmation only rather
-# than inventing a number. Worth a follow-up ask to Rohan specifically for a wholesale
-# signup count or similar before treating this one as fully complete.
-results: "[NEEDS INPUT: add specific results/metrics for this project — e.g. conversion rate change, page speed improvement, or launch timeline. None of these figures currently exist anywhere in the repo, so nothing has been invented here.]"
+results: "A fully custom wholesale flow, live and ready to onboard B2B buyers alongside the retail storefront, tiered pricing, margin calculators, and a qualification form built directly into the theme rather than bolted on as a separate app. Delivered in 2 weeks, on schedule, as the second of three Shopify builds for this client."
 ---
 
 ## The Challenge
@@ -32,6 +27,6 @@ Rather than a bolt-on, built custom Liquid logic for the wholesale side directly
 
 ## The Result
 
-A single store that genuinely serves two different customer types without either one feeling like an afterthought, wholesale buyers get pricing clarity built for how they actually decide, retail customers get a normal storefront. This was the second of three Shopify builds for this client, each one expanding on what the last delivered.
+A single store that genuinely serves two different customer types without either one feeling like an afterthought, wholesale buyers get pricing clarity built for how they actually decide, retail customers get a normal storefront. The wholesale flow, tiered pricing, margin calculators, and the qualification form, is live and fully functional, ready to onboard B2B buyers as the business grows into that side of the market. The build was completed in two weeks, on schedule for launch. This was the second of three Shopify builds for this client, each one expanding on what the last delivered.
 
 Visit the live site: [wholenights.com](https://wholenights.com/)
