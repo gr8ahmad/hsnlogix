@@ -14,6 +14,11 @@ date: 2026-08-31
 image: /whole-nights.webp
 url_live: https://wholenights.com/
 excerpt: "A single store that genuinely serves two different customer types without either one feeling like an afterthought."
+# NOTE: Rohan's reply confirmed the timeline (2 weeks, on schedule) but did not include
+# a distinct outcome metric the way the other three projects did (no wholesale signup
+# count, no conversion figure). Leaving "results" as delivery-confirmation only rather
+# than inventing a number. Worth a follow-up ask to Rohan specifically for a wholesale
+# signup count or similar before treating this one as fully complete.
 results: "[NEEDS INPUT: add specific results/metrics for this project — e.g. conversion rate change, page speed improvement, or launch timeline. None of these figures currently exist anywhere in the repo, so nothing has been invented here.]"
 ---
 
