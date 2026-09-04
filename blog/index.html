@@ -9,10 +9,10 @@ permalink: /blog/
 
   <div class="blog-post-list">
     {% for post in site.posts %}
-    <a class="blog-post-card{% if post.image %} has-image{% endif %}" href="{{ post.url }}">
+    <a class="blog-post-card{% if post.image %} has-image{% endif %}" href="{{ post.url | relative_url }}">
       {% if post.image %}
       <div class="blog-post-card-image">
-        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
       </div>
       {% endif %}
       <div class="blog-post-card-content">

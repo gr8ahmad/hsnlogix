@@ -9,10 +9,10 @@ permalink: /case-studies/
 
   <div class="blog-post-list">
     {% for study in site.case_studies %}
-    <a class="blog-post-card case-study-card{% if study.image %} has-image{% endif %}" href="{{ study.url }}">
+    <a class="blog-post-card case-study-card{% if study.image %} has-image{% endif %}" href="{{ study.url | relative_url }}">
       {% if study.image %}
       <div class="blog-post-card-image">
-        <img src="{{ study.image }}" alt="{{ study.client }}" loading="lazy">
+        <img src="{{ study.image | relative_url }}" alt="{{ study.client }}" loading="lazy">
       </div>
       {% endif %}
       <div class="blog-post-card-content">

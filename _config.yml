@@ -1,6 +1,7 @@
 title: HSNLOGIX Blog
 description: Shopify and web development insights from HSNLOGIX
 url: "https://hsnlogix.com"
+baseurl: ""
 
 # Clean URLs: no date, no .html extension.
 # Example: hsnlogix.com/blog/post-title/

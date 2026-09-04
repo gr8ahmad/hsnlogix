@@ -18,7 +18,7 @@ In this guide, we will break down what actually goes into the cost of a custom S
 
 ## The Real Four Cost Components
 
-![Four cost components of a Shopify store: subscription, theme and design, custom development, apps and maintenance](/blog-images/inbody-1-cost-components.jpg)
+![Four cost components of a Shopify store: subscription, theme and design, custom development, apps and maintenance]({{ '/blog-images/inbody-1-cost-components.jpg' | relative_url }})
 
 **1. Shopify subscription**
 
@@ -58,7 +58,7 @@ Before calculating the cost of building a Shopify store, you need to account for
 
 As of August 2026, Shopify's main plans are:
 
-![Shopify plan pricing comparison: Basic $39, Grow $105, Advanced $399, Plus from $2,300 per month](/blog-images/inbody-2-plan-pricing.jpg)
+![Shopify plan pricing comparison: Basic $39, Grow $105, Advanced $399, Plus from $2,300 per month]({{ '/blog-images/inbody-2-plan-pricing.jpg' | relative_url }})
 
 | Plan | Monthly billing | Annual billing* | Best suited for |
 |---|---|---|---|
@@ -103,7 +103,7 @@ The initial development cost is only part of the total cost of running a Shopify
 
 Your budget should match the stage of your business rather than paying for complexity you don't need yet.
 
-![Realistic Shopify budget by business stage: new business $500-$700, growing business $700-$1,500, complex catalog $1,500+](/blog-images/inbody-3-budget-by-stage.jpg)
+![Realistic Shopify budget by business stage: new business $500-$700, growing business $700-$1,500, complex catalog $1,500+]({{ '/blog-images/inbody-3-budget-by-stage.jpg' | relative_url }})
 
 A new business can often launch a professional Shopify store for around $500–$700 if branding, products, content, and assets are already prepared. A growing business that needs more customization, better UX, custom sections, and integrations may realistically budget $700–$1,500. Businesses with more complex catalogs, custom functionality, or multiple integrations should expect $1,500+ for development. The goal is to build what your business needs today while leaving room to expand later.
 
@@ -121,4 +121,4 @@ The fastest way to get an accurate figure isn't to guess from a blog post, it's 
 
 If you're figuring out where your project falls, a $500 basic setup, a $1,200 custom build, or something more advanced, we're happy to take a look and give you a real, itemized quote based on your specific store, not a generic range. No cost and no obligation.
 
-[Get a quote and project scope →](/#contact)
+[Get a quote and project scope →]({{ '/#contact' | relative_url }})

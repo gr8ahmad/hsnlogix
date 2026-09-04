@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="blog-post case-study">
-  <p class="blog-back"><a href="/case-studies/">&larr; Back to case studies</a></p>
+  <p class="blog-back"><a href="{{ '/case-studies/' | relative_url }}">&larr; Back to case studies</a></p>
 
   <div class="case-study-meta-tags">
     {% if page.platform %}<span class="case-study-tag">{{ page.platform }}</span>{% endif %}
@@ -15,7 +15,7 @@ layout: default
 
   {% if page.image %}
   <div class="blog-post-featured-image">
-    <img src="{{ page.image }}" alt="{{ page.client }}">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.client }}">
   </div>
   {% endif %}
 
