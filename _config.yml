@@ -31,3 +31,4 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - _config_staging.yml

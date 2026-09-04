@@ -1,0 +1,45 @@
+name: Deploy staging preview
+
+on:
+  push:
+    branches:
+      - staging
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout hsnlogix (staging)
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build Jekyll site with staging overrides
+        run: bundle exec jekyll build --destination _site --config _config.yml,_config_staging.yml
+
+      # _config_staging.yml only sets url/robots via Liquid. CNAME and robots.txt
+      # are plain static files Jekyll copies verbatim, so they need to be
+      # patched after the build rather than through the config overlay.
+      - name: Harden staging output
+        run: |
+          rm -f _site/CNAME
+          printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          touch _site/.nojekyll
+
+      - name: Deploy to gr8ahmad/hsnlogix-staging
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.HSNLOGIX_STAGING_DEPLOY_TOKEN }}
+          external_repository: gr8ahmad/hsnlogix-staging
+          publish_branch: main
+          publish_dir: ./_site
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: "Deploy staging preview from gr8ahmad/hsnlogix@${{ github.sha }}"

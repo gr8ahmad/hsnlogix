@@ -1,0 +1,5 @@
+# Config overlay for the staging preview build only.
+# Applied on top of _config.yml via: jekyll build --config _config.yml,_config_staging.yml
+# Never used for the production (hsnlogix.com) build.
+url: "https://gr8ahmad.github.io/hsnlogix-staging"
+robots: "noindex, nofollow"
