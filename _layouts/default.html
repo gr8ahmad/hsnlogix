@@ -33,6 +33,43 @@
     gtag('js', new Date());
     gtag('config', 'G-2XBBSKSGBJ');
   </script>
+  {%- if page.layout == "service" %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "{{ page.title | strip_html }}",
+    "provider": {
+      "@type": "Person",
+      "name": "Hussain A",
+      "url": "https://hsnlogix.com"
+    },
+    "areaServed": "Worldwide",
+    "description": "{{ page.excerpt | strip_html | escape }}",
+    "url": "https://hsnlogix.com{{ page.url }}"
+  }
+  </script>
+  {%- endif %}
+  {%- if page.layout == "case-study" %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "{{ page.title | strip_html | escape }}",
+    "about": "{{ page.client | escape }}",
+    "author": {
+      "@type": "Person",
+      "name": "Hussain A",
+      "url": "https://hsnlogix.com"
+    },
+    "description": "{{ page.excerpt | strip_html | escape }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "url": "https://hsnlogix.com{{ page.url }}"
+  }
+  </script>
+  {%- endif %}
 </head>
 <body>
   <!-- HEADER (same markup as the main site) -->
