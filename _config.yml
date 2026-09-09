@@ -1,6 +1,7 @@
 title: HSNLOGIX Blog
 description: Shopify and web development insights from HSNLOGIX
 url: "https://hsnlogix.com"
+baseurl: ""
 
 # Clean URLs: no date, no .html extension.
 # Example: hsnlogix.com/blog/post-title/
@@ -9,8 +10,26 @@ permalink: /blog/:title/
 collections:
   posts:
     output: true
+  case_studies:
+    output: true
+    permalink: /case-studies/:path/
+  services:
+    output: true
+    permalink: /services/:path/
+
+plugins:
+  - jekyll-sitemap
+
+# work-index.html is private (noindex meta tag + robots.txt disallow) --
+# keep it out of the sitemap too.
+defaults:
+  - scope:
+      path: "work-index.html"
+    values:
+      sitemap: false
 
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - _config_staging.yml

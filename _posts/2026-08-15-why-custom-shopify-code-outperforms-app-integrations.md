@@ -14,7 +14,7 @@ The performance impact varies considerably depending on how each app is implemen
 
 ## The Real Cost of App Stacking
 
-![Page weight and load delay compound with every app added](/blog-images/inbody-1-app-stacking-cost.jpg)
+![Page weight and load delay compound with every app added]({{ '/blog-images/inbody-1-app-stacking-cost.jpg' | relative_url }})
 
 Here's the part most Shopify store owners never connect: the sluggishness they've learned to live with usually isn't a Shopify problem, it's an app problem.
 
@@ -42,7 +42,7 @@ Each of those features has an app built specifically for it: a password-gate app
 
 Instead, the entire experience was built with custom Liquid: the email-gated reveal, a Swiper-based carousel handling the model/flat-lay toggle, back-in-stock logic wired directly into the theme, and compare-at pricing displayed natively wherever a discount applied. The result functioned identically to what three apps would have delivered, without three apps' worth of scripts competing for the same page load, and without three recurring line items on the merchant's app bill.
 
-![Case study comparison: booking without a booking app, and a gated sale built with custom Liquid instead of three apps](/blog-images/inbody-2-case-studies.jpg)
+![Case study comparison: booking without a booking app, and a gated sale built with custom Liquid instead of three apps]({{ '/blog-images/inbody-2-case-studies.jpg' | relative_url }})
 
 ## When an Additional App Actually Makes Sense
 
@@ -54,7 +54,7 @@ The problem isn't apps in general, it's using an app to do something Shopify's o
 
 A useful question to ask before installing anything: does this feature need to talk to a system outside Shopify, or does it just need to look and behave a certain way inside a page Shopify already controls? The first case is a legitimate reason to reach for an app. The second is usually a sign that a focused custom implementation may be able to deliver the same functionality without adding another app, another monthly fee, or another dependency the store now has to maintain indefinitely.
 
-![Decision test: does the feature need to talk to a system outside Shopify, or can it be built with custom code](/blog-images/inbody-3-when-app-makes-sense.jpg)
+![Decision test: does the feature need to talk to a system outside Shopify, or can it be built with custom code]({{ '/blog-images/inbody-3-when-app-makes-sense.jpg' | relative_url }})
 
 ## Concluding Remarks
 
@@ -66,4 +66,4 @@ That doesn't mean avoiding apps altogether. It means being deliberate about whic
 
 If your store feels slower than it should, or you're paying for three apps to do what could be one clean build, it's worth having someone look at what's actually happening under the hood before assuming a new theme or a bigger ad budget is the fix.
 
-[If you have a Shopify project, book a call now to discuss the details →](/#contact)
+[If you have a Shopify project, book a call now to discuss the details →]({{ '/#contact' | relative_url }})
