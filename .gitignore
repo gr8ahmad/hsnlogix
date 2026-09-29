@@ -1,0 +1,7 @@
+node_modules/
+originals/
+package.json
+package-lock.json
+resize_images.mjs
+*.tmp
+.DS_Store
