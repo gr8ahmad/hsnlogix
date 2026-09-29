@@ -17,6 +17,10 @@ collections:
     output: true
     permalink: /services/:path/
 
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+
 plugins:
   - jekyll-sitemap
 
