@@ -1,0 +1,256 @@
+---
+layout: team-profile
+title: "Hussain A — Shopify Theme Developer"
+description: "Senior Shopify Theme Developer & Front-End Specialist. Book a free consultation to discuss custom themes, integrations, and how to elevate your store."
+permalink: /team/hussain/
+---
+
+<style>
+/* ── Profile section ── */
+.profile-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #02090A;
+  padding: 120px 40px 100px;
+  box-sizing: border-box;
+}
+
+.profile-section__pattern {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.055) 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+.profile-section__pattern .hero-pattern__blob--dark { display: none; }
+.profile-section__pattern .hero-pattern__blob--green {
+  background: rgba(130, 255, 31, 0.10);
+  width: 600px;
+  height: 600px;
+  right: -80px;
+  top: -120px;
+  left: auto;
+}
+
+.profile-section__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Photo column */
+.profile-section__photo-col {
+  flex-shrink: 0;
+}
+.profile-section__photo {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 3px solid #82FF1F;
+  box-shadow: 0 0 48px rgba(130, 255, 31, 0.18);
+  display: block;
+}
+
+/* Body column */
+.profile-section__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-section__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(130, 255, 31, 0.08);
+  border: 1px solid rgba(130, 255, 31, 0.22);
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #82FF1F;
+  margin-bottom: 20px;
+}
+.profile-section__eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #82FF1F;
+  flex-shrink: 0;
+}
+
+.profile-section__name {
+  font-family: 'Manrope', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #fff;
+  margin: 0 0 10px;
+  line-height: 1.05;
+}
+
+.profile-section__title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 24px;
+}
+
+.profile-section__upwork {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  padding: 8px 16px 8px 12px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.profile-section__upwork:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.profile-section__upwork img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.profile-section__bio {
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.68);
+  max-width: 580px;
+  margin: 0 0 40px;
+}
+.profile-section__bio .hl {
+  color: #82FF1F;
+  font-weight: 700;
+}
+
+.profile-section__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ── Mobile ── */
+@media (max-width: 800px) {
+  .profile-section {
+    padding: 96px 24px 80px;
+  }
+  .profile-section__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .profile-section__photo {
+    width: 160px;
+    height: 160px;
+  }
+  .profile-section__name {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+  }
+  .profile-section__bio {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-section__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .profile-section__actions .cta-button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+</style>
+
+<section class="profile-section">
+  <div class="hero-pattern profile-section__pattern" aria-hidden="true">
+    <div class="hero-pattern__blob hero-pattern__blob--green"></div>
+    <div class="hero-pattern__blob hero-pattern__blob--dark"></div>
+    <div class="hero-pattern__dot hero-pattern__dot--glow" style="width:5px;height:5px;right:18%;top:25%;"></div>
+    <div class="hero-pattern__dot" style="width:8px;height:8px;left:8%;bottom:20%;"></div>
+    <div class="hero-pattern__dot hero-pattern__dot--glow" style="width:4px;height:4px;right:30%;bottom:30%;"></div>
+  </div>
+
+  <div class="profile-section__inner">
+
+    <!-- Photo -->
+    <div class="profile-section__photo-col">
+      <img
+        src="{{ '/hussain-profile-picture.webp' | relative_url }}"
+        alt="Hussain A — Shopify Theme Developer"
+        class="profile-section__photo"
+      >
+    </div>
+
+    <!-- Info -->
+    <div class="profile-section__body">
+      <div class="profile-section__eyebrow">
+        <span class="profile-section__eyebrow-dot"></span>
+        Meet the Founder
+      </div>
+
+      <h1 class="profile-section__name">Hussain A</h1>
+      <p class="profile-section__title">Shopify Theme Developer &amp; Front-End Specialist</p>
+
+      <a
+        href="https://www.upwork.com/freelancers/~01e91c15509859436e"
+        target="_blank"
+        rel="noopener"
+        class="profile-section__upwork"
+      >
+        <img src="{{ '/upwork-icon.webp' | relative_url }}" alt="Upwork">
+        Top Rated on Upwork
+      </a>
+
+      <p class="profile-section__bio">
+        <span class="hl">Book a free consultation</span> — I'll walk you through custom themes,
+        integrations, and how we can <span class="hl">elevate your store's design &amp; conversions.</span>
+      </p>
+
+      <div class="profile-section__actions">
+        <a href="#" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+          <div class="button-text"><p>Book a Call</p></div>
+          <div class="button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+            </svg>
+          </div>
+        </a>
+        <a href="https://www.upwork.com/freelancers/~01e91c15509859436e" target="_blank" rel="noopener" class="cta-button cta-button--dark">
+          <div class="button-text"><p>View Upwork Profile</p></div>
+          <div class="button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
