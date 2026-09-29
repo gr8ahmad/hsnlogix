@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Privacy Policy
+description: "HSNLOGIX's privacy policy — how we collect, use, and protect your information."
 permalink: /privacy-policy/
+date: 2026-09-29
 ---
 
 <style>

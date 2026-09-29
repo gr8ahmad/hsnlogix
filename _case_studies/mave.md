@@ -1,6 +1,7 @@
 ---
 layout: case-study
 title: "Custom Vintage-Branded Shopify Store for a Soda Brand — Mavé"
+seo_title: "Custom Vintage-Branded Shopify Store for a Soda Brand — Mavé | HSNLOGIX"
 client: Mavé
 category: Beverage / Impulse Purchase
 platform: Shopify (Dawn, deep custom Liquid)

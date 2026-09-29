@@ -13,14 +13,14 @@
   <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | truncate: 155 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
   <meta name="robots" content="{{ site.robots | default: 'index, follow' }}">
   <link rel="canonical" href="https://hsnlogix.com{{ page.url }}">
-  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX Blog{% endif %}">
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
+  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 155 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
-  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX Blog{% else %}HSNLOGIX Blog{% endif %}</title>
+  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% if page.layout == "post" %} | HSNLOGIX Blog{% else %} | HSNLOGIX{% endif %}{% else %}HSNLOGIX{% endif %}</title>
 
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v=shared-header">
   <link rel="stylesheet" href="{{ '/style-additions.css' | relative_url }}?v=shared-header">

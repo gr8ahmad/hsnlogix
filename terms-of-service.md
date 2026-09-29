@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Terms of Service
+description: "Terms of service governing use of the HSNLOGIX website and Shopify development services."
 permalink: /terms-of-service/
+date: 2026-09-29
 ---
 
 <style>
