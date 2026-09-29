@@ -19,4 +19,4 @@ cta_label: "Get your catalog set up right"
 
 A well-structured catalog is one of the highest-leverage investments you can make in a Shopify store. When products are properly organized — right variants, right metafields, right collection filters — customers find what they're looking for faster, and pages rank better in search because the content is clear and consistent. The stores that struggle with catalog management usually started without a clear architecture and kept patching it as they grew. Building it right from the start, or cleaning it up properly, pays off in every sale that follows.
 
-Once the catalog is structured and SEO-ready, [Conversion Rate Optimization](/services/conversion-rate-optimization/) can measure and improve how many of those product page visitors actually complete a purchase.
+Once the catalog is structured and SEO-ready, [Conversion Rate Optimization]({{ '/services/conversion-rate-optimization/' | relative_url }}) can measure and improve how many of those product page visitors actually complete a purchase.

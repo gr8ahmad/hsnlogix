@@ -25,7 +25,7 @@ Mavé is a vintage-inspired soda brand entering a crowded, largely impulse-drive
 
 ## The Approach
 
-Every section of the site was [rebuilt from scratch in custom Liquid](/services/theme-development/) to match a detailed Figma design 1:1, not adapted from an existing template: a custom product showcase, brand storytelling sections built to carry the retro identity through the whole browsing experience, a custom testimonial carousel, a full multi-product catalog with individual product pages, and a custom-built contact page. A subscribe-and-save purchase flow was [built as a custom app integration](/services/app-integration/) alongside standard one-time checkout to support recurring customers, and a multi-flavor "Coming Soon" system was added to build anticipation ahead of future flavor launches. Delivered in two weeks, launched on schedule.
+Every section of the site was [rebuilt from scratch in custom Liquid]({{ '/services/theme-development/' | relative_url }}) to match a detailed Figma design 1:1, not adapted from an existing template: a custom product showcase, brand storytelling sections built to carry the retro identity through the whole browsing experience, a custom testimonial carousel, a full multi-product catalog with individual product pages, and a custom-built contact page. A subscribe-and-save purchase flow was [built as a custom app integration]({{ '/services/app-integration/' | relative_url }}) alongside standard one-time checkout to support recurring customers, and a multi-flavor "Coming Soon" system was added to build anticipation ahead of future flavor launches. Delivered in two weeks, launched on schedule.
 
 ## The Result
 

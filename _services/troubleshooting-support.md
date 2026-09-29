@@ -19,4 +19,4 @@ cta_label: "Get help now"
 
 Most Shopify issues have a root cause that's fixable in hours once someone who knows the platform looks at it properly. The problem is getting to that person without days of ticket queues, non-answers, and having to explain your store setup from scratch each time. One direct conversation with a developer who knows what they're looking at is usually enough to diagnose and scope a fix, even for issues that have been sitting unresolved for weeks.
 
-If the same kinds of issues keep surfacing after the fix, [Ongoing Maintenance Retainer](/services/maintenance-retainer/) keeps a developer watching your store proactively — problems caught before customers ever see them.
+If the same kinds of issues keep surfacing after the fix, [Ongoing Maintenance Retainer]({{ '/services/maintenance-retainer/' | relative_url }}) keeps a developer watching your store proactively — problems caught before customers ever see them.
