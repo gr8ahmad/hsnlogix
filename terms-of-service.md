@@ -5,13 +5,13 @@ permalink: /terms-of-service/
 ---
 
 <style>
-  .legal-page { max-width: 740px; margin: 0 auto; padding: 80px 40px; background: #02090A; color: rgba(255,255,255,0.75); font-family: 'Manrope', sans-serif; }
-  .legal-page h1 { font-size: 40px; font-weight: 800; letter-spacing: -1.5px; color: #fff; margin-bottom: 8px; }
-  .legal-page .legal-date { color: rgba(255,255,255,0.35); font-size: 14px; margin-bottom: 48px; }
-  .legal-page h2 { font-size: 18px; font-weight: 700; color: #fff; margin: 36px 0 12px; }
+  .legal-page { max-width: 740px; margin: 0 auto; padding: 80px 40px; color: #2F2F2F; font-family: 'Manrope', sans-serif; }
+  .legal-page h1 { font-size: 40px; font-weight: 800; letter-spacing: -1.5px; color: #0A0A0A; margin-bottom: 8px; }
+  .legal-page .legal-date { color: rgba(0,0,0,0.4); font-size: 14px; margin-bottom: 48px; }
+  .legal-page h2 { font-size: 18px; font-weight: 700; color: #0A0A0A; margin: 36px 0 12px; }
   .legal-page p, .legal-page li { font-size: 15px; line-height: 1.75; margin-bottom: 12px; }
   .legal-page ul { padding-left: 20px; }
-  .legal-page a { color: #82FF1F; }
+  .legal-page a { color: #0A6640; }
 </style>
 
 <div class="legal-page">
