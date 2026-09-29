@@ -1,0 +1,193 @@
+---
+layout: default
+title: "FAQ"
+description: "Answers to common questions about HSNLOGIX Shopify development services — timelines, pricing, support, and how we work."
+permalink: /faq/
+---
+
+<style>
+/* Override blog-main defaults for this page */
+.blog-main { padding: 0 !important; }
+
+.faq-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 80px 40px 100px;
+  box-sizing: border-box;
+}
+
+/* Page header */
+.faq-page__header {
+  margin-bottom: 56px;
+}
+.faq-page__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(130,255,31,0.08);
+  border: 1px solid rgba(130,255,31,0.25);
+  border-radius: 100px;
+  padding: 5px 14px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2a6600;
+  margin-bottom: 20px;
+}
+.faq-page__eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #82FF1F;
+  flex-shrink: 0;
+}
+.faq-page__heading {
+  font-family: 'Manrope', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: #0A0A0A;
+  margin: 0 0 16px;
+  line-height: 1.1;
+}
+.faq-page__heading span {
+  color: #2F2F2F;
+  font-weight: 400;
+}
+.faq-page__subhead {
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  color: #555;
+  max-width: 520px;
+  margin: 0;
+  line-height: 1.65;
+}
+
+/* Reuse homepage .faq-item CSS from style.css — just add a subtle divider */
+.faq-page .faq-item + .faq-item {
+  border-top: 1px solid rgba(0,0,0,0.07);
+}
+
+/* Ask CTA at the bottom */
+.faq-page__cta {
+  margin-top: 64px;
+  padding: 40px;
+  background: #f7faf4;
+  border: 1px solid rgba(130,255,31,0.3);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.faq-page__cta-text {
+  font-family: 'Manrope', sans-serif;
+}
+.faq-page__cta-text strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  color: #0A0A0A;
+  margin-bottom: 4px;
+}
+.faq-page__cta-text span {
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 640px) {
+  .faq-page { padding: 56px 24px 80px; }
+  .faq-page__heading { font-size: 36px; letter-spacing: -1px; }
+  .faq-page__cta { flex-direction: column; align-items: flex-start; }
+}
+</style>
+
+<div class="faq-page">
+
+  <!-- Header -->
+  <div class="faq-page__header">
+    <div class="faq-page__eyebrow">
+      <span class="faq-page__eyebrow-dot"></span>
+      FAQ
+    </div>
+    <h1 class="faq-page__heading">Still have questions?<br><span>We've got you covered.</span></h1>
+    <p class="faq-page__subhead">Everything you need to know before we get started. If it's not here, just ask.</p>
+  </div>
+
+  <!-- FAQ accordion — reuses .faq-item / .faq-question / .faq-answer from style.css -->
+  <div class="faq-questions">
+    {% for faq in site.data.faqs %}
+    <div class="faq-item">
+      <div class="faq-question">
+        <div class="question-content">
+          <div class="question-text">
+            <p class="question-number">{{ faq.number }}/</p>
+            <p class="question-title">{{ faq.question }}</p>
+          </div>
+          <div class="question-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-answer">
+          <p>{{ faq.answer }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Bottom CTA -->
+  <div class="faq-page__cta">
+    <div class="faq-page__cta-text">
+      <strong>Still have a question?</strong>
+      <span>Book a free call and we'll answer everything before you commit to anything.</span>
+    </div>
+    <a href="#" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+      <div class="button-text"><p>Book a Call</p></div>
+      <div class="button-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+          <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+        </svg>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<!-- FAQPage schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for faq in site.data.faqs %}{
+      "@type": "Question",
+      "name": {{ faq.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.answer | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<!-- FAQ accordion JS (same logic as homepage) -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var items = document.querySelectorAll('.faq-page .faq-item');
+  items.forEach(function (item) {
+    item.querySelector('.faq-question').addEventListener('click', function () {
+      var isActive = item.classList.contains('active');
+      items.forEach(function (i) { i.classList.remove('active'); });
+      if (!isActive) item.classList.add('active');
+    });
+  });
+});
+</script>
