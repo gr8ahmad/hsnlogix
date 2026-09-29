@@ -10,6 +10,7 @@ timeline: "3 weeks, delivered for product reveal"
 repeat_client: "Repeat client — third Shopify build completed for this founder"
 date: 2026-08-28
 image: /lockassure.webp
+image_alt: "LockAssure Shopify homepage: 'Accountability you can trust' hero over a padlocked chain-link fence, with theft and burglary stats below"
 url_live: https://lockassure.com
 excerpt: "A launch-ready site that converted visitor interest into booked demos and investor conversations from day one."
 results: "A fully functioning demo-booking and pre-order pipeline, live from day one of the product reveal, backed by a testimonial from a general superintendent with 20 years in the field crediting the system with bringing site-access incidents to zero. Delivered in 3 weeks against a fixed reveal date, with no slippage."

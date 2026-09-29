@@ -13,6 +13,7 @@ date: 2026-08-31
 # used on the homepage's Featured Projects section), so that's used here instead of
 # a placeholder -- no fabricated image path needed.
 image: /whole-nights.webp
+image_alt: "WholeNights Shopify homepage: dusk photo of a man wearing the Calma Clip sleep device, with 'Sound sleep without the sound' headline"
 url_live: https://wholenights.com/
 excerpt: "A single store that genuinely serves two different customer types without either one feeling like an afterthought."
 results: "A fully custom wholesale flow, live and ready to onboard B2B buyers alongside the retail storefront, tiered pricing, margin calculators, and a qualification form built directly into the theme rather than bolted on as a separate app. Delivered in 2 weeks, on schedule, as the second of three Shopify builds for this client."

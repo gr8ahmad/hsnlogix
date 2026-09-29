@@ -13,6 +13,7 @@ date: 2026-08-31
 # used on the homepage's Featured Projects section), so that's used here instead of
 # a placeholder -- no fabricated image path needed.
 image: /drinkmave.webp
+image_alt: "Mavé Shopify homepage: retro cream and navy design with a soda can hero and 'Soda-Pop Water, zero sugars' tagline"
 url_live: https://www.drinkmave.com/
 excerpt: "A storefront where the brand's identity is consistent and convincing from the homepage through checkout."
 results: "A subscribe-and-save purchase flow running alongside one-time orders, a multi-flavor 'Coming Soon' system built to drive anticipation ahead of future launches, and six real customer testimonials live at launch. Delivered in 2 weeks, on schedule."
