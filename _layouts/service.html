@@ -10,6 +10,15 @@ layout: default
   <p class="service-intro">{{ page.intro }}</p>
   {% endif %}
 
+  {% if page.problem %}
+  <div class="service-section">
+    <h2 class="service-section-title">The Problem</h2>
+    <div class="blog-post-body">
+      <p>{{ page.problem }}</p>
+    </div>
+  </div>
+  {% endif %}
+
   {% if page.includes %}
   <div class="service-section">
     <h2 class="service-section-title">What's Included</h2>
@@ -21,17 +30,28 @@ layout: default
   </div>
   {% endif %}
 
+  {% if content != "" %}
   <div class="service-section">
     <h2 class="service-section-title">Why It Matters</h2>
     <div class="blog-post-body">
       {{ content }}
     </div>
   </div>
+  {% endif %}
+
+  {% if page.process %}
+  <div class="service-section">
+    <h2 class="service-section-title">How It Works</h2>
+    <div class="blog-post-body">
+      <p>{{ page.process }}</p>
+    </div>
+  </div>
+  {% endif %}
 
   <div class="service-cta">
     <a href="#" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
       <div class="button-text">
-        <p>Book a free consultation</p>
+        <p>{% if page.cta_label %}{{ page.cta_label }}{% else %}Book a free consultation{% endif %}</p>
       </div>
       <div class="button-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
