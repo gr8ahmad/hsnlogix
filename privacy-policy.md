@@ -5,7 +5,7 @@ permalink: /privacy-policy/
 ---
 
 <style>
-  .legal-page { max-width: 740px; margin: 0 auto; padding: 80px 40px; color: rgba(255,255,255,0.75); font-family: 'Manrope', sans-serif; }
+  .legal-page { max-width: 740px; margin: 0 auto; padding: 80px 40px; background: #02090A; color: rgba(255,255,255,0.75); font-family: 'Manrope', sans-serif; }
   .legal-page h1 { font-size: 40px; font-weight: 800; letter-spacing: -1.5px; color: #fff; margin-bottom: 8px; }
   .legal-page .legal-date { color: rgba(255,255,255,0.35); font-size: 14px; margin-bottom: 48px; }
   .legal-page h2 { font-size: 18px; font-weight: 700; color: #fff; margin: 36px 0 12px; }

@@ -1,0 +1,19 @@
+<!-- Drawer overlay (click to close) -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- Off-canvas nav drawer — slides in from the right -->
+<aside class="nav-drawer" id="navDrawer" aria-label="Site navigation">
+    <button class="nav-drawer__close" id="navDrawerClose" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="currentColor">
+            <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+        </svg>
+    </button>
+    <nav class="nav-drawer__nav">
+        <!-- Shown in drawer only when inline header links are hidden (< 480px) -->
+        <a href="{{ '/case-studies' | relative_url }}" class="nav-drawer__link nav-drawer__link--mobile-only">Case Studies</a>
+        <a href="{{ '/' | relative_url }}#testimonials" class="nav-drawer__link nav-drawer__link--mobile-only">Testimonials</a>
+        <!-- Always in drawer -->
+        <a href="{{ '/' | relative_url }}#faqs" class="nav-drawer__link">FAQs</a>
+        <a href="{{ '/white-label' | relative_url }}" class="nav-drawer__link">For Agencies</a>
+    </nav>
+</aside>
