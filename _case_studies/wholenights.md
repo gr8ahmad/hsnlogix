@@ -25,7 +25,7 @@ WholeNights needed one site to serve two very different buyers at once: retail c
 
 ## The Approach
 
-Rather than a bolt-on, built custom Liquid logic for the wholesale side directly into the store: tiered unit pricing tables that calculate margins automatically, "Most Popular" tier badges to guide bulk buyers toward the right volume, and an embedded Typeform flow to capture and qualify wholesale orders without disrupting retail checkout. The homepage was structured around a multi-product layout with "Coming Soon" reveals to keep both audiences engaged with upcoming launches. Delivered in two weeks.
+Rather than a bolt-on, built [custom Liquid logic for the wholesale side](/services/b2b-wholesale/) directly into the store: tiered unit pricing tables that calculate margins automatically, "Most Popular" tier badges to guide bulk buyers toward the right volume, and an [embedded Typeform flow](/services/app-integration/) to capture and qualify wholesale orders without disrupting retail checkout. The homepage was structured around a multi-product layout with "Coming Soon" reveals to keep both audiences engaged with upcoming launches. Delivered in two weeks.
 
 ## The Result
 

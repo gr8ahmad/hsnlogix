@@ -1,0 +1,25 @@
+---
+layout: default
+title: "Shopify Development Services"
+seo_title: "Shopify Development Services | HSNLOGIX"
+description: "Full-service Shopify development — custom themes, store setup, speed optimization, B2B, migrations, CRO, and ongoing support for D2C brands."
+permalink: /services/
+date: 2026-09-29
+---
+<div class="blog-index">
+  <h1 class="blog-index-title">Services</h1>
+  <p class="blog-index-subtitle">Shopify development, end to end — from the first build to ongoing growth.</p>
+
+  <div class="blog-post-list">
+    {% assign sorted_services = site.services | sort: 'title' %}
+    {% for service in sorted_services %}
+    <a class="blog-post-card" href="{{ service.url | relative_url }}">
+      <div class="blog-post-card-content">
+        <h2>{{ service.title }}</h2>
+        <p>{{ service.excerpt }}</p>
+        <span class="blog-read-more">Learn more &rarr;</span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>

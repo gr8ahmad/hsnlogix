@@ -22,7 +22,7 @@ LockAssure needed a launch site for a product reveal, but the goal wasn't standa
 
 ## The Approach
 
-Six fully custom pages, rebuilt from the Dawn theme in Liquid to match a detailed Figma design pixel-for-pixel, no off-the-shelf sections doing the heavy lifting. Calendly was integrated directly for demo bookings, alongside a custom email capture flow built specifically for investor and early-access interest, not a generic newsletter signup. The entire build was delivered in three weeks to hit a fixed product reveal date, with zero slippage on the launch.
+Six fully custom pages, [rebuilt from the Dawn theme in Liquid](/services/theme-development/) to match a detailed Figma design pixel-for-pixel, no off-the-shelf sections doing the heavy lifting. Calendly was [integrated](/services/app-integration/) directly for demo bookings, alongside a custom email capture flow built specifically for investor and early-access interest, not a generic newsletter signup. The entire build was delivered in three weeks to hit a fixed product reveal date, with zero slippage on the launch.
 
 ## The Result
 

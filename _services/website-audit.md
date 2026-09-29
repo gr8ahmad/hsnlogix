@@ -18,3 +18,5 @@ cta_label: "Get your store audited"
 ---
 
 Speed is a revenue lever, not a technical detail. Google's own data shows that a one-second improvement in mobile load time can lift conversion rates by up to 27%. But most Shopify store owners never get a clear picture of where their performance budget is actually going — they get a raw PageSpeed score and a list of flags with no indication of which ones actually affect real users. This audit gives you a concrete picture of what's slow, what's redundant, and what to fix first.
+
+Once you have a prioritized fix list, [Theme Optimization & Responsiveness](/services/speed-optimization/) covers the implementation side — fixing the specific performance issues the audit surfaces.

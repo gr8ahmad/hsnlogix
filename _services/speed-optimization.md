@@ -13,3 +13,5 @@ includes:
 ---
 
 Slow-loading pages and rough mobile experiences cost conversions before a visitor ever gets to a product page — most Shopify traffic is mobile, and delays that seem small to a developer are often enough for a shopper to leave. Fixing performance and responsiveness on an existing store is usually faster and cheaper than a full rebuild, and it goes straight at the point where stores are actually losing customers.
+
+Not sure where the problems are yet? A [Website Audit & Performance](/services/website-audit/) review gives you a prioritized fix list before any implementation begins.
