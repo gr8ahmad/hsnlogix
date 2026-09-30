@@ -1,0 +1,29 @@
+<style>
+.breadcrumbs__inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  font-size: 0.8rem;
+}
+.breadcrumb-link { color: #888; text-decoration: none; }
+.breadcrumb-link:hover { color: #111; text-decoration: underline; }
+.breadcrumb-sep { color: #bbb; }
+.breadcrumb-current { color: #111; font-weight: 600; }
+</style>
+<nav aria-label="Breadcrumb">
+  <div class="breadcrumbs__inner">
+    <a href="{{ '/' | relative_url }}" class="breadcrumb-link">Home</a>
+    {% if include.parent %}
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <a href="{{ include.parent_url | relative_url }}" class="breadcrumb-link">{{ include.parent }}</a>
+    {% endif %}
+    {% if include.current %}
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current" aria-current="page">{{ include.current }}</span>
+    {% endif %}
+  </div>
+</nav>

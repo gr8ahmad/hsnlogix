@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="blog-post case-study">
-  <p class="blog-back"><a href="{{ '/case-studies/' | relative_url }}">&larr; Back to case studies</a></p>
+  {% include breadcrumbs.html parent="Case Studies" parent_url="/case-studies/" current=page.client %}
 
   <div class="case-study-meta-tags">
     {% if page.platform %}<span class="case-study-tag">{{ page.platform }}</span>{% endif %}

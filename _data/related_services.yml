@@ -1,0 +1,54 @@
+theme-development:
+  - store-setup
+  - speed-optimization
+  - app-integration
+
+store-setup:
+  - theme-development
+  - product-collection-setup
+  - platform-migration
+
+speed-optimization:
+  - website-audit
+  - theme-development
+  - conversion-rate-optimization
+
+app-integration:
+  - theme-development
+  - store-setup
+  - troubleshooting-support
+
+website-audit:
+  - speed-optimization
+  - conversion-rate-optimization
+  - maintenance-retainer
+
+troubleshooting-support:
+  - maintenance-retainer
+  - website-audit
+  - app-integration
+
+product-collection-setup:
+  - conversion-rate-optimization
+  - store-setup
+  - website-audit
+
+conversion-rate-optimization:
+  - product-collection-setup
+  - website-audit
+  - speed-optimization
+
+maintenance-retainer:
+  - troubleshooting-support
+  - website-audit
+  - conversion-rate-optimization
+
+platform-migration:
+  - store-setup
+  - theme-development
+  - speed-optimization
+
+b2b-wholesale:
+  - store-setup
+  - app-integration
+  - theme-development
