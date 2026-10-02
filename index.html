@@ -650,6 +650,7 @@ date: 2026-09-29
   padding-left: 0;
   width: auto;
   overflow: visible;
+  place-self: center;
 }
 .founder-section .profile-content {
   display: flex;
@@ -725,6 +726,7 @@ date: 2026-09-29
   font-family: 'Manrope', sans-serif;
   font-size: 13px;
   font-weight: 600;
+  letter-spacing: initial;
   transition: border-color 0.2s, background 0.2s;
 }
 .founder-upwork-badge:hover {
@@ -760,6 +762,10 @@ date: 2026-09-29
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  margin-top: 30px;
+}
+.founder-section__actions p {
+  color: #2F2F2F;
 }
 .founder-section__actions .cta-button {
   flex-shrink: 0;
@@ -811,10 +817,7 @@ date: 2026-09-29
             <div class="hsn-logix-avatar">
               <div class="hsn-logix-profile-pic">
                 <div class="hsn-logix-img-wrapper" data-aos="fade-right" data-aos-duration="750" data-aos-delay="150">
-                  <img
-                    src="{{ '/hussain-profile-picture.webp' | relative_url }}"
-                    alt="Hussain A - Senior Shopify Developer" loading="eager"
-                  />
+                  <img src="{{ '/hussain-profile-picture.webp' | relative_url }}" alt="Hussain A - Senior Shopify Developer" loading="eager">
                 </div>
               </div>
             </div>
@@ -824,18 +827,15 @@ date: 2026-09-29
               <h3 class="name">Hussain A.</h3>
               <div class="title">
                 <p class="title-text">Senior Shopify Theme Developer</p>
-                <a href="https://www.upwork.com/freelancers/~01e91c15509859436e" target="_blank" rel="noopener" class="social-link">
-                  <img src="{{ '/upwork-icon.webp' | relative_url }}" alt="Upwork" width="35" height="35">
+                <a href="https://www.upwork.com/freelancers/~01e91c15509859436e" target="_blank" rel="noopener" class="founder-upwork-badge">
+                  <img src="{{ '/upwork-icon.webp' | relative_url }}" alt="">
+                  Top Rated on Upwork
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a href="https://www.upwork.com/freelancers/~01e91c15509859436e" target="_blank" rel="noopener" class="founder-upwork-badge">
-        <img src="{{ '/upwork-icon.webp' | relative_url }}" alt="">
-        Top Rated on Upwork
-      </a>
     </div>
 
     <!-- RIGHT: Heading, description, and CTA buttons -->
