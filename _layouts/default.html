@@ -18,7 +18,7 @@
   <link rel="canonical" href="https://hsnlogix.com{{ page.url }}">
   <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 25, '' }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
-  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'post' or page.layout == 'case-study' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
   <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% if page.layout == "post" %} | HSNLOGIX Blog{% else %} | HSNLOGIX{% endif %}{% else %}HSNLOGIX{% endif %}</title>
 
