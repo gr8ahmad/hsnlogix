@@ -8,7 +8,7 @@
           <div class="question-content">
             <div class="question-text">
               <p class="question-number">{{ forloop.index }}/</p>
-              <p class="question-title">{{ item.q }}</p>
+              <p class="question-title">{{ item.question }}</p>
             </div>
             <div class="question-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-hidden="true">
@@ -17,7 +17,7 @@
             </div>
           </div>
           <div class="faq-answer">
-            <p>{{ item.a }}</p>
+            <p>{{ item.answer }}</p>
           </div>
         </div>
       </div>
@@ -33,10 +33,10 @@
   "mainEntity": [
     {% for item in include.items %}{
       "@type": "Question",
-      "name": {{ item.q | jsonify }},
+      "name": {{ item.question | jsonify }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ item.a | jsonify }}
+        "text": {{ item.answer | jsonify }}
       }
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
