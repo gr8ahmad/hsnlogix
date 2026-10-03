@@ -84,11 +84,9 @@ If you need a storefront designed specifically around your brand and business re
 
 The cost of building a Shopify store through a developer or agency depends largely on the scope and complexity of the project. A basic store using an existing theme and standard Shopify features requires far less development than a fully customized ecommerce experience.
 
-**Basic Shopify store ($500–$700):** Best for new or small businesses that already have their branding, products, images, and content. This typically includes theme setup and customization, essential pages, product/collection setup, payment and shipping configuration, and basic launch setup.
+**Lighter Shopify work ($500–$1,000):** Best for store setup, theme customization, performance audits, or troubleshooting. This typically includes theme setup and customization, essential pages, product/collection setup, payment and shipping configuration, and basic launch setup.
 
-**Custom Shopify store ($700–$1,500):** Suitable for businesses that need a more tailored storefront. This can include custom sections, Liquid/CSS/JavaScript development, customized product and collection pages, improved UX, SEO setup, and selected third-party integrations.
-
-**Advanced Shopify store ($1,500+):** Designed for businesses requiring more complex functionality, extensive customization, or multiple integrations. Costs can increase significantly depending on custom features and third-party systems.
+**Custom Shopify theme development ($1,500–$5,000+):** For businesses that need a fully tailored storefront. This includes custom Liquid/CSS/JavaScript development, custom sections, customized product and collection pages, improved UX, SEO setup, and third-party integrations. Costs increase with custom features, large catalogs, and complex integrations.
 
 These are development costs, not the total cost of running the store. Shopify subscriptions, premium themes, paid apps, domain registration, and ongoing maintenance are separate expenses.
 
@@ -104,9 +102,9 @@ The initial development cost is only part of the total cost of running a Shopify
 
 Your budget should match the stage of your business rather than paying for complexity you don't need yet.
 
-![Realistic Shopify budget by business stage: new business $500-$700, growing business $700-$1,500, complex catalog $1,500+]({{ '/blog-images/inbody-3-budget-by-stage.webp' | relative_url }})
+![Realistic Shopify budget by business stage: lighter work $500–$1,000, custom theme development $1,500–$5,000+]({{ '/blog-images/inbody-3-budget-by-stage.webp' | relative_url }})
 
-A new business can often launch a professional Shopify store for around $500–$700 if branding, products, content, and assets are already prepared. A growing business that needs more customization, better UX, custom sections, and integrations may realistically budget $700–$1,500. Businesses with more complex catalogs, custom functionality, or multiple integrations should expect $1,500+ for development. The goal is to build what your business needs today while leaving room to expand later.
+Lighter work — store setup, audits, and troubleshooting — typically falls in the $500–$1,000 range if branding, products, content, and assets are already prepared. Custom Shopify theme development, for businesses that need a fully tailored storefront with custom sections and integrations, typically runs $1,500–$5,000+. Businesses with more complex catalogs, custom functionality, or multiple integrations should budget at the higher end. The goal is to build what your business needs today while leaving room to expand later.
 
 ## Shopify vs. Alternatives: Brief Cost Comparison
 
@@ -120,6 +118,6 @@ Every price in this guide is a range, not a fixed quote. Your actual number depe
 
 The fastest way to get an accurate figure isn't to guess from a blog post, it's to get an itemized quote from someone who's actually looked at what you're building. When you do request quotes, ask for a breakdown, not just a total: what's included, what counts as a custom feature versus a standard one, and what happens if scope changes mid-project. A vague single number is usually a sign the scope hasn't been thought through yet.
 
-If you're figuring out where your project falls, a $500 basic setup, a $1,200 custom build, or something more advanced, we're happy to take a look and give you a real, itemized quote based on your specific store, not a generic range. No cost and no obligation.
+If you're figuring out where your project falls, whether that's lighter setup work in the $500–$1,000 range or a custom theme build starting at $1,500, we're happy to take a look and give you a real, itemized quote based on your specific store, not a generic range. No cost and no obligation.
 
 [Get a quote and project scope →]({{ '/#contact' | relative_url }})
