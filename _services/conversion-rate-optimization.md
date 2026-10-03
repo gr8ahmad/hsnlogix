@@ -11,7 +11,7 @@ includes:
   - "Product page optimization (layout, copy, social proof, urgency elements)"
   - "Cart and checkout friction review"
   - "A/B testing setup for key pages and elements"
-  - "Mobile-specific UX fixes (most DTC traffic is mobile)"
+  - "Mobile-specific UX fixes (most D2C traffic is mobile)"
   - "Trust-signal audit: reviews, guarantees, shipping/return clarity"
 process: "Funnel and analytics review → prioritized hypothesis list → implement and test highest-impact changes first → report on results, iterate."
 cta_label: "Start optimizing your funnel"
