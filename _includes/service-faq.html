@@ -1,0 +1,60 @@
+<div class="service-section">
+  <h2 class="service-section-title">Common Questions</h2>
+  <div class="service-faq">
+    <div class="faq-questions">
+      {% for item in include.items %}
+      <div class="faq-item">
+        <div class="faq-question">
+          <div class="question-content">
+            <div class="question-text">
+              <p class="question-number">{{ forloop.index }}/</p>
+              <p class="question-title">{{ item.q }}</p>
+            </div>
+            <div class="question-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-hidden="true">
+                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-answer">
+            <p>{{ item.a }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in include.items %}{
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<script>
+(function () {
+  document.querySelectorAll('.service-faq').forEach(function (container) {
+    var items = container.querySelectorAll('.faq-item');
+    items.forEach(function (item) {
+      item.querySelector('.faq-question').addEventListener('click', function () {
+        var isActive = item.classList.contains('active');
+        items.forEach(function (i) { i.classList.remove('active'); });
+        if (!isActive) item.classList.add('active');
+      });
+    });
+  });
+})();
+</script>

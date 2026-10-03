@@ -13,7 +13,21 @@ includes:
   - "Theme code review for render-blocking scripts, unused CSS/JS, and legacy bloat"
   - "Checkout and cart flow performance check"
   - "Prioritized action report ranked by effort-to-impact, not just a raw score dump"
-process: "Audit (2–3 days) → findings report with screenshots and benchmarks → optional fix implementation, quoted separately once scope is clear."
+steps:
+  - "Full diagnostic across Core Web Vitals, app bloat, image weight, theme code, and checkout performance — typically completed in 2–3 days."
+  - "Findings report with screenshots and benchmarks: what's slow, what's redundant, and what to fix first — ranked by impact, not just a raw score."
+  - "Optional fix implementation quoted separately once the scope is clear from the report."
+faq:
+  - q: "Who runs the audit?"
+    a: "Hussain does the audit personally and writes the findings report. Not an automated PageSpeed PDF — a real review of your specific store with annotated findings and a prioritized fix list."
+  - q: "What does an audit cost?"
+    a: "The audit typically runs $500–$1,000 depending on store complexity. You'll get a clear quote upfront before anything starts."
+  - q: "How long does it take?"
+    a: "The diagnostic and findings report is typically completed in 2–3 days from when store access is shared."
+  - q: "How do payments work?"
+    a: "Both Upwork escrow/milestone payments and direct payment are available."
+  - q: "Is there an NDA available?"
+    a: "Yes — if you'd prefer an NDA in place before sharing store access, that's available on request before work starts."
 cta_label: "Get your store audited"
 ---
 

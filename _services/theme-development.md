@@ -12,7 +12,26 @@ includes:
   - "Mobile-first, performance-conscious build from day one"
   - "Design system consistent with your brand across every page"
   - "Scalable structure that supports adding new features as your store grows"
-process: "Discovery on your brand, product catalog, and functionality needs → design direction and approval → custom Liquid build → QA across devices and browsers → launch with documentation so your team can make basic edits confidently."
+steps:
+  - "Discovery: understand your brand, product catalog, and the specific functionality the theme needs to support."
+  - "Design direction and approval — sign off on the visual approach before a line of code is written."
+  - "Custom Liquid build: mobile-first, performance-conscious, built around your store's exact requirements."
+  - "QA across devices and browsers before anything touches your live store."
+  - "Launch with documentation so your team can make basic edits confidently without needing a developer for routine changes."
+faq:
+  - q: "Who builds the theme?"
+    a: "Hussain builds it personally, with specialists brought in for specific components on larger projects. No account-manager layer — the developer scoping the project is the one building it."
+  - q: "Do I own the theme?"
+    a: "Yes, outright, after final payment. No licensing fees, no platform lock-in — the code is yours to modify and extend."
+  - q: "What does a custom theme cost?"
+    a: "Custom Shopify theme development typically runs $1,500–$5,000+ depending on scope and design complexity. You'll get a detailed quote after the discovery call."
+  - q: "How long does it take?"
+    a: "A full custom theme typically takes 3 weeks to a month from design approval through launch. A focused rebuild runs faster than a built-from-scratch project with a full design system."
+  - q: "What payments are accepted?"
+    a: "Both Upwork escrow/milestone payments and direct payment are available."
+  - q: "What support is included after launch?"
+    a: "Every project includes a post-launch window with 2–3 rounds of revisions. For ongoing support beyond that, the Maintenance Retainer keeps a developer watching your store monthly."
+proof_case_study: "Laboostudio"
 cta_label: "Start your custom theme"
 ---
 

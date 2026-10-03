@@ -53,13 +53,18 @@ layout: default
   </div>
   {% endif %}
 
-  {% if page.process %}
+  {% if page.steps %}
+  {% include service-steps.html steps=page.steps %}
+  {% elsif page.process %}
   <div class="service-section">
     <h2 class="service-section-title">How It Works</h2>
     <div class="blog-post-body">
       <p>{{ page.process }}</p>
     </div>
   </div>
+  {% endif %}
+  {% if page.faq %}
+  {% include service-faq.html items=page.faq %}
   {% endif %}
 
   {% assign related_slugs = site.data.related_services[service_slug] %}
@@ -83,6 +88,10 @@ layout: default
       {% endfor %}
     </div>
   </div>
+  {% endif %}
+
+  {% if page.proof_case_study %}
+  {% include service-proof.html client=page.proof_case_study %}
   {% endif %}
 
   <div class="service-cta">
