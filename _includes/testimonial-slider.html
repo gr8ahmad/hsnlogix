@@ -194,6 +194,7 @@
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const slider = document.getElementById('hsnlogix-portfolio-slider');
     if (!slider) return;
     const track = slider.querySelector('.hsnlogix-slider-track');

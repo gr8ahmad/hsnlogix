@@ -1,4 +1,4 @@
----
+﻿---
 date: 2026-09-29
 ---
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ date: 2026-09-29
       "name": "What's your usual project timeline?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most theme development or customization projects are completed within 1 to 4 weeks, depending on the scope and level of detail required. Once we understand your requirements, we'll share a clear timeline with milestones for design setup, development, testing, and final delivery."
+        "text": "Most theme development or customization projects are completed within 1 to 4 weeks, depending on the scope and level of detail required. Once I understand your requirements, I'll share a clear timeline with milestones for design setup, development, testing, and final delivery."
       }
     },
     {
@@ -66,7 +66,7 @@ date: 2026-09-29
       "name": "Do you provide ongoing support after the project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! We offer ongoing maintenance and support for Shopify stores. This can include performance improvements, bug fixes, layout tweaks, and updates to keep your theme running smoothly as your business evolves."
+        "text": "Yes! I offer ongoing maintenance and support for Shopify stores. This can include performance improvements, bug fixes, layout tweaks, and updates to keep your theme running smoothly as your business evolves."
       }
     },
     {
@@ -74,7 +74,7 @@ date: 2026-09-29
       "name": "Can you follow my existing brand guidelines?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Definitely. We make sure your Shopify store fully aligns with your brand's look and feel — colors, typography, layout, and visual tone. Whether you already have detailed brand guidelines or just a reference design, we can implement them precisely and maintain consistency across all pages."
+        "text": "Definitely. I make sure your Shopify store fully aligns with your brand's look and feel — colors, typography, layout, and visual tone. Whether you already have detailed brand guidelines or just a reference design, I can implement them precisely and maintain consistency across all pages."
       }
     },
     {
@@ -82,7 +82,7 @@ date: 2026-09-29
       "name": "How do you handle revisions and feedback?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Revisions are part of the process. We provide structured feedback rounds where you can review progress and suggest adjustments. We value clear communication and make sure your feedback is implemented quickly and accurately until everything looks and functions as intended."
+        "text": "Revisions are part of the process. I provide structured feedback rounds where you can review progress and suggest adjustments. I value clear communication and make sure your feedback is implemented quickly and accurately until everything looks and functions as intended."
       }
     },
     {
@@ -128,7 +128,7 @@ date: 2026-09-29
                 <h1 class="customer-hero__headline">Your Shopify store shouldn't hold your growth back.</h1>
                 <p class="customer-hero__subhead">We build and scale Shopify stores with custom development, performance engineering, and AI-powered solutions, for brands that need more than off-the-shelf themes and apps.</p>
                 <div class="customer-hero__cta-group">
-                    <a href="#" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+                    <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
                         <div class="button-text">
                             <p>Discuss Your Store</p>
                         </div>
@@ -138,7 +138,7 @@ date: 2026-09-29
                             </svg>
                         </div>
                     </a>
-                    <a href="#" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button cta-button--dark">
+                    <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button cta-button--dark">
                         <div class="button-text">
                             <p>Book a Call</p>
                         </div>
@@ -214,6 +214,7 @@ date: 2026-09-29
         </div>
         <script>
   document.addEventListener("DOMContentLoaded", function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const ticker = document.getElementById('hsnlogix-stats-ticker');
     const track = ticker.querySelector('.ticker-list');
     const items = Array.from(track.children);
@@ -601,10 +602,83 @@ date: 2026-09-29
   </div>
 </section>
 
+
+<section class="hsnlogix-portfolio" id="testimonials">
+    
+    <div class="testimonials-header">
+        <div class="header-content">
+            <div class="tag-badge">
+                <div class="tag-text">testimonials</div>
+            </div>
+            <div class="headline-container">
+                <div class="headline-part">
+                    <h2 class="headline-text">50+ partners</h2>
+                </div>
+                <div>
+                    <h2 class="headline-text">One Mission: Growth</h2>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <p>Real stories from real businesses who achieved lasting growth with our help</p>
+        </div>
+    </div>
+{% include testimonial-slider.html %}
+
+
+</section>
+<section class="faq-section" id="faqs">
+    <div class="faq-container">
+        <div class="faq-header">
+            <div class="header-content">
+                <div class="tag-badge">
+                    <div class="tag-text">FAQ</div>
+                </div>
+                <div class="headline-container">
+                    <div class="headline-part">
+                        <h2 class="headline-text">Still have questions?</h2>
+                    </div>
+                    <div>
+                        <h2 class="headline-text">We've got you covered</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="description faq-header__desc">
+                <p>Everything you need to know before we get started, and if it's not here, just ask.</p>
+            </div>
+        </div>
+        <div class="faq-questions">
+            {% for faq in site.data.faqs %}
+            <div class="faq-item">
+                <div class="faq-question">
+                    <div class="question-content">
+                        <div class="question-text">
+                            <p class="question-number">{{ faq.number }}/</p>
+                            <p class="question-title">{{ faq.question }}</p>
+                        </div>
+                        <div class="question-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>{{ faq.answer }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div style="margin-top:40px;text-align:center;">
+            <a href="{{ '/faq/' | relative_url }}" style="font-family:'Manrope',sans-serif;font-size:15px;font-weight:700;color:#0A0A0A;text-decoration:none;border-bottom:2px solid #82FF1F;padding-bottom:2px;">View all FAQs &rarr;</a>
+        </div>
+    </div>
+</section>
+
 <style>
 /* --- Outer section --- */
 .founder-section {
-  background-color: #02090A;
+  background: radial-gradient(60% 50% at 80% 0%, rgba(130,255,31,0.10), transparent 70%), var(--bg-lifted);
   padding: 80px 40px;
   overflow: hidden;
   width: 100%;
@@ -851,7 +925,7 @@ date: 2026-09-29
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
           </div>
         </a>
-        <a href="#" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button cta-button--dark">
+        <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button cta-button--dark">
           <div class="button-text"><p>Book a Call</p></div>
           <div class="button-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
@@ -861,78 +935,6 @@ date: 2026-09-29
     </div>
 
   </div>
-</section>
-
-<section class="hsnlogix-portfolio" id="testimonials">
-    
-    <div class="testimonials-header">
-        <div class="header-content">
-            <div class="tag-badge">
-                <div class="tag-text">testimonials</div>
-            </div>
-            <div class="headline-container">
-                <div class="headline-part">
-                    <h2 class="headline-text">50+ partners</h2>
-                </div>
-                <div>
-                    <h2 class="headline-text">One Mission: Growth</h2>
-                </div>
-            </div>
-        </div>
-        <div class="description">
-            <p>Real stories from real businesses who achieved lasting growth with our help</p>
-        </div>
-    </div>
-{% include testimonial-slider.html %}
-
-
-</section>
-<section class="faq-section" id="faqs">
-    <div class="faq-container">
-        <div class="faq-header">
-            <div class="header-content">
-                <div class="tag-badge">
-                    <div class="tag-text">FAQ</div>
-                </div>
-                <div class="headline-container">
-                    <div class="headline-part">
-                        <h2 class="headline-text">Still have questions?</h2>
-                    </div>
-                    <div>
-                        <h2 class="headline-text">We've got you covered</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="description faq-header__desc">
-                <p>Everything you need to know before we get started, and if it's not here, just ask.</p>
-            </div>
-        </div>
-        <div class="faq-questions">
-            {% for faq in site.data.faqs %}
-            <div class="faq-item">
-                <div class="faq-question">
-                    <div class="question-content">
-                        <div class="question-text">
-                            <p class="question-number">{{ faq.number }}/</p>
-                            <p class="question-title">{{ faq.question }}</p>
-                        </div>
-                        <div class="question-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>{{ faq.answer }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-        <div style="margin-top:40px;text-align:center;">
-            <a href="{{ '/faq/' | relative_url }}" style="font-family:'Manrope',sans-serif;font-size:15px;font-weight:700;color:#0A0A0A;text-decoration:none;border-bottom:2px solid #82FF1F;padding-bottom:2px;">View all FAQs &rarr;</a>
-        </div>
-    </div>
 </section>
 
   </main>
@@ -959,7 +961,7 @@ date: 2026-09-29
                 <p class="footer-cta__sub">Book a free strategy call — we'll map out exactly what your store needs to grow, convert, and scale.</p>
             </div>
             <div class="footer-cta__actions">
-                <a href="#" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+                <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
                     <div class="button-text"><p>Book a Call</p></div>
                     <div class="button-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
@@ -1023,7 +1025,7 @@ date: 2026-09-29
                 <h4 class="footer-col__heading">Contact</h4>
                 <ul class="footer-col__links">
                     <li><a href="mailto:hussain@hsnlogix.com">hussain@hsnlogix.com</a></li>
-                    <li><a href="#" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener">Book a Call</a></li>
+                    <li><a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener">Book a Call</a></li>
                 </ul>
             </div>
 
