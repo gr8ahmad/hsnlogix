@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
+{% include page-hero.html eyebrow="Blog" title_dark=page.title breadcrumb_parent="Blog" breadcrumb_parent_url="/blog/" breadcrumb_current=page.title %}
 <article class="blog-post">
-  {% include breadcrumbs.html parent="Blog" parent_url="/blog/" current=page.title %}
-  <h1 class="blog-post-title">{{ page.title }}</h1>
   <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
   {% if page.image %}
   <div class="blog-post-featured-image">

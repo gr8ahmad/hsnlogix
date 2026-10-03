@@ -5,10 +5,8 @@ description: "Shopify development guides, case studies, and practical advice for
 permalink: /blog/
 date: 2026-09-29
 ---
+{% include page-hero.html eyebrow="Blog" title_dark="Blog" lede="Shopify, Webflow, and ecommerce development notes from HSNLOGIX." breadcrumb_current="Blog" %}
 <div class="blog-index">
-  <h1 class="blog-index-title">Blog</h1>
-  <p class="blog-index-subtitle">Shopify, Webflow, and ecommerce development notes from HSNLOGIX.</p>
-
   <div class="blog-post-list">
     {% for post in site.posts %}
     <a class="blog-post-card{% if post.image %} has-image{% endif %}" href="{{ post.url | relative_url }}">

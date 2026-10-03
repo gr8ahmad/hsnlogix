@@ -1,69 +1,13 @@
 ---
 layout: default
 ---
-<style>
-.service-hero {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 2rem;
-  align-items: flex-start;
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-.service-hero__content { min-width: 0; }
-.service-hero__eyebrow { margin-bottom: 0.75rem; }
-.service-hero__icon-wrap {
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  background: rgba(0,0,0,0.05);
-  flex-shrink: 0;
-}
-.service-hero__icon-wrap svg {
-  width: 40px;
-  height: 40px;
-}
-.service-hero__cta { margin-top: 1.25rem; }
-.related-services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-@media (max-width: 600px) {
-  .service-hero {
-    grid-template-columns: 1fr;
-  }
-  .service-hero__icon-wrap {
-    order: -1;
-    width: 64px;
-    height: 64px;
-    margin-bottom: 0.25rem;
-  }
-  .service-hero__icon-wrap svg {
-    width: 32px;
-    height: 32px;
-  }
-}
-</style>
+{% assign url_parts = page.url | split: '/' %}
+{% assign service_slug = url_parts[2] %}
+{% include page-hero.html eyebrow="Shopify Service" title_dark=page.title lede=page.intro breadcrumb_parent="Services" breadcrumb_parent_url="/services/" breadcrumb_current=page.title %}
 <article class="blog-post service-page">
-
-  {% include breadcrumbs.html parent="Services" parent_url="/services/" current=page.title %}
-
-  {% assign url_parts = page.url | split: '/' %}
-  {% assign service_slug = url_parts[2] %}
 
   <div class="service-hero">
     <div class="service-hero__content">
-      <div class="service-hero__eyebrow">
-        <div class="tag-badge"><div class="tag-text">Shopify Service</div></div>
-      </div>
-      <h1 class="blog-post-title">{{ page.title }}</h1>
-      {% if page.intro %}<p class="service-intro">{{ page.intro }}</p>{% endif %}
       <div class="service-hero__cta">
         <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
           <div class="button-text">

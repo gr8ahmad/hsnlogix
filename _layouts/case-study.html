@@ -1,15 +1,14 @@
 ---
 layout: default
 ---
+{% include page-hero.html eyebrow="Case Study" title_dark=page.title lede=page.excerpt breadcrumb_parent="Case Studies" breadcrumb_parent_url="/case-studies/" breadcrumb_current=page.client %}
 <article class="blog-post case-study">
-  {% include breadcrumbs.html parent="Case Studies" parent_url="/case-studies/" current=page.client %}
 
   <div class="case-study-meta-tags">
     {% if page.platform %}<span class="case-study-tag">{{ page.platform }}</span>{% endif %}
     {% if page.category %}<span class="case-study-tag">{{ page.category }}</span>{% endif %}
   </div>
 
-  <h1 class="blog-post-title">{{ page.title }}</h1>
   <p class="case-study-client">Client: <strong>{{ page.client }}</strong></p>
   <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
 
