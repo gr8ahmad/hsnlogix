@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include page-hero.html eyebrow="Blog" title_dark=page.title breadcrumb_parent="Blog" breadcrumb_parent_url="/blog/" breadcrumb_current=page.title %}
+{% include page-hero.html eyebrow="Blog" title_dark=page.title breadcrumb_parent="Blog" breadcrumb_parent_url="/blog/" breadcrumb_current=page.title show_breadcrumb=true %}
 <article class="blog-post">
   <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
   {% if page.image %}

@@ -1,3 +1,4 @@
+{% if include.show_breadcrumb %}
 {% assign crumb_current = include.breadcrumb_current | default: page.title %}
 {% assign crumb_parent = include.breadcrumb_parent %}
 {% assign crumb_parent_url = include.breadcrumb_parent_url %}
@@ -13,12 +14,14 @@
   ]
 }
 </script>
+{% endif %}
 <section class="page-hero">
   <div class="hero-pattern" aria-hidden="true">
     <div class="hero-pattern__blob hero-pattern__blob--green"></div>
     <div class="hero-pattern__blob hero-pattern__blob--dark"></div>
   </div>
   <div class="page-hero__inner">
+    {% if include.show_breadcrumb %}
     <nav aria-label="Breadcrumb">
       <div class="breadcrumbs__inner">
         <a href="{{ '/' | relative_url }}" class="breadcrumb-link">Home</a>
@@ -30,6 +33,7 @@
         <span class="breadcrumb-current" aria-current="page">{{ crumb_current }}</span>
       </div>
     </nav>
+    {% endif %}
     <div class="tag-badge page-hero__eyebrow-wrap">
       <div class="tag-text">{{ include.eyebrow }}</div>
     </div>

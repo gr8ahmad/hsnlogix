@@ -5,10 +5,8 @@ description: "Real Shopify projects delivered for D2C brands — custom builds, 
 permalink: /case-studies/
 date: 2026-09-29
 ---
+{% include page-hero.html eyebrow="Case Studies" title_dark="Case Studies" lede="Real client projects — the platforms, the work, and the results." %}
 <div class="blog-index">
-  <h1 class="blog-index-title">Case Studies</h1>
-  <p class="blog-index-subtitle">Real client projects — the platforms, the work, and the results.</p>
-
   <div class="blog-post-list">
     {% for study in site.case_studies %}
     <a class="blog-post-card case-study-card{% if study.image %} has-image{% endif %}" href="{{ study.url | relative_url }}">

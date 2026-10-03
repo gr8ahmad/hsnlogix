@@ -6,10 +6,8 @@ description: "Full-service Shopify development — custom themes, store setup, s
 permalink: /services/
 date: 2026-09-29
 ---
+{% include page-hero.html eyebrow="Services" title_pale="Shopify Development" title_dark="Services" lede="Shopify development, end to end — from the first build to ongoing growth." %}
 <div class="blog-index">
-  <h1 class="blog-index-title">Services</h1>
-  <p class="blog-index-subtitle">Shopify development, end to end — from the first build to ongoing growth.</p>
-
   <div class="blog-post-list">
     {% assign sorted_services = site.services | sort: 'title' %}
     {% for service in sorted_services %}
