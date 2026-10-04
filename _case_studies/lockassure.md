@@ -13,6 +13,14 @@ image: /lockassure.webp
 image_alt: "LockAssure Shopify homepage: 'Accountability you can trust' hero over a padlocked chain-link fence, with theft and burglary stats below"
 url_live: https://lockassure.com
 excerpt: "A launch-ready site that converted visitor interest into booked demos and investor conversations from day one."
+related_services:
+  - title: "Theme Development"
+    url: /services/theme-development/
+  - title: "App Integration"
+    url: /services/app-integration/
+next_case_study:
+  title: "Custom Vintage-Branded Shopify Store for a Soda Brand — Mavé"
+  url: /case-studies/mave/
 results: "A fully functioning demo-booking and pre-order pipeline, live from day one of the product reveal, backed by a testimonial from a general superintendent with 20 years in the field crediting the system with bringing site-access incidents to zero. Delivered in 3 weeks against a fixed reveal date, with no slippage."
 ---
 

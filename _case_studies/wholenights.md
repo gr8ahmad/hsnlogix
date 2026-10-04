@@ -16,6 +16,14 @@ image: /whole-nights.webp
 image_alt: "WholeNights Shopify homepage: dusk photo of a man wearing the Calma Clip sleep device, with 'Sound sleep without the sound' headline"
 url_live: https://wholenights.com/
 excerpt: "A single store that genuinely serves two different customer types without either one feeling like an afterthought."
+related_services:
+  - title: "B2B Wholesale"
+    url: /services/b2b-wholesale/
+  - title: "App Integration"
+    url: /services/app-integration/
+next_case_study:
+  title: "Custom Shopify Store for a Premium Wall Art Brand — Laboostudio"
+  url: /case-studies/laboostudio/
 results: "A fully custom wholesale flow, live and ready to onboard B2B buyers alongside the retail storefront, tiered pricing, margin calculators, and a qualification form built directly into the theme rather than bolted on as a separate app. Delivered in 2 weeks, on schedule, as the second of three Shopify builds for this client."
 ---
 

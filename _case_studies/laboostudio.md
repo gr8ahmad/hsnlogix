@@ -11,6 +11,14 @@ image: /laboostudio.webp
 image_alt: "Laboostudio Shopify homepage: 'Shop Modern, Timeless Japanese Wall Art' hero with framed wall art in a styled room and a Kusama prints row"
 url_live: https://laboostudio.com
 excerpt: "A fast-loading, conversion-focused storefront built to let premium wall art do the selling."
+related_services:
+  - title: "Theme Development"
+    url: /services/theme-development/
+  - title: "Speed Optimization"
+    url: /services/speed-optimization/
+next_case_study:
+  title: "Custom Shopify Launch Site for a Construction Tech Startup — LockAssure"
+  url: /case-studies/lockassure/
 results: "Localized checkout in 40+ currencies for a global customer base, a size-comparison and gallery-wall planning tool that lets shoppers preview scale before buying, and a 4.9+/5 average review score across the catalog."
 ---
 

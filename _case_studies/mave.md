@@ -16,6 +16,14 @@ image: /drinkmave.webp
 image_alt: "Mavé Shopify homepage: retro cream and navy design with a soda can hero and 'Soda-Pop Water, zero sugars' tagline"
 url_live: https://www.drinkmave.com/
 excerpt: "A storefront where the brand's identity is consistent and convincing from the homepage through checkout."
+related_services:
+  - title: "Theme Development"
+    url: /services/theme-development/
+  - title: "App Integration"
+    url: /services/app-integration/
+next_case_study:
+  title: "Multi-Product Shopify Site with a B2B Wholesale Flow — WholeNights"
+  url: /case-studies/wholenights/
 results: "A subscribe-and-save purchase flow running alongside one-time orders, a multi-flavor 'Coming Soon' system built to drive anticipation ahead of future launches, and six real customer testimonials live at launch. Delivered in 2 weeks, on schedule."
 ---
 
