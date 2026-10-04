@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: "Custom Shopify Launch Site for a Construction Tech Startup — LockAssure"
-seo_title: "Custom Shopify Launch Site for a Construction Tech Startup — LockAssure | HSNLOGIX"
+seo_title: "Shopify Launch Site for LockAssure | HSNLOGIX"
 client: LockAssure
 category: Construction Tech
 platform: Shopify (Dawn, rebuilt in custom Liquid)

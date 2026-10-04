@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: "Custom Shopify Store for a Premium Wall Art Brand — Laboostudio"
-seo_title: "Custom Shopify Store for a Premium Wall Art Brand — Laboostudio | HSNLOGIX"
+seo_title: "Custom Shopify Store for Laboostudio | HSNLOGIX"
 client: Laboostudio
 category: Home & Décor
 platform: Shopify (custom theme build)

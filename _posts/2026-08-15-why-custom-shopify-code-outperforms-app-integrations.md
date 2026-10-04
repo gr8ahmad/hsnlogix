@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why Custom Shopify Code Outperforms App Integrations"
+seo_title: "Custom Code vs App Integrations on Shopify | HSNLOGIX Blog"
 date: 2026-08-15
 image: /blog-images/featured-custom-code-vs-apps.webp
 excerpt: "Learn why custom Shopify code can outperform app integrations by reducing unnecessary scripts, improving storefront performance, lowering app costs, and creating a faster, more conversion-focused shopping experience."

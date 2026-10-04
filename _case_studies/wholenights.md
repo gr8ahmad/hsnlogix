@@ -1,7 +1,7 @@
 ---
 layout: case-study
 title: "Multi-Product Shopify Site with a B2B Wholesale Flow — WholeNights"
-seo_title: "Multi-Product Shopify Site with a B2B Wholesale Flow — WholeNights | HSNLOGIX"
+seo_title: "B2B Wholesale Shopify Store — WholeNights | HSNLOGIX"
 client: WholeNights
 category: Sleep & Wellness
 platform: Shopify (Dawn, custom Liquid)

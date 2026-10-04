@@ -16,11 +16,16 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Shopify development and growth engineering for ambitious D2C brands.{% endif %}">
   <meta name="robots" content="{{ site.robots | default: 'index, follow' }}">
   <link rel="canonical" href="https://hsnlogix.com{{ page.url }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} | HSNLOGIX{% else %}HSNLOGIX{% endif %}">
+  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX{% else %}HSNLOGIX{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Shopify development and growth engineering for ambitious D2C brands.{% endif %}">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
-  <title>{% if page.title %}{{ page.title }} | HSNLOGIX{% else %}HSNLOGIX{% endif %}</title>
+  <meta property="og:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX{% else %}HSNLOGIX{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Shopify development and growth engineering for ambitious D2C brands.{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
+  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX{% else %}HSNLOGIX{% endif %}</title>
 
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v=shared-header">
   <link rel="stylesheet" href="{{ '/style-additions.css' | relative_url }}?v=shared-header">
@@ -34,6 +39,22 @@
     gtag('config', 'G-2XBBSKSGBJ');
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://hsnlogix.com/team/hussain/#person",
+    "name": "Hussain Ahmad",
+    "url": "https://hsnlogix.com/team/hussain/",
+    "jobTitle": "Shopify Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://hsnlogix.com/#organization",
+      "name": "HSNLOGIX",
+      "url": "https://hsnlogix.com"
+    }
+  }
+  </script>
 
 </head>
 <body>

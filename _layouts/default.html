@@ -20,6 +20,11 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 25, '' }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
   <meta property="og:type" content="{% if page.layout == 'post' or page.layout == 'case-study' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
+  <meta property="og:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 25, '' }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
   <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% if page.layout == "post" %} | HSNLOGIX Blog{% else %} | HSNLOGIX{% endif %}{% else %}HSNLOGIX{% endif %}</title>
 
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v=shared-header">
@@ -41,11 +46,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "{{ page.title | strip_html }}",
-    "provider": {
-      "@type": "Person",
-      "name": "Hussain Ahmad",
-      "url": "https://hsnlogix.com"
-    },
+    "provider": {"@id": "https://hsnlogix.com/#organization"},
     "areaServed": "Worldwide",
     "description": "{{ page.excerpt | strip_html | escape }}",
     "url": "https://hsnlogix.com{{ page.url }}"
@@ -60,11 +61,7 @@
     "@type": "CreativeWork",
     "name": "{{ page.title | strip_html | escape }}",
     "about": "{{ page.client | escape }}",
-    "author": {
-      "@type": "Person",
-      "name": "Hussain Ahmad",
-      "url": "https://hsnlogix.com"
-    },
+    "author": {"@id": "https://hsnlogix.com/team/hussain/#person"},
     "description": "{{ page.excerpt | strip_html | escape }}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "url": "https://hsnlogix.com{{ page.url }}"
@@ -79,16 +76,9 @@
     "@type": "BlogPosting",
     "headline": {{ page.title | jsonify }},
     "description": {{ page.excerpt | strip_html | jsonify }},
-    "author": {
-      "@type": "Person",
-      "name": "Hussain Ahmad",
-      "url": "https://hsnlogix.com/team/hussain/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "HSNLOGIX",
-      "url": "https://hsnlogix.com"
-    },
+    "author": {"@id": "https://hsnlogix.com/team/hussain/#person"},
+    "publisher": {"@id": "https://hsnlogix.com/#organization"},
+    "image": "https://hsnlogix.com{% if page.image %}{{ page.image }}{% else %}/HSNLogix-logo.jpg{% endif %}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "dateModified": "{{ page.date | date_to_xmlschema }}",
     "url": "https://hsnlogix.com{{ page.url }}"
@@ -96,6 +86,28 @@
   </script>
   {%- endif %}
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://hsnlogix.com/#organization",
+        "name": "HSNLOGIX",
+        "url": "https://hsnlogix.com",
+        "logo": "https://hsnlogix.com/HSNLogix-logo.jpg",
+        "sameAs": ["https://www.linkedin.com/company/hsnlogix"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://hsnlogix.com/team/hussain/#person",
+        "name": "Hussain Ahmad",
+        "url": "https://hsnlogix.com/team/hussain/",
+        "worksFor": {"@id": "https://hsnlogix.com/#organization"}
+      }
+    ]
+  }
+  </script>
 
 </head>
 <body>
