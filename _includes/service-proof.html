@@ -4,7 +4,7 @@
   <a href="{{ study.url | relative_url }}" class="service-proof-card">
     {% if study.image %}
     <div class="service-proof-card__img-wrap">
-      <img src="{{ study.image | relative_url }}" alt="{{ study.image_alt | default: study.client }}" loading="lazy">
+      <img src="{{ study.image | relative_url }}" alt="{{ study.image_alt | default: study.client }}" loading="lazy" width="160" height="140">
     </div>
     {% endif %}
     <div class="service-proof-card__body">

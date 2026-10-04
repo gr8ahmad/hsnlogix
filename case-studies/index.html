@@ -13,7 +13,7 @@ date: 2026-09-29
     <a class="blog-post-card case-study-card{% if study.image %} has-image{% endif %}" href="{{ study.url | relative_url }}">
       {% if study.image %}
       <div class="blog-post-card-image">
-        <img src="{{ study.image | relative_url }}" alt="{{ study.image_alt | default: study.client }}" loading="lazy">
+        <img src="{{ study.image | relative_url }}" alt="{{ study.image_alt | default: study.client }}" loading="lazy" width="500" height="375">
       </div>
       {% endif %}
       <div class="blog-post-card-content">
