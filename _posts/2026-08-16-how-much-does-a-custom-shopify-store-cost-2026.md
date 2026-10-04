@@ -49,7 +49,7 @@ Many Shopify stores use third-party apps for functions such as reviews, email ma
 
 Some apps are free, while others charge monthly or usage-based fees.
 
-You should also account for ongoing maintenance as your business grows. This might include updating functionality, improving conversion rates, fixing issues, adding new features, optimizing the storefront, or integrating new tools.
+You should also account for [ongoing maintenance]({{ '/services/maintenance-retainer/' | relative_url }}) as your business grows. This might include updating functionality, improving conversion rates, fixing issues, adding new features, optimizing the storefront, or integrating new tools.
 
 These costs aren't necessarily required on day one, but they can become part of the store's ongoing operating budget.
 
@@ -84,9 +84,9 @@ If you need a storefront designed specifically around your brand and business re
 
 The cost of building a Shopify store through a developer or agency depends largely on the scope and complexity of the project. A basic store using an existing theme and standard Shopify features requires far less development than a fully customized ecommerce experience.
 
-**Lighter Shopify work ($500–$1,000):** Best for store setup, theme customization, performance audits, or troubleshooting. This typically includes theme setup and customization, essential pages, product/collection setup, payment and shipping configuration, and basic launch setup.
+**Lighter Shopify work ($500–$1,000):** Best for [store setup]({{ '/services/store-setup/' | relative_url }}), theme customization, performance audits, or troubleshooting. This typically includes theme setup and customization, essential pages, product/collection setup, payment and shipping configuration, and basic launch setup.
 
-**Custom Shopify theme development ($1,500–$5,000+):** For businesses that need a fully tailored storefront. This includes custom Liquid/CSS/JavaScript development, custom sections, customized product and collection pages, improved UX, SEO setup, and third-party integrations. Costs increase with custom features, large catalogs, and complex integrations.
+**[Custom Shopify theme development]({{ '/services/theme-development/' | relative_url }}) ($1,500–$5,000+):** For businesses that need a fully tailored storefront. This includes custom Liquid/CSS/JavaScript development, custom sections, customized product and collection pages, improved UX, SEO setup, and third-party integrations. Costs increase with custom features, large catalogs, and complex integrations.
 
 These are development costs, not the total cost of running the store. Shopify subscriptions, premium themes, paid apps, domain registration, and ongoing maintenance are separate expenses.
 
@@ -120,4 +120,4 @@ The fastest way to get an accurate figure isn't to guess from a blog post, it's 
 
 If you're figuring out where your project falls, whether that's lighter setup work in the $500–$1,000 range or a custom theme build starting at $1,500, we're happy to take a look and give you a real, itemized quote based on your specific store, not a generic range. No cost and no obligation.
 
-[Get a quote and project scope →]({{ '/#contact' | relative_url }})
+<a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener">Get a quote and project scope →</a>

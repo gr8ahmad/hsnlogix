@@ -66,4 +66,4 @@ That doesn't mean avoiding apps altogether. It means being deliberate about whic
 
 If your store feels slower than it should, or you're paying for three apps to do what could be one clean build, it's worth having someone look at what's actually happening under the hood before assuming a new theme or a bigger ad budget is the fix.
 
-[If you have a Shopify project, book a call now to discuss the details →]({{ '/#contact' | relative_url }})
+<a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener">If you have a Shopify project, book a call now to discuss the details →</a>

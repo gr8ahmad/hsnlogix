@@ -71,6 +71,30 @@
   }
   </script>
   {%- endif %}
+  {%- if page.layout == "post" %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.excerpt | strip_html | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": "Hussain Ahmad",
+      "url": "https://hsnlogix.com/team/hussain/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "HSNLOGIX",
+      "url": "https://hsnlogix.com"
+    },
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "url": "https://hsnlogix.com{{ page.url }}"
+  }
+  </script>
+  {%- endif %}
 
 
 </head>
