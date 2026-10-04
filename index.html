@@ -651,17 +651,17 @@ date: 2026-09-29
             {% for faq in site.data.faqs %}
             <div class="faq-item">
                 <div class="faq-question">
-                    <div class="question-content">
+                    <button type="button" class="question-content faq-trigger" aria-expanded="false">
                         <div class="question-text">
                             <p class="question-number">{{ faq.number }}/</p>
                             <p class="question-title">{{ faq.question }}</p>
                         </div>
                         <div class="question-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-hidden="true">
                                 <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
                             </svg>
                         </div>
-                    </div>
+                    </button>
                     <div class="faq-answer">
                         <p>{{ faq.answer }}</p>
                     </div>
@@ -987,23 +987,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add this JavaScript to make the FAQ items interactive
+// FAQ accordion — keyboard accessible via button.faq-trigger
 document.addEventListener('DOMContentLoaded', function() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        
-        question.addEventListener('click', function() {
-            // Toggle active class
-            item.classList.toggle('active');
-            
-            // Close other FAQ items
-            faqItems.forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('active');
-                }
+    var faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(function(item) {
+        var trigger = item.querySelector('.faq-trigger');
+        if (!trigger) return;
+        trigger.addEventListener('click', function() {
+            var isActive = item.classList.contains('active');
+            faqItems.forEach(function(i) {
+                i.classList.remove('active');
+                var t = i.querySelector('.faq-trigger');
+                if (t) t.setAttribute('aria-expanded', 'false');
             });
+            if (!isActive) {
+                item.classList.add('active');
+                trigger.setAttribute('aria-expanded', 'true');
+            }
         });
     });
 });

@@ -15,17 +15,17 @@ date: 2026-09-29
     {% for faq in site.data.faqs %}
     <div class="faq-item">
       <div class="faq-question">
-        <div class="question-content">
+        <button type="button" class="question-content faq-trigger" aria-expanded="false">
           <div class="question-text">
             <p class="question-number">{{ faq.number }}/</p>
             <p class="question-title">{{ faq.question }}</p>
           </div>
           <div class="question-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-hidden="true">
               <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
             </svg>
           </div>
-        </div>
+        </button>
         <div class="faq-answer">
           <p>{{ faq.answer }}</p>
         </div>
@@ -71,15 +71,22 @@ date: 2026-09-29
 }
 </script>
 
-<!-- FAQ accordion JS (same logic as homepage) -->
+<!-- FAQ accordion JS -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var items = document.querySelectorAll('.faq-page .faq-item');
   items.forEach(function (item) {
-    item.querySelector('.faq-question').addEventListener('click', function () {
+    var trigger = item.querySelector('.faq-trigger');
+    trigger.addEventListener('click', function () {
       var isActive = item.classList.contains('active');
-      items.forEach(function (i) { i.classList.remove('active'); });
-      if (!isActive) item.classList.add('active');
+      items.forEach(function (i) {
+        i.classList.remove('active');
+        i.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+      if (!isActive) {
+        item.classList.add('active');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
     });
   });
 });
