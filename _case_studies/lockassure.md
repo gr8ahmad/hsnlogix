@@ -21,7 +21,7 @@ related_services:
 next_case_study:
   title: "Custom Vintage-Branded Shopify Store for a Soda Brand — Mavé"
   url: /case-studies/mave/
-results: "A fully functioning demo-booking and pre-order pipeline, live from day one of the product reveal, backed by a testimonial from a general superintendent with 20 years in the field crediting the system with bringing site-access incidents to zero. Delivered in 3 weeks against a fixed reveal date, with no slippage."
+results: "A fully functioning demo-booking and pre-order pipeline, live from day one of the product reveal, backed by positive feedback from a general superintendent with 20 years in the field who praised the system's reliability for day-to-day site access control. Delivered in 3 weeks against a fixed reveal date, with no slippage."
 ---
 
 ## The Challenge
