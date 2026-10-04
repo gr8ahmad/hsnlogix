@@ -13,7 +13,23 @@ includes:
   - "A/B testing setup for key pages and elements"
   - "Mobile-specific UX fixes (most D2C traffic is mobile)"
   - "Trust-signal audit: reviews, guarantees, shipping/return clarity"
+steps:
+  - "Funnel and analytics review — identify exactly where visitors drop off and why."
+  - "Build a prioritized hypothesis list based on the data, not guesses."
+  - "Implement and test the highest-impact changes first."
+  - "Report on results and iterate — the next round of changes is informed by what the first round proved."
 process: "Funnel and analytics review → prioritized hypothesis list → implement and test highest-impact changes first → report on results, iterate."
+faq:
+  - question: "Who does the CRO work?"
+    answer: "Hussain runs the analysis and implements changes personally. No account-manager layer — the developer reviewing your funnel is the one making the changes."
+  - question: "What does CRO cost?"
+    answer: "CRO engagements typically run $500–$1,500 for an initial analysis and first round of implementation, depending on scope. You'll get a clear quote after the funnel review."
+  - question: "How long does it take?"
+    answer: "Initial funnel analysis and the first round of changes typically complete within 2 weeks. CRO is an iterative process — subsequent rounds are informed by what the first round proves."
+  - question: "How do payments work?"
+    answer: "Both Upwork escrow/milestone payments and direct payment are available."
+problem_heading: "Why most stores can't tell where they're losing buyers"
+why_matters_heading: "Why fixing conversion is cheaper than buying more traffic"
 cta_label: "Start optimizing your funnel"
 ---
 

@@ -13,7 +13,26 @@ includes:
   - "Net payment terms and wholesale-specific checkout logic"
   - "Margin calculators and pricing tools where needed"
   - "Locked wholesale sections/catalogs visible only to approved accounts"
+steps:
+  - "Map your current retail setup and the exact wholesale requirements that need to layer on top of it."
+  - "Design the pricing structure, access logic, and account qualification flow."
+  - "Build and test the wholesale features with real wholesale accounts."
+  - "Launch with both customer types — retail and B2B — running cleanly from one store."
 process: "Map your current retail setup and the wholesale requirements you need layered on top → design the pricing and access logic → build and test with real wholesale accounts → launch with both customer types running cleanly on one store."
+faq:
+  - question: "Who builds the B2B setup?"
+    answer: "Hussain builds it personally. For larger projects, a specialist may be brought in for specific components — but there's no account-manager layer. You're always working directly with the developer doing the work."
+  - question: "Does the client own the code?"
+    answer: "Yes, outright, after final payment. The custom logic lives in your theme with no licensing fees or restrictions."
+  - question: "What does a B2B setup cost?"
+    answer: "B2B and wholesale builds typically run $1,500–$5,000+ depending on the complexity of the pricing logic and order flows involved. You'll get a clear quote after scoping."
+  - question: "How long does it take?"
+    answer: "A full B2B setup typically takes 2–3 weeks once the wholesale requirements are scoped."
+  - question: "How do payments work?"
+    answer: "Both Upwork escrow/milestone payments and direct payment are available."
+proof_case_study: "WholeNights"
+problem_heading: "Why retail-first Shopify stores struggle to serve wholesale buyers"
+why_matters_heading: "Why one store can serve both retail and B2B without compromise"
 cta_label: "Set up B2B on your store"
 ---
 

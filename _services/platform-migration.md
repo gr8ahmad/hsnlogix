@@ -13,7 +13,26 @@ includes:
   - "Custom theme build matching or improving on your current site's design and functionality"
   - "Pre-launch QA against the old site to confirm nothing was missed"
   - "Post-launch monitoring for redirect and indexing issues"
+steps:
+  - "Audit your current store's full structure — products, URLs, content, and integrations."
+  - "Build the new Shopify store and migrate product, customer, and order data."
+  - "Map every old URL to its new Shopify equivalent, protecting existing search rankings."
+  - "Test extensively against the old site before DNS cutover."
+  - "Launch and monitor for the first weeks to catch any redirect or indexing issues."
 process: "Audit your current store's full structure (products, URLs, content, integrations) → build the new Shopify store and migrate data → map every old URL to its new equivalent → test extensively before DNS cutover → launch and monitor for the first weeks to catch anything that slipped through."
+faq:
+  - question: "Who handles the migration?"
+    answer: "Hussain manages the migration personally, with specialists brought in for specific components on larger projects. No account-manager layer — the developer scoping the migration is the one executing it."
+  - question: "What does a migration cost?"
+    answer: "Platform migrations typically run $1,500–$5,000+ depending on store size, the number of products and customers, and how much custom functionality needs to be rebuilt in Shopify. You'll get a clear quote after the audit."
+  - question: "How long does it take?"
+    answer: "Most migrations run 2–4 weeks from the initial audit to DNS cutover, depending on catalog size and integration complexity."
+  - question: "How do payments work?"
+    answer: "Both Upwork escrow/milestone payments and direct payment are available."
+  - question: "Is there an NDA available?"
+    answer: "Yes — if you'd prefer an NDA in place before sharing store access or customer data, that's available on request before work starts."
+problem_heading: "Why platform migrations fail without a careful handoff plan"
+why_matters_heading: "Why every URL and record needs to move intact"
 cta_label: "Plan your migration"
 ---
 

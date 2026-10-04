@@ -13,7 +13,26 @@ includes:
   - "Checkout customization within Shopify's available options"
   - "Policy pages, legal setup, and essential apps configured correctly"
   - "Domain connection and pre-launch technical checklist"
+steps:
+  - "Kickoff call to understand your brand, requirements, and launch timeline."
+  - "Theme selection and customization — structure and branding set up before content goes in."
+  - "Configuration of payments, shipping rates, and store settings."
+  - "Product upload and collection organization."
+  - "Final QA pass across checkout, policies, and technical setup before go-live."
 process: "Kickoff call to understand your brand and requirements → theme and structure setup → configuration of payments, shipping, and store settings → product upload and organization → final QA pass before you go live."
+faq:
+  - question: "Who sets up the store?"
+    answer: "Hussain does the setup personally. No account-manager layer — you're working directly with the developer doing the work."
+  - question: "How long does a store setup take?"
+    answer: "A full store setup typically takes 7–10 days from kickoff to launch-ready."
+  - question: "What does a store setup cost?"
+    answer: "Store setup typically runs $500–$1,000 depending on catalog size and customization scope. You'll get a clear quote upfront."
+  - question: "What support is included after launch?"
+    answer: "Every setup includes a post-launch window with 2–3 rounds of revisions. For ongoing support beyond that, the Maintenance Retainer keeps a developer watching your store monthly."
+  - question: "How do payments work?"
+    answer: "Both Upwork escrow/milestone payments and direct payment are available — whichever works for your setup."
+problem_heading: "Why a default Shopify install isn't a finished store"
+why_matters_heading: "Why getting setup right the first time matters"
 cta_label: "Get your store set up"
 ---
 

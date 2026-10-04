@@ -13,7 +13,23 @@ includes:
   - "Post-update regression fixes"
   - "Clear explanation of what broke and why, so it doesn't happen again"
   - "Available for one-off fixes or ongoing support arrangements"
+steps:
+  - "Send the issue — a screenshot, error message, or link is enough to start."
+  - "Same-day or next-day diagnosis of the root cause."
+  - "Fix scoped and quoted before any work begins."
+  - "Resolved, tested, and confirmed with you before the conversation closes."
 process: "Send the issue (screenshot, error, or link) → same-day or next-day diagnosis → fix scoped and quoted → resolved, tested, confirmed with you."
+faq:
+  - question: "Who diagnoses and fixes the issue?"
+    answer: "Hussain does the diagnosis personally. No ticket queue, no junior handoff — one direct conversation with the developer looking at your store."
+  - question: "What does troubleshooting cost?"
+    answer: "Most one-off fixes run $500–$1,000 depending on the complexity of the issue. You'll get a clear scope and quote before any work begins."
+  - question: "How do payments work?"
+    answer: "Both Upwork escrow/milestone payments and direct payment are available."
+  - question: "What if the same issues keep coming back?"
+    answer: "If your store needs ongoing attention beyond one-off fixes, the Maintenance Retainer provides monthly developer hours, proactive monitoring, and priority response — so problems get caught before customers see them."
+problem_heading: "Why Shopify fixes stall without direct developer access"
+why_matters_heading: "Why most Shopify issues are fixable in hours, not weeks"
 cta_label: "Get help now"
 ---
 
