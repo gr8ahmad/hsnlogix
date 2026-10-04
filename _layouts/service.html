@@ -26,7 +26,7 @@ layout: default
 
   {% if page.problem %}
   <div class="service-section">
-    <h2 class="service-section-title">The Problem</h2>
+    <h2 class="service-section-title">{{ page.problem_heading | default: "The Problem" }}</h2>
     <div class="blog-post-body">
       <p>{{ page.problem }}</p>
     </div>
@@ -46,7 +46,7 @@ layout: default
 
   {% if content != "" %}
   <div class="service-section">
-    <h2 class="service-section-title">Why It Matters</h2>
+    <h2 class="service-section-title">{{ page.why_matters_heading | default: "Why It Matters" }}</h2>
     <div class="blog-post-body">
       {{ content }}
     </div>

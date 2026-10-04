@@ -31,6 +31,8 @@ faq:
     answer: "Both Upwork escrow/milestone payments and direct payment are available."
   - question: "What support is included after launch?"
     answer: "Every project includes a post-launch window with 2–3 rounds of revisions. For ongoing support beyond that, the Maintenance Retainer keeps a developer watching your store monthly."
+problem_heading: "Why off-the-shelf themes hold your store back"
+why_matters_heading: "Why a custom Shopify theme pays off"
 proof_case_study: "Laboostudio"
 cta_label: "Start your custom theme"
 ---

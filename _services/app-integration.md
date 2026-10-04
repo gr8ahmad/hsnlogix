@@ -28,6 +28,8 @@ faq:
     answer: "Most projects run about 3 weeks to a month once scoped. More complex multi-API setups take longer — scope determines the timeline."
   - question: "How do payments work?"
     answer: "Both Upwork escrow/milestone payments and direct payment are available — whichever works for your setup."
+problem_heading: "Why off-the-shelf Shopify apps fall short"
+why_matters_heading: "Why custom integrations outperform stacked apps"
 cta_label: "Get a custom integration built"
 ---
 

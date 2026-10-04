@@ -28,6 +28,8 @@ faq:
     answer: "Both Upwork escrow/milestone payments and direct payment are available."
   - question: "Is there an NDA available?"
     answer: "Yes — if you'd prefer an NDA in place before sharing store access, that's available on request before work starts."
+problem_heading: "Why slow Shopify stores lose revenue"
+why_matters_heading: "What a Shopify performance audit actually reveals"
 cta_label: "Get your store audited"
 ---
 
