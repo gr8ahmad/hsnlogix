@@ -7,12 +7,12 @@ category: Construction Tech
 platform: Shopify (Dawn, rebuilt in custom Liquid)
 role: Lead Shopify Developer
 timeline: "3 weeks, delivered for product reveal"
-repeat_client: "Repeat client — third Shopify build completed for this founder"
+repeat_client: "Repeat client — one of several Shopify projects completed for this founder"
 date: 2026-08-28
 image: /lockassure.webp
 image_alt: "LockAssure Shopify homepage: 'Accountability you can trust' hero over a padlocked chain-link fence, with theft and burglary stats below"
 url_live: https://lockassure.com
-excerpt: "A launch-ready site that converted visitor interest into booked demos and investor conversations from day one."
+excerpt: "A launch-ready site that converted visitor interest into booked demos, the kind of store a founder can confidently show to investors."
 related_services:
   - title: "Theme Development"
     url: /services/theme-development/

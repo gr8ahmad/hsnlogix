@@ -19,7 +19,7 @@ related_services:
 next_case_study:
   title: "Custom Shopify Launch Site for a Construction Tech Startup — LockAssure"
   url: /case-studies/lockassure/
-results: "Localized checkout in 40+ currencies for a global customer base, a size-comparison and gallery-wall planning tool that lets shoppers preview scale before buying, and a 4.9+/5 average review score across the catalog."
+results: "Localized checkout with multi-currency support for international shoppers, a size-comparison and gallery-wall planning tool that lets shoppers preview scale before buying, and strong, consistently positive customer reviews."
 ---
 
 ## The Challenge

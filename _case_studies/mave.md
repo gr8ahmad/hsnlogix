@@ -24,7 +24,7 @@ related_services:
 next_case_study:
   title: "Multi-Product Shopify Site with a B2B Wholesale Flow — WholeNights"
   url: /case-studies/wholenights/
-results: "A subscribe-and-save purchase flow running alongside one-time orders, a multi-flavor 'Coming Soon' system built to drive anticipation ahead of future launches, and six real customer testimonials live at launch. Delivered in 2 weeks, on schedule."
+results: "A subscribe-and-save purchase flow running alongside one-time orders, a multi-flavor 'Coming Soon' system built to drive anticipation ahead of future launches, and real customer testimonials live at launch. Delivered in 2 weeks, on schedule."
 ---
 
 ## The Challenge
