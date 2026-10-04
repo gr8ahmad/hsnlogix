@@ -74,8 +74,8 @@
   var navDrawer = document.getElementById('navDrawer');
   var navOverlay = document.getElementById('navOverlay');
   var navDrawerClose = document.getElementById('navDrawerClose');
-  function openDrawer() { navDrawer.classList.add('active'); navOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
-  function closeDrawer() { navDrawer.classList.remove('active'); navOverlay.classList.remove('active'); document.body.style.overflow = ''; }
+  function openDrawer() { navDrawer.classList.add('active'); navOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true'); }
+  function closeDrawer() { navDrawer.classList.remove('active'); navOverlay.classList.remove('active'); document.body.style.overflow = ''; if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false'); }
   if (menuToggle) menuToggle.addEventListener('click', openDrawer);
   if (navDrawerClose) navDrawerClose.addEventListener('click', closeDrawer);
   if (navOverlay) navOverlay.addEventListener('click', closeDrawer);

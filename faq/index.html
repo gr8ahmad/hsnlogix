@@ -16,7 +16,7 @@ date: 2026-09-29
     {% for faq in site.data.faqs %}
     <div class="faq-item">
       <div class="faq-question">
-        <button type="button" class="question-content faq-trigger" aria-expanded="false">
+        <button type="button" class="question-content faq-trigger" aria-expanded="false" aria-controls="faq-answer-{{ forloop.index }}">
           <div class="question-text">
             <p class="question-number">{{ faq.number }}/</p>
             <p class="question-title">{{ faq.question }}</p>
@@ -27,7 +27,7 @@ date: 2026-09-29
             </svg>
           </div>
         </button>
-        <div class="faq-answer">
+        <div class="faq-answer" id="faq-answer-{{ forloop.index }}">
           <p>{{ faq.answer }}</p>
         </div>
       </div>

@@ -5,7 +5,7 @@
       {% for item in include.items %}
       <div class="faq-item">
         <div class="faq-question">
-          <button type="button" class="question-content faq-trigger" aria-expanded="false">
+          <button type="button" class="question-content faq-trigger" aria-expanded="false" aria-controls="service-faq-answer-{{ forloop.index }}">
             <div class="question-text">
               <p class="question-number">{{ forloop.index }}/</p>
               <p class="question-title">{{ item.question }}</p>
@@ -16,7 +16,7 @@
               </svg>
             </div>
           </button>
-          <div class="faq-answer">
+          <div class="faq-answer" id="service-faq-answer-{{ forloop.index }}">
             <p>{{ item.answer }}</p>
           </div>
         </div>

@@ -34,6 +34,7 @@ date: 2026-09-29
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://hsnlogix.com/#organization",
   "name": "HSNLOGIX",
   "url": "https://hsnlogix.com",
   "logo": "https://hsnlogix.com/HSNLogix-logo.jpg",
@@ -41,11 +42,7 @@ date: 2026-09-29
   "sameAs": [
     "https://www.linkedin.com/company/hsnlogix"
   ],
-  "founder": {
-    "@type": "Person",
-    "name": "Hussain Ahmad",
-    "url": "https://hsnlogix.com/team/hussain/"
-  }
+  "founder": {"@id": "https://hsnlogix.com/team/hussain/#person"}
 }
 </script>
 <script type="application/ld+json">
@@ -1044,11 +1041,13 @@ document.addEventListener("DOMContentLoaded", () => {
     navDrawer.classList.add('active');
     navOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
   }
   function closeDrawer() {
     navDrawer.classList.remove('active');
     navOverlay.classList.remove('active');
     document.body.style.overflow = '';
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
   }
 
   if (menuToggle) menuToggle.addEventListener('click', openDrawer);

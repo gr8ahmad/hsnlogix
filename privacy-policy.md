@@ -31,7 +31,7 @@ HSNLOGIX ("we", "us", or "our") operates hsnlogix.com. This page informs you of 
 We may collect the following types of information:
 
 - **Contact information** you provide voluntarily (e.g. name, email) when you book a call or reach out to us.
-- **Usage data** collected automatically via analytics tools (e.g. pages visited, browser type, referring URLs).
+- **Usage data** collected automatically via Google Analytics (GA4), including pages visited, browser type, and referring URLs.
 
 ## How We Use Your Information
 
@@ -39,11 +39,12 @@ We use the information we collect to:
 
 - Respond to your enquiries and schedule consultations
 - Improve the site and our services
-- Send occasional updates if you have opted in
 
 ## Third-Party Services
 
 We use Cal.com for scheduling calls. Their privacy policy governs any data you submit through that booking flow.
+
+We use Google Analytics (GA4) to understand how visitors use this site. Google's privacy policy applies to data collected through this service.
 
 ## Data Retention
 

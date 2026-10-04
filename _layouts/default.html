@@ -133,11 +133,13 @@
     navDrawer.classList.add('active');
     navOverlay.classList.add('active');
     document.body.style.overflow = 'hidden';
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
   }
   function closeDrawer() {
     navDrawer.classList.remove('active');
     navOverlay.classList.remove('active');
     document.body.style.overflow = '';
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
   }
 
   if (menuToggle) menuToggle.addEventListener('click', openDrawer);
