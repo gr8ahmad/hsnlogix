@@ -7,6 +7,7 @@ permalink: /services/
 date: 2026-09-29
 ---
 {% include page-hero.html eyebrow="Services" title_pale="Shopify Development" title_dark="Services" lede="Shopify development, end to end — from the first build to ongoing growth." %}
+<div class="page-content">
 <div class="blog-index">
   <div class="blog-post-list">
     {% assign sorted_services = site.services | sort: 'title' %}
@@ -20,4 +21,5 @@ date: 2026-09-29
     </a>
     {% endfor %}
   </div>
+</div>
 </div>

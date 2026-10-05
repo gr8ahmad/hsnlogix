@@ -2,6 +2,7 @@
 layout: default
 ---
 {% include page-hero.html eyebrow="Blog" title_dark=page.title breadcrumb_parent="Blog" breadcrumb_parent_url="/blog/" breadcrumb_current=page.title show_breadcrumb=true %}
+<div class="page-content">
 <article class="blog-post">
   <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
   <p class="blog-post-author">Written by <a href="{{ '/team/hussain/' | relative_url }}">Hussain Ahmad</a></p>
@@ -14,3 +15,4 @@ layout: default
     {{ content }}
   </div>
 </article>
+</div>
