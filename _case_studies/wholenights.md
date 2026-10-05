@@ -5,7 +5,7 @@ seo_title: "B2B Wholesale Shopify Store — WholeNights | HSNLOGIX"
 client: WholeNights
 category: Sleep & Wellness
 platform: Shopify (Dawn, custom Liquid)
-role: Lead Shopify Developer
+role: Founder & Lead Shopify Developer
 timeline: "2 weeks"
 repeat_client: "Second of three Shopify builds completed for this client"
 date: 2026-08-31

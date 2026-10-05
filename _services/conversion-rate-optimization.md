@@ -23,7 +23,7 @@ faq:
   - question: "Who does the CRO work?"
     answer: "Hussain runs the analysis and implements changes personally. No account-manager layer — the developer reviewing your funnel is the one making the changes."
   - question: "What does CRO cost?"
-    answer: "CRO engagements typically run $500–$1,500 for an initial analysis and first round of implementation, depending on scope. You'll get a clear quote after the funnel review."
+    answer: "CRO is scoped individually. The effort depends on the number of pages in the funnel, the volume of data available, and the current state of your analytics setup. Book a call for a custom quote after the funnel review."
   - question: "How long does it take?"
     answer: "Initial funnel analysis and the first round of changes typically complete within 2 weeks. CRO is an iterative process — subsequent rounds are informed by what the first round proves."
   - question: "How do payments work?"

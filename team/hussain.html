@@ -1,7 +1,7 @@
 ---
 layout: team-profile
-title: "Hussain Ahmad — Shopify Theme Developer"
-description: "Senior Shopify Theme Developer & Front-End Specialist. Book a free consultation to discuss custom themes, integrations, and how to elevate your store."
+title: "Hussain Ahmad — Founder & Lead Shopify Developer"
+description: "Founder & Lead Shopify Developer at HSNLOGIX. Custom Shopify themes, speed optimization, and Shopify 2.0 builds for D2C brands. Book a free consultation."
 permalink: /team/hussain/
 date: 2026-09-29
 ---
@@ -186,6 +186,67 @@ date: 2026-09-29
     justify-content: space-between;
   }
 }
+
+/* ── Bio section ── */
+.hussain-bio {
+  background: #FFFFFF;
+  padding: 72px 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(10,10,10,0.08);
+}
+.hussain-bio__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.hussain-bio__heading {
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #0A0A0A;
+  margin: 0 0 24px;
+  letter-spacing: -0.5px;
+}
+.hussain-bio__body p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  margin: 0 0 16px;
+}
+.hussain-bio__body a {
+  color: #0A6640;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hussain-bio__body a:hover {
+  text-decoration: underline;
+}
+.hussain-bio__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+.hussain-bio__link {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #0A6640;
+  text-decoration: none;
+  padding: 7px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(10,102,64,0.25);
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.hussain-bio__link:hover {
+  background: #0A6640;
+  color: #FFFFFF;
+}
+@media (max-width: 640px) {
+  .hussain-bio {
+    padding: 56px 24px;
+  }
+}
 </style>
 
 <section class="profile-section">
@@ -203,7 +264,7 @@ date: 2026-09-29
     <div class="profile-section__photo-col">
       <img
         src="{{ '/hussain-profile-picture.webp' | relative_url }}"
-        alt="Hussain Ahmad — Shopify Theme Developer"
+        alt="Hussain Ahmad — Founder &amp; Lead Shopify Developer"
         class="profile-section__photo"
         width="200" height="257"
       >
@@ -217,7 +278,7 @@ date: 2026-09-29
       </div>
 
       <h1 class="profile-section__name">Hussain Ahmad</h1>
-      <p class="profile-section__title">Shopify Theme Developer &amp; Front-End Specialist</p>
+      <p class="profile-section__title">Founder &amp; Lead Shopify Developer</p>
 
       <a
         href="https://www.upwork.com/freelancers/~01e91c15509859436e"
@@ -254,6 +315,22 @@ date: 2026-09-29
       </div>
     </div>
 
+  </div>
+</section>
+
+<section class="hussain-bio">
+  <div class="hussain-bio__inner">
+    <h2 class="hussain-bio__heading">About Hussain</h2>
+    <div class="hussain-bio__body">
+      <p>I'm Hussain, founder of HSNLOGIX and a Shopify developer with 7+ years of hands-on experience and 100+ Shopify projects delivered. I started out building on Upwork, where I'm a Top Rated freelancer with 92 client reviews, and HSNLOGIX grew out of that work.</p>
+      <p>I focus on D2C brands: custom themes built from Figma, Shopify 2.0 sections and metafields, speed optimization, app integrations, and B2B and wholesale setups. My clients are based in the US, Canada, the UK and Singapore.</p>
+      <p>I write clean, mobile-first Liquid code and stay involved in every project personally, so you work directly with the person building your store. If you're planning a build, a fix or a migration, <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener">book a call</a> and we'll work out the right scope together.</p>
+    </div>
+    <nav class="hussain-bio__links" aria-label="Profile navigation">
+      <a href="{{ '/services/' | relative_url }}" class="hussain-bio__link">Services</a>
+      <a href="{{ '/case-studies/' | relative_url }}" class="hussain-bio__link">Case Studies</a>
+      <a href="{{ '/testimonials/' | relative_url }}" class="hussain-bio__link">Testimonials</a>
+    </nav>
   </div>
 </section>
 

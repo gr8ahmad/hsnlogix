@@ -5,7 +5,7 @@ seo_title: "Custom Shopify Store for Mavé — Soda Brand | HSNLOGIX"
 client: Mavé
 category: Beverage / Impulse Purchase
 platform: Shopify (Dawn, deep custom Liquid)
-role: Lead Shopify Developer
+role: Founder & Lead Shopify Developer
 timeline: "2 weeks, launched on schedule"
 repeat_client: "Second Shopify build completed for this client"
 date: 2026-08-31

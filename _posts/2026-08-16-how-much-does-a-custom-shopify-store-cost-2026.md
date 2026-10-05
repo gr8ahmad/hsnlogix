@@ -3,7 +3,7 @@ layout: post
 title: "How Much Does a Custom Shopify Store Actually Cost in 2026?"
 seo_title: "Custom Shopify Store Cost in 2026 | HSNLOGIX Blog"
 date: 2026-08-16
-image: /blog-images/featured-shopify-cost-2026.webp
+image:
 excerpt: "Discover how much a custom Shopify store costs in 2026, including Shopify plans, themes, development, custom functionality, apps, integrations, and ongoing maintenance. Compare realistic Shopify development budgets by store complexity and business stage."
 description: "What a custom Shopify store costs in 2026: Shopify plans, themes, development, apps and ongoing maintenance, with realistic budgets by business stage."
 ---
@@ -60,8 +60,6 @@ Before calculating the cost of building a Shopify store, you need to account for
 
 As of August 2026, Shopify's main plans are:
 
-![Shopify plan pricing comparison: Basic $39, Grow $105, Advanced $399, Plus from $2,300 per month]({{ '/blog-images/inbody-2-plan-pricing.webp' | relative_url }})
-
 | Plan | Monthly billing | Annual billing* | Best suited for |
 |---|---|---|---|
 | Basic | $39/month | $29/month | Solo entrepreneurs and small stores |
@@ -102,8 +100,6 @@ The initial development cost is only part of the total cost of running a Shopify
 ## A Realistic Budget by Business Stage
 
 Your budget should match the stage of your business rather than paying for complexity you don't need yet.
-
-![Realistic Shopify budget by business stage: lighter work $500–$1,000, custom theme development $1,500–$5,000+]({{ '/blog-images/inbody-3-budget-by-stage.webp' | relative_url }})
 
 Lighter work — store setup, audits, and troubleshooting — typically falls in the $500–$1,000 range if branding, products, content, and assets are already prepared. Custom Shopify theme development, for businesses that need a fully tailored storefront with custom sections and integrations, typically runs $1,500–$5,000+. Businesses with more complex catalogs, custom functionality, or multiple integrations should budget at the higher end. The goal is to build what your business needs today while leaving room to expand later.
 

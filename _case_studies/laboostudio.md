@@ -5,7 +5,7 @@ seo_title: "Custom Shopify Store for Laboostudio | HSNLOGIX"
 client: Laboostudio
 category: Home & Décor
 platform: Shopify (custom theme build)
-role: Lead Shopify Developer
+role: Founder & Lead Shopify Developer
 date: 2026-08-28
 image: /laboostudio.webp
 image_alt: "Laboostudio Shopify homepage: 'Shop Modern, Timeless Japanese Wall Art' hero with framed wall art in a styled room and a Kusama prints row"

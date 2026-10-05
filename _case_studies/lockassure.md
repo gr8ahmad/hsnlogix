@@ -5,7 +5,7 @@ seo_title: "Shopify Launch Site for LockAssure | HSNLOGIX"
 client: LockAssure
 category: Construction Tech
 platform: Shopify (Dawn, rebuilt in custom Liquid)
-role: Lead Shopify Developer
+role: Founder & Lead Shopify Developer
 timeline: "3 weeks, delivered for product reveal"
 repeat_client: "Repeat client — one of several Shopify projects completed for this founder"
 date: 2026-08-28
