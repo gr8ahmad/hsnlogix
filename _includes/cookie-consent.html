@@ -1,0 +1,71 @@
+<!-- Cookie consent banner -->
+<div id="hsn-cookie-banner" class="hsn-cookie-banner" role="region" aria-label="Cookie consent" hidden>
+  <div class="hsn-cookie-banner__inner">
+    <p class="hsn-cookie-banner__text">
+      We use cookies to understand how visitors use this site. You can accept or reject analytics cookies.
+      <a href="{{ '/privacy-policy/' | relative_url }}" class="hsn-cookie-banner__link">Privacy Policy</a>
+    </p>
+    <div class="hsn-cookie-banner__actions">
+      <button type="button" id="hsn-cookie-reject" class="hsn-cookie-banner__btn">Reject</button>
+      <button type="button" id="hsn-cookie-accept" class="hsn-cookie-banner__btn hsn-cookie-banner__btn--accept">Accept</button>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var banner = document.getElementById('hsn-cookie-banner');
+
+  function showBanner() {
+    if (banner) banner.removeAttribute('hidden');
+  }
+
+  function hideBanner() {
+    if (banner) banner.setAttribute('hidden', '');
+  }
+
+  function handleChoice(choice) {
+    try { localStorage.setItem('hsn_consent', choice); } catch(e) {}
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', {
+        analytics_storage: choice,
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied'
+      });
+    }
+    document.dispatchEvent(new CustomEvent('hsn_consent_update', {
+      detail: { analytics_storage: choice }
+    }));
+    hideBanner();
+  }
+
+  var savedConsent = null;
+  try { savedConsent = localStorage.getItem('hsn_consent'); } catch(e) {}
+  if (!savedConsent) {
+    showBanner();
+  }
+
+  var acceptBtn = document.getElementById('hsn-cookie-accept');
+  var rejectBtn = document.getElementById('hsn-cookie-reject');
+  if (acceptBtn) acceptBtn.addEventListener('click', function () { handleChoice('granted'); });
+  if (rejectBtn) rejectBtn.addEventListener('click', function () { handleChoice('denied'); });
+
+  var settingsBtn = document.getElementById('hsn-cookie-settings');
+  if (settingsBtn) {
+    settingsBtn.addEventListener('click', function () {
+      try { localStorage.removeItem('hsn_consent'); } catch(e) {}
+      showBanner();
+    });
+  } else {
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('hsn-cookie-settings');
+      if (btn) {
+        btn.addEventListener('click', function () {
+          try { localStorage.removeItem('hsn_consent'); } catch(e) {}
+          showBanner();
+        });
+      }
+    });
+  }
+})();
+</script>

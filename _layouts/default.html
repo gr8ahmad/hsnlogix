@@ -31,14 +31,7 @@
   <link rel="stylesheet" href="{{ '/style-additions.css' | relative_url }}?v=shared-header">
   <link rel="stylesheet" href="{{ '/blog.css' | relative_url }}?v=shared-header">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XBBSKSGBJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2XBBSKSGBJ');
-  </script>
+  {% include analytics.html %}
   {%- if page.layout == "service" %}
 
   <script type="application/ld+json">
@@ -121,6 +114,7 @@
 
 
   {% include footer.html %}
+  {% include cookie-consent.html %}
 
   <script>
 // Off-canvas nav drawer (slides in from the right)

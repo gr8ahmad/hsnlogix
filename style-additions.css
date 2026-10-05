@@ -1347,3 +1347,85 @@ button.faq-trigger {
 .footer-contact__link:hover img {
   opacity: 1;
 }
+
+/* ── Cookie consent banner ── */
+.hsn-cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--bg-lifted, #0A1314);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 14px 24px;
+  box-sizing: border-box;
+}
+.hsn-cookie-banner__inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.hsn-cookie-banner__text {
+  flex: 1 1 280px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.82);
+  margin: 0;
+}
+.hsn-cookie-banner__link {
+  color: var(--accent, #82FF1F);
+  text-decoration: underline;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.hsn-cookie-banner__actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.hsn-cookie-banner__btn {
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 100px;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  background: transparent;
+  color: rgba(255,255,255,0.88);
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hsn-cookie-banner__btn { transition: none; }
+}
+.hsn-cookie-banner__btn:hover {
+  border-color: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.08);
+}
+.hsn-cookie-banner__btn--accept:hover {
+  border-color: var(--accent, #82FF1F);
+  color: var(--accent, #82FF1F);
+}
+.hsn-cookie-banner__btn:focus-visible {
+  outline: 2px solid var(--accent, #82FF1F);
+  outline-offset: 2px;
+}
+@media (max-width: 560px) {
+  .hsn-cookie-banner { padding: 14px 16px; }
+  .hsn-cookie-banner__inner { gap: 12px; }
+  .hsn-cookie-banner__actions { width: 100%; }
+  .hsn-cookie-banner__btn { flex: 1; text-align: center; }
+}
+
+/* Footer "Cookie settings" button — inherits .footer-legal__link styles */
+button.footer-legal__link {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
