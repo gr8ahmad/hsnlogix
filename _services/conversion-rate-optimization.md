@@ -11,7 +11,7 @@ includes:
   - "Product page optimization (layout, copy, social proof, urgency elements)"
   - "Cart and checkout friction review"
   - "A/B testing setup for key pages and elements"
-  - "Mobile-specific UX fixes (most D2C traffic is mobile)"
+  - "Mobile-specific UX fixes (most DTC traffic is mobile)"
   - "Trust-signal audit: reviews, guarantees, shipping/return clarity"
 steps:
   - "Funnel and analytics review — identify exactly where visitors drop off and why."
