@@ -24,7 +24,7 @@ faq:
   - question: "Who handles the migration?"
     answer: "Hussain manages the migration personally, with specialists brought in for specific components on larger projects. No account-manager layer — the developer scoping the migration is the one executing it."
   - question: "What does a migration cost?"
-    answer: "Platform migrations typically run $1,500–$5,000+ depending on store size, the number of products and customers, and how much custom functionality needs to be rebuilt in Shopify. You'll get a clear quote after the audit."
+    answer: "Most Shopify migrations cost between $500 and $1,500 depending on catalog size and complexity. Very large catalogs and Shopify Plus migrations are quoted individually."
   - question: "How long does it take?"
     answer: "Most migrations run 2–4 weeks from the initial audit to DNS cutover, depending on catalog size and integration complexity."
   - question: "How do payments work?"

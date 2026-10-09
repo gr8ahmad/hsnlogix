@@ -22,7 +22,7 @@ faq:
   - question: "Who handles the monthly work?"
     answer: "Hussain handles retainer work personally. Because the same developer is always on your store, there's no re-onboarding when something new comes up — context carries forward month to month."
   - question: "What does the retainer cost?"
-    answer: "The Maintenance Retainer is $300/month. The monthly hour allotment covers fixes, tweaks, and small improvements. Larger scoped work is quoted separately."
+    answer: "The Maintenance Retainer is $400/month. The monthly hour allotment covers fixes, tweaks, and small improvements. Larger scoped work is quoted separately."
   - question: "How do payments work?"
     answer: "Both Upwork escrow/milestone payments and direct payment are available."
   - question: "Is there a minimum commitment?"
