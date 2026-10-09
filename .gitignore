@@ -1,4 +1,5 @@
 _site/
+_site_staging/
 node_modules/
 originals/
 package.json
