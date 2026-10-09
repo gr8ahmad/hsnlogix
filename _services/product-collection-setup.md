@@ -3,7 +3,7 @@ layout: service
 title: "Product & Collection Setup"
 seo_title: "Shopify Product & Collection Setup Services | HSNLOGIX"
 date: 2026-09-01
-excerpt: "Clean, SEO-ready Shopify product and collection setup — structured variants, metafields, and customer-friendly filtering that makes browsing and buying effortless."
+excerpt: "SEO-ready Shopify product and collection setup: structured variants, metafields, and customer-friendly filtering for effortless browsing and buying."
 intro: "Your catalog should sell for you. Clean, organized, SEO-ready product and collection setup that makes browsing and buying effortless."
 problem: "Messy variants, inconsistent metafields, collections that don't filter right, and product pages that don't answer the questions customers actually have before they buy."
 includes:

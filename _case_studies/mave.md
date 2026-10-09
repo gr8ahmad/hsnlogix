@@ -15,7 +15,7 @@ date: 2026-08-31
 image: /drinkmave.webp
 image_alt: "Mavé Shopify homepage: retro cream and navy design with a soda can hero and 'Soda-Pop Water, zero sugars' tagline"
 url_live: https://www.drinkmave.com/
-excerpt: "A storefront where the brand's identity is consistent and convincing from the homepage through checkout."
+excerpt: "Custom Shopify storefront for a vintage-inspired soda brand, rebuilt in Liquid from a Figma design, with brand storytelling and a subscribe-and-save flow."
 related_services:
   - title: "Theme Development"
     url: /services/theme-development/

@@ -3,7 +3,7 @@ layout: service
 title: "Ongoing Maintenance Retainer"
 seo_title: "Shopify Ongoing Maintenance Retainer | HSNLOGIX"
 date: 2026-09-01
-excerpt: "Monthly Shopify maintenance retainer — proactive monitoring, priority fixes, and dedicated developer hours so nothing breaks quietly and improvements actually ship."
+excerpt: "Monthly Shopify maintenance retainer: proactive monitoring, priority fixes, and dedicated developer hours so nothing breaks and improvements ship."
 intro: "Your store, looked after. Monthly retainer coverage so updates, fixes, and small improvements happen without you having to chase anyone down."
 problem: "Shopify and its apps update constantly. Without someone watching, things quietly break, or opportunities to improve get shelved indefinitely because there's no dedicated time for them."
 includes:

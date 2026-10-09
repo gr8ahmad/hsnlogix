@@ -3,7 +3,7 @@ layout: service
 title: "Website Audit & Performance"
 seo_title: "Shopify Website Audit & Performance Optimization | HSNLOGIX"
 date: 2026-09-01
-excerpt: "Full Shopify store audit covering Core Web Vitals, app bloat, image optimization, and render-blocking code — with a prioritized fix list that actually moves the needle."
+excerpt: "Shopify store audit covering Core Web Vitals, app bloat, image optimization, and render-blocking code, with a prioritized fix list that moves the needle."
 intro: "Your store's speed is costing you sales. Get a full audit of what's slowing you down, and a prioritized fix list that actually moves the needle."
 problem: "Slow load times, bloated apps, and unoptimized code quietly bleed conversions. Most stores are running 15–20 apps they've stopped using, images that were never compressed, and render-blocking scripts nobody's touched in years."
 includes:

@@ -50,46 +50,15 @@ date: 2026-09-29
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
+    {% for faq in site.data.faqs %}{
       "@type": "Question",
-      "name": "What's your usual project timeline?",
+      "name": {{ faq.question | jsonify }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most theme development or customization projects are completed within 1 to 4 weeks, depending on the scope and level of detail required. Once we understand your requirements, we'll share a clear timeline with milestones for design setup, development, testing, and final delivery."
+        "text": {{ faq.answer | jsonify }}
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide ongoing support after the project?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes! We offer ongoing maintenance and support for Shopify stores. This can include performance improvements, bug fixes, layout tweaks, and updates to keep your theme running smoothly as your business evolves."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you follow my existing brand guidelines?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Definitely. We make sure your Shopify store fully aligns with your brand's look and feel, colors, typography, layout, and visual tone. Whether you already have detailed brand guidelines or just a reference design, we can implement them precisely and maintain consistency across all pages."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do you handle revisions and feedback?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Revisions are part of the process. We provide structured feedback rounds where you can review progress and suggest adjustments. We value clear communication and make sure your feedback is implemented quickly and accurately until everything looks and functions as intended."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much does a Shopify project typically cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Smaller work like store setup, audits, or troubleshooting typically starts around $500 to $1,000. Custom Shopify development and design, and Shopify Plus development, typically run $1,500 to $5,000+ depending on scope. Ongoing maintenance and support starts at $400 per month."
-      }
-    }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
   ]
 }
 </script>
@@ -659,6 +628,7 @@ date: 2026-09-29
             <p>Real stories from real businesses who achieved lasting growth with our help</p>
         </div>
     </div>
+<h2 class="sr-only">What Clients Say</h2>
 {% include testimonial-slider.html %}
 
 
@@ -972,7 +942,6 @@ date: 2026-09-29
     </div>
 
   </div>
-</section>
 </section>
 
   </main>
