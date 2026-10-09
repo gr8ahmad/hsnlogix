@@ -1508,3 +1508,44 @@ button.footer-legal__link {
   font: inherit;
   cursor: pointer;
 }
+
+/* Phase 19: Featured services cards and 5-card addon grid */
+.featured-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.featured-card {
+  display: flex;
+  flex-direction: column;
+}
+.featured-card .addon-desc {
+  display: block;
+}
+@media (max-width: 900px) {
+  .featured-services {
+    grid-template-columns: 1fr;
+  }
+}
+
+.addon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.addon-grid .addon-card {
+  flex: 0 0 calc(20% - 14px);
+  min-width: 160px;
+}
+@media (max-width: 900px) {
+  .addon-grid .addon-card {
+    flex: 0 0 calc(50% - 8px);
+  }
+}
+@media (max-width: 560px) {
+  .addon-grid .addon-card {
+    flex: 0 0 100%;
+  }
+}
