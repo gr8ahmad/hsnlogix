@@ -1,0 +1,10 @@
+<ol class="how-we-work-steps">
+  {% assign steps = include.steps %}
+  {% for step in steps %}
+  <li class="how-we-work-step">
+    <span class="how-we-work-step__num" aria-hidden="true">0{{ forloop.index }}</span>
+    <h3 class="how-we-work-step__title">{{ step.title }}</h3>
+    <p class="how-we-work-step__desc">{{ step.desc }}</p>
+  </li>
+  {% endfor %}
+</ol>

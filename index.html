@@ -471,6 +471,62 @@ date: 2026-09-29
     </div>
 </section>
 
+<section class="how-we-work-section" id="how-we-work">
+  <div class="how-we-work-inner">
+    <div class="how-we-work-header">
+      <div class="how-we-work-header__left">
+        <div class="services-badge">
+          <span class="badge-text">process</span>
+        </div>
+        <div class="how-we-work-headline">
+          <h2 class="headline-text">How We Work</h2>
+        </div>
+      </div>
+      <p class="how-we-work-header__desc">Six steps from first call to launched store, with no surprises in between.</p>
+    </div>
+    {% assign hww_steps = "" | split: "" %}
+    {% assign s1 = "title:Discovery call|desc:We learn about your store, your goals and what is holding growth back." | split: "|" %}
+    {% assign s2 = "title:Audit and scoping|desc:We review your current store, theme and apps, then define exactly what needs to be built or fixed." | split: "|" %}
+    {% assign s3 = "title:Proposal and timeline|desc:You get a clear scope, price and delivery timeline before any work starts." | split: "|" %}
+    {% assign s4 = "title:Build|desc:Development happens on a separate copy of your theme, so your live store keeps running as normal." | split: "|" %}
+    {% assign s5 = "title:Testing and review|desc:We test across devices and browsers and check speed and checkout before anything goes live. You review and approve." | split: "|" %}
+    {% assign s6 = "title:Launch and support|desc:We launch, monitor the first days after release and hand over what you need to manage the store. Ongoing support is available if you want it." | split: "|" %}
+    <ol class="how-we-work-steps">
+      <li class="how-we-work-step">
+        <span class="how-we-work-step__num" aria-hidden="true">01</span>
+        <h3 class="how-we-work-step__title">Discovery call</h3>
+        <p class="how-we-work-step__desc">We learn about your store, your goals and what is holding growth back.</p>
+      </li>
+      <li class="how-we-work-step">
+        <span class="how-we-work-step__num" aria-hidden="true">02</span>
+        <h3 class="how-we-work-step__title">Audit and scoping</h3>
+        <p class="how-we-work-step__desc">We review your current store, theme and apps, then define exactly what needs to be built or fixed.</p>
+      </li>
+      <li class="how-we-work-step">
+        <span class="how-we-work-step__num" aria-hidden="true">03</span>
+        <h3 class="how-we-work-step__title">Proposal and timeline</h3>
+        <p class="how-we-work-step__desc">You get a clear scope, price and delivery timeline before any work starts.</p>
+      </li>
+      <li class="how-we-work-step">
+        <span class="how-we-work-step__num" aria-hidden="true">04</span>
+        <h3 class="how-we-work-step__title">Build</h3>
+        <p class="how-we-work-step__desc">Development happens on a separate copy of your theme, so your live store keeps running as normal.</p>
+      </li>
+      <li class="how-we-work-step">
+        <span class="how-we-work-step__num" aria-hidden="true">05</span>
+        <h3 class="how-we-work-step__title">Testing and review</h3>
+        <p class="how-we-work-step__desc">We test across devices and browsers and check speed and checkout before anything goes live. You review and approve.</p>
+      </li>
+      <li class="how-we-work-step">
+        <span class="how-we-work-step__num" aria-hidden="true">06</span>
+        <h3 class="how-we-work-step__title">Launch and support</h3>
+        <p class="how-we-work-step__desc">We launch, monitor the first days after release and hand over what you need to manage the store. Ongoing support is available if you want it.</p>
+      </li>
+    </ol>
+    <p class="how-we-work-cta">Ready to start? <a href="{{ '/contact/' | relative_url }}">Send a message</a></p>
+  </div>
+</section>
+
     <section class="projects-section" id="projects">
 
 
@@ -633,6 +689,34 @@ date: 2026-09-29
 
 
 </section>
+
+{% if site.posts.size > 0 %}
+<section class="blog-strip-section" id="blog-strip">
+  <div class="blog-strip-inner">
+    <div class="blog-strip-header">
+      <div class="blog-strip-header__left">
+        <div class="services-badge">
+          <span class="badge-text">blog</span>
+        </div>
+        <div class="blog-strip-headline">
+          <h2 class="headline-text">Latest from the Blog</h2>
+        </div>
+      </div>
+      <a href="{{ '/blog/' | relative_url }}" class="blog-strip-all-link">View all posts &rarr;</a>
+    </div>
+    <div class="blog-strip-cards">
+      {% for post in site.posts limit:2 %}
+      <a href="{{ post.url | relative_url }}" class="blog-strip-card">
+        <p class="blog-strip-card__date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        <h3 class="blog-strip-card__title">{{ post.title }}</h3>
+        <p class="blog-strip-card__excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="faq-section" id="faqs">
     <div class="faq-container">
         <div class="faq-header">
