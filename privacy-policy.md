@@ -42,6 +42,8 @@ If you book a call or reach out by email, you provide your name and email addres
 
 **Cal.com** is used for scheduling calls. When you open the booking widget, Cal.com may set its own cookies or store session data in your browser. Their data handling is governed by the [Cal.com privacy policy](https://cal.com/privacy).
 
+**Web3Forms** is used to receive contact form submissions from this site. When you submit the "Discuss Your Store" form, your details are sent to Web3Forms' servers for delivery. Their data handling is governed by the [Web3Forms privacy policy](https://web3forms.com/privacy).
+
 ## Information We Do Not Collect
 
 We do not use advertising pixels, retargeting tags, or any tracking other than the analytics described above (and only with your consent).
