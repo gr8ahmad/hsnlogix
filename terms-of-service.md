@@ -32,7 +32,7 @@ HSNLOGIX provides Shopify development and related services. Specific terms for a
 
 ## Intellectual Property
 
-All content on this site — including text, graphics, logos, and code — is the property of HSNLOGIX unless otherwise stated.
+All content on this site, including text, graphics, logos, and code, is the property of HSNLOGIX unless otherwise stated.
 
 ## Disclaimer
 
