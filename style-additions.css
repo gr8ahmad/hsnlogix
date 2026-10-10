@@ -1230,6 +1230,9 @@
   }
   .page-hero__heading { font-size: 30px; letter-spacing: -0.8px; }
 }
+.blog-main section.hsnlogix-portfolio {
+  padding-bottom: 0;
+}
 
 /* ─── Service Hero (moved from _layouts/service.html inline style) ─────── */
 .service-hero {
