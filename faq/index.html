@@ -1,0 +1,96 @@
+---
+layout: default
+title: "FAQ"
+seo_title: "Shopify Development FAQs | HSNLOGIX"
+description: "Answers to common questions about Shopify project timelines, support, revisions, brand guidelines and pricing."
+permalink: /faq/
+date: 2026-09-29
+---
+
+{% include page-hero.html eyebrow="FAQ" title_pale="Shopify Development" title_dark="FAQs" lede="Answers to common questions about Shopify project pricing, timelines, migrations, revisions and ongoing support." lede_2="Cannot find your question? Send a message or book a free call." breadcrumb_current="FAQ" %}
+
+<div class="page-content">
+<div class="faq-page">
+
+  <!-- FAQ accordion — reuses .faq-item / .faq-question / .faq-answer from style.css -->
+  <div class="faq-questions">
+    {% for faq in site.data.faqs %}
+    <div class="faq-item">
+      <div class="faq-question">
+        <button type="button" class="question-content faq-trigger" aria-expanded="false" aria-controls="faq-answer-{{ forloop.index }}">
+          <div class="question-text">
+            <p class="question-number">{{ faq.number }}/</p>
+            <p class="question-title">{{ faq.question }}</p>
+          </div>
+          <div class="question-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" aria-hidden="true">
+              <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+            </svg>
+          </div>
+        </button>
+        <div class="faq-answer" id="faq-answer-{{ forloop.index }}">
+          <p>{{ faq.answer }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Bottom CTA -->
+  <div class="faq-page__cta">
+    <div class="faq-page__cta-text">
+      <strong>Still have a question?</strong>
+      <span>Book a free call and we'll answer everything before you commit to anything.</span>
+    </div>
+    <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+      <div class="button-text"><p>Book a Call</p></div>
+      <div class="button-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+          <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+        </svg>
+      </div>
+    </a>
+  </div>
+
+</div>
+</div>
+
+<!-- FAQPage schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for faq in site.data.faqs %}{
+      "@type": "Question",
+      "name": {{ faq.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.answer | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+<!-- FAQ accordion JS -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var items = document.querySelectorAll('.faq-page .faq-item');
+  items.forEach(function (item) {
+    var trigger = item.querySelector('.faq-trigger');
+    trigger.addEventListener('click', function () {
+      var isActive = item.classList.contains('active');
+      items.forEach(function (i) {
+        i.classList.remove('active');
+        i.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+      });
+      if (!isActive) {
+        item.classList.add('active');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+});
+</script>

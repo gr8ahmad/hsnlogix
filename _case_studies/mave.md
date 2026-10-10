@@ -1,10 +1,11 @@
 ---
 layout: case-study
-title: "Custom Vintage-Branded Shopify Store for a Soda Brand — Mavé"
+title: "Custom Vintage-Branded Shopify Store for a Soda Brand: Mavé"
+seo_title: "Custom Shopify Store for Mavé, Soda Brand | HSNLOGIX"
 client: Mavé
 category: Beverage / Impulse Purchase
 platform: Shopify (Dawn, deep custom Liquid)
-role: Lead Shopify Developer
+role: Founder & Lead Shopify Developer
 timeline: "2 weeks, launched on schedule"
 repeat_client: "Second Shopify build completed for this client"
 date: 2026-08-31
@@ -12,9 +13,20 @@ date: 2026-08-31
 # used on the homepage's Featured Projects section), so that's used here instead of
 # a placeholder -- no fabricated image path needed.
 image: /drinkmave.webp
+image_alt: "Mavé Shopify homepage: retro cream and navy design with a soda can hero and 'Soda-Pop Water, zero sugars' tagline"
 url_live: https://www.drinkmave.com/
-excerpt: "A storefront where the brand's identity is consistent and convincing from the homepage through checkout."
-results: "A subscribe-and-save purchase flow running alongside one-time orders, a multi-flavor 'Coming Soon' system built to drive anticipation ahead of future launches, and six real customer testimonials live at launch. Delivered in 2 weeks, on schedule."
+excerpt: "Custom Shopify storefront for a vintage-inspired soda brand, rebuilt in Liquid from a Figma design, with brand storytelling and a subscribe-and-save flow."
+h1: "Mave: Custom Vintage-Branded Shopify Store for a Soda Brand"
+hero_lede: "Custom Shopify storefront for a vintage-inspired soda brand, rebuilt in Liquid from a Figma design, with brand storytelling and a subscribe-and-save flow. Delivered in 2 weeks."
+related_services:
+  - title: "Theme Development"
+    url: /services/theme-development/
+  - title: "App Integration"
+    url: /services/app-integration/
+next_case_study:
+  title: "Multi-Product Shopify Site with a B2B Wholesale Flow: WholeNights"
+  url: /case-studies/wholenights/
+results: "A subscribe-and-save purchase flow running alongside one-time orders, a multi-flavor 'Coming Soon' system built to drive anticipation ahead of future launches, and real customer testimonials live at launch. Delivered in 2 weeks, on schedule."
 ---
 
 ## The Challenge
@@ -23,7 +35,7 @@ Mavé is a vintage-inspired soda brand entering a crowded, largely impulse-drive
 
 ## The Approach
 
-Every section of the site was rebuilt from scratch in Liquid to match a detailed Figma design 1:1, not adapted from an existing template: a custom product showcase, brand storytelling sections built to carry the retro identity through the whole browsing experience, a custom testimonial carousel, a full multi-product catalog with individual product pages, and a custom-built contact page. A subscribe-and-save purchase flow was built alongside standard one-time checkout to support recurring customers, and a multi-flavor "Coming Soon" system was added to build anticipation ahead of future flavor launches. Delivered in two weeks, launched on schedule.
+Every section of the site was [rebuilt from scratch in custom Liquid]({{ '/services/theme-development/' | relative_url }}) to match a detailed Figma design 1:1, not adapted from an existing template: a custom product showcase, brand storytelling sections built to carry the retro identity through the whole browsing experience, a custom testimonial carousel, a full multi-product catalog with individual product pages, and a custom-built contact page. A subscribe-and-save purchase flow was [built as a custom app integration]({{ '/services/app-integration/' | relative_url }}) alongside standard one-time checkout to support recurring customers, and a multi-flavor "Coming Soon" system was added to build anticipation ahead of future flavor launches. Delivered in two weeks, launched on schedule.
 
 ## The Result
 

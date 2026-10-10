@@ -1,10 +1,11 @@
 ---
 layout: case-study
-title: "Multi-Product Shopify Site with a B2B Wholesale Flow — WholeNights"
+title: "Multi-Product Shopify Site with a B2B Wholesale Flow: WholeNights"
+seo_title: "B2B Wholesale Shopify Store for WholeNights | HSNLOGIX"
 client: WholeNights
 category: Sleep & Wellness
 platform: Shopify (Dawn, custom Liquid)
-role: Lead Shopify Developer
+role: Founder & Lead Shopify Developer
 timeline: "2 weeks"
 repeat_client: "Second of three Shopify builds completed for this client"
 date: 2026-08-31
@@ -12,8 +13,19 @@ date: 2026-08-31
 # used on the homepage's Featured Projects section), so that's used here instead of
 # a placeholder -- no fabricated image path needed.
 image: /whole-nights.webp
+image_alt: "WholeNights Shopify homepage: dusk photo of a man wearing the Calma Clip sleep device, with 'Sound sleep without the sound' headline"
 url_live: https://wholenights.com/
 excerpt: "A single store that genuinely serves two different customer types without either one feeling like an afterthought."
+h1: "WholeNights: Multi-Product Shopify Site with a B2B Wholesale Flow"
+hero_lede: "A single Shopify store serving both retail and B2B wholesale customers, with tiered pricing, margin calculators and a qualification form built directly into the theme."
+related_services:
+  - title: "B2B Wholesale"
+    url: /services/b2b-wholesale/
+  - title: "App Integration"
+    url: /services/app-integration/
+next_case_study:
+  title: "Custom Shopify Store for a Premium Wall Art Brand: Laboostudio"
+  url: /case-studies/laboostudio/
 results: "A fully custom wholesale flow, live and ready to onboard B2B buyers alongside the retail storefront, tiered pricing, margin calculators, and a qualification form built directly into the theme rather than bolted on as a separate app. Delivered in 2 weeks, on schedule, as the second of three Shopify builds for this client."
 ---
 
@@ -23,7 +35,7 @@ WholeNights needed one site to serve two very different buyers at once: retail c
 
 ## The Approach
 
-Rather than a bolt-on, built custom Liquid logic for the wholesale side directly into the store: tiered unit pricing tables that calculate margins automatically, "Most Popular" tier badges to guide bulk buyers toward the right volume, and an embedded Typeform flow to capture and qualify wholesale orders without disrupting retail checkout. The homepage was structured around a multi-product layout with "Coming Soon" reveals to keep both audiences engaged with upcoming launches. Delivered in two weeks.
+Rather than a bolt-on, built [custom Liquid logic for the wholesale side]({{ '/services/b2b-wholesale/' | relative_url }}) directly into the store: tiered unit pricing tables that calculate margins automatically, "Most Popular" tier badges to guide bulk buyers toward the right volume, and an [embedded Typeform flow]({{ '/services/app-integration/' | relative_url }}) to capture and qualify wholesale orders without disrupting retail checkout. The homepage was structured around a multi-product layout with "Coming Soon" reveals to keep both audiences engaged with upcoming launches. Delivered in two weeks.
 
 ## The Result
 

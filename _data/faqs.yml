@@ -1,0 +1,23 @@
+- number: "01"
+  question: "What's your usual project timeline?"
+  answer: "Most theme development or customization projects are completed within 1 to 4 weeks, depending on the scope and level of detail required. Once we understand your requirements, we'll share a clear timeline with milestones for design setup, development, testing, and final delivery."
+
+- number: "02"
+  question: "Do you provide ongoing support after the project?"
+  answer: "Yes! We offer ongoing maintenance and support for Shopify stores. This can include performance improvements, bug fixes, layout tweaks, and updates to keep your theme running smoothly as your business evolves."
+
+- number: "03"
+  question: "Can you follow my existing brand guidelines?"
+  answer: "Definitely. We make sure your Shopify store fully aligns with your brand's look and feel, colors, typography, layout, and visual tone. Whether you already have detailed brand guidelines or just a reference design, we can implement them precisely and maintain consistency across all pages."
+
+- number: "04"
+  question: "How do you handle revisions and feedback?"
+  answer: "Revisions are part of the process. We provide structured feedback rounds where you can review progress and suggest adjustments. We value clear communication and make sure your feedback is implemented quickly and accurately until everything looks and functions as intended."
+
+- number: "05"
+  question: "How much does a Shopify project typically cost?"
+  answer: "Smaller work like store setup, audits, or troubleshooting typically starts around $500 to $1,000. Custom Shopify development and design, and Shopify Plus development, typically run $1,500 to $5,000+ depending on scope. Ongoing maintenance and support starts at $400 per month."
+
+- number: "06"
+  question: "How much does a migration development project typically cost?"
+  answer: "Migration development projects typically range from $500 to $1,500, depending on the platforms involved, store size, data requirements, integrations, and overall migration scope. We will confirm the exact cost after reviewing your current store and requirements."

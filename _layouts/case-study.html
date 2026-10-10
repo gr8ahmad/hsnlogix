@@ -1,21 +1,23 @@
 ---
 layout: default
 ---
+{% assign cs_h1 = page.h1 | default: page.title %}
+{% assign cs_lede = page.hero_lede | default: page.excerpt %}
+{% include page-hero.html eyebrow="Case Study" title_dark=cs_h1 lede=cs_lede breadcrumb_parent="Case Studies" breadcrumb_parent_url="/case-studies/" breadcrumb_current=page.client %}
+<div class="page-content">
 <article class="blog-post case-study">
-  <p class="blog-back"><a href="{{ '/case-studies/' | relative_url }}">&larr; Back to case studies</a></p>
 
   <div class="case-study-meta-tags">
     {% if page.platform %}<span class="case-study-tag">{{ page.platform }}</span>{% endif %}
     {% if page.category %}<span class="case-study-tag">{{ page.category }}</span>{% endif %}
   </div>
 
-  <h1 class="blog-post-title">{{ page.title }}</h1>
   <p class="case-study-client">Client: <strong>{{ page.client }}</strong></p>
   <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
 
   {% if page.image %}
   <div class="blog-post-featured-image">
-    <img src="{{ page.image | relative_url }}" alt="{{ page.client }}">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.client }}" width="500" height="375">
   </div>
   {% endif %}
 
@@ -57,9 +59,19 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.url_live %}
   <div class="case-study-cta">
-    <a href="{{ page.url_live }}" target="_blank" rel="noopener" class="cta-button">
+    <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+      <div class="button-text">
+        <p>Book a Call</p>
+      </div>
+      <div class="button-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+          <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+        </svg>
+      </div>
+    </a>
+    {% if page.url_live %}
+    <a href="{{ page.url_live }}" target="_blank" rel="noopener" class="cta-button cta-button--secondary">
       <div class="button-text">
         <p>Visit {{ page.client }}</p>
       </div>
@@ -69,6 +81,26 @@ layout: default
         </svg>
       </div>
     </a>
+    {% endif %}
+  </div>
+
+  {% if page.related_services %}
+  <div class="case-study-related-services">
+    <h2 class="case-study-related-title">Related Services</h2>
+    <div class="case-study-related-links">
+      {% for service in page.related_services %}
+      <a href="{{ service.url | relative_url }}" class="case-study-related-link">{{ service.title }} &rarr;</a>
+      {% endfor %}
+    </div>
   </div>
   {% endif %}
+
+  {% if page.next_case_study %}
+  <div class="case-study-next">
+    <span class="case-study-next-label">Next case study</span>
+    <a href="{{ page.next_case_study.url | relative_url }}" class="case-study-next-link">{{ page.next_case_study.title }} &rarr;</a>
+  </div>
+  {% endif %}
+
 </article>
+</div>

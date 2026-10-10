@@ -1,0 +1,18 @@
+{% assign study = site.case_studies | where: "client", include.client | first %}
+{% if study %}
+<div class="service-section service-proof-section">
+  <a href="{{ study.url | relative_url }}" class="service-proof-card">
+    {% if study.image %}
+    <div class="service-proof-card__img-wrap">
+      <img src="{{ study.image | relative_url }}" alt="{{ study.image_alt | default: study.client }}" loading="lazy" width="160" height="140">
+    </div>
+    {% endif %}
+    <div class="service-proof-card__body">
+      <span class="service-proof-card__eyebrow">Case Study</span>
+      <h3 class="service-proof-card__client">{{ study.client }}</h3>
+      <p class="service-proof-card__excerpt">{{ study.excerpt }}</p>
+      <span class="service-proof-card__link">Read the case study →</span>
+    </div>
+  </a>
+</div>
+{% endif %}

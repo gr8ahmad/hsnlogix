@@ -1,12 +1,14 @@
 ---
 layout: default
 title: Blog
+seo_title: "Shopify Development Blog | HSNLOGIX"
+description: "Shopify development guides, case studies, and practical advice for DTC brands, from the team at HSNLOGIX."
 permalink: /blog/
+date: 2026-09-29
 ---
+{% include page-hero.html eyebrow="Insights" title_pale="Shopify Development" title_dark="Guides and Insights" lede="Practical guides on Shopify themes, migrations, speed, apps and project costs for store owners and teams planning their next build." breadcrumb_current="Blog" %}
+<div class="page-content">
 <div class="blog-index">
-  <h1 class="blog-index-title">Blog</h1>
-  <p class="blog-index-subtitle">Shopify, Webflow, and ecommerce development notes from HSNLOGIX.</p>
-
   <div class="blog-post-list">
     {% for post in site.posts %}
     <a class="blog-post-card{% if post.image %} has-image{% endif %}" href="{{ post.url | relative_url }}">
@@ -24,4 +26,5 @@ permalink: /blog/
     </a>
     {% endfor %}
   </div>
+</div>
 </div>

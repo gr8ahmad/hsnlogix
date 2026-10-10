@@ -1,13 +1,38 @@
 ---
 layout: default
 ---
+{% assign url_parts = page.url | split: '/' %}
+{% assign service_slug = url_parts[2] %}
+{% assign hero_h1 = page.h1 | default: page.title %}
+{% include page-hero.html eyebrow="Shopify Service" title_dark=hero_h1 lede=page.intro breadcrumb_parent="Services" breadcrumb_parent_url="/services/" breadcrumb_current=page.title show_breadcrumb=true %}
+<div class="page-content">
 <article class="blog-post service-page">
-  <p class="blog-back"><a href="{{ '/#services' | relative_url }}">&larr; Back to services</a></p>
 
-  <h1 class="blog-post-title">{{ page.title }}</h1>
+  <div class="service-hero">
+    <div class="service-hero__content">
+      <div class="service-hero__cta">
+        <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+          <div class="button-text">
+            <p>{% if page.cta_label %}{{ page.cta_label }}{% else %}Book a free consultation{% endif %}</p>
+          </div>
+          <div class="button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="service-hero__icon-wrap" aria-hidden="true">
+      {% include service-icon.html slug=service_slug %}
+    </div>
+  </div>
 
-  {% if page.intro %}
-  <p class="service-intro">{{ page.intro }}</p>
+  {% if page.problem %}
+  <div class="service-section">
+    <h2 class="service-section-title">{{ page.problem_heading | default: "The Problem" }}</h2>
+    <div class="blog-post-body">
+      <p>{{ page.problem }}</p>
+    </div>
+  </div>
   {% endif %}
 
   {% if page.includes %}
@@ -21,17 +46,60 @@ layout: default
   </div>
   {% endif %}
 
+  {% if content != "" %}
   <div class="service-section">
-    <h2 class="service-section-title">Why It Matters</h2>
+    <h2 class="service-section-title">{{ page.why_matters_heading | default: "Why It Matters" }}</h2>
     <div class="blog-post-body">
       {{ content }}
     </div>
   </div>
+  {% endif %}
+
+  {% if page.steps %}
+  {% include service-steps.html steps=page.steps %}
+  {% elsif page.process %}
+  <div class="service-section">
+    <h2 class="service-section-title">How It Works</h2>
+    <div class="blog-post-body">
+      <p>{{ page.process }}</p>
+    </div>
+  </div>
+  {% endif %}
+  {% if page.faq %}
+  {% include service-faq.html items=page.faq %}
+  {% endif %}
+
+  {% assign related_slugs = site.data.related_services[service_slug] %}
+  {% if related_slugs %}
+  <div class="service-section">
+    <h2 class="service-section-title">Related Services</h2>
+    <div class="related-services-grid">
+      {% for slug in related_slugs %}
+        {% assign service_url = '/services/' | append: slug | append: '/' %}
+        {% assign rel = site.services | where: "url", service_url | first %}
+        {% if rel %}
+        <a href="{{ rel.url | relative_url }}" class="addon-card">
+          <div class="addon-visual">{% include service-icon.html slug=slug %}</div>
+          <div class="addon-body">
+            <span class="addon-title">{{ rel.title }}</span>
+            <p class="addon-desc">{{ rel.excerpt }}</p>
+            <span class="addon-link">Learn more &rarr;</span>
+          </div>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if page.proof_case_study %}
+  {% include service-proof.html client=page.proof_case_study %}
+  {% endif %}
 
   <div class="service-cta">
-    <a href="{{ '/#contact' | relative_url }}" class="cta-button">
+    <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
       <div class="button-text">
-        <p>Book a free consultation</p>
+        <p>{% if page.cta_label %}{{ page.cta_label }}{% else %}Book a free consultation{% endif %}</p>
       </div>
       <div class="button-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -39,5 +107,7 @@ layout: default
         </svg>
       </div>
     </a>
+    <p class="service-cta__alt-link">Or <a href="{{ '/contact/' | relative_url }}">send a message</a></p>
   </div>
 </article>
+</div>

@@ -4,6 +4,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://app.cal.com">
+  <link rel="preload" href="{{ '/fonts/manrope.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="icon" type="image/png" href="{{ '/favicon-96x96.png' | relative_url }}" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}" />
   <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" />
@@ -11,28 +13,25 @@
   <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 25, '' }}{% else %}Shopify development insights from HSNLOGIX.{% endif %}">
   <meta name="robots" content="{{ site.robots | default: 'index, follow' }}">
   <link rel="canonical" href="https://hsnlogix.com{{ page.url }}">
-  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX Blog{% endif %}">
-  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 155 }}{% else %}Shopify and web development insights from HSNLOGIX.{% endif %}">
-  <meta property="og:type" content="article">
+  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 25, '' }}{% else %}Shopify development insights from HSNLOGIX.{% endif %}">
+  <meta property="og:type" content="{% if page.layout == 'post' or page.layout == 'case-study' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
-  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX Blog{% else %}HSNLOGIX Blog{% endif %}</title>
+  <meta property="og:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 25, '' }}{% else %}Shopify development insights from HSNLOGIX.{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
+  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% if page.layout == "post" %} | HSNLOGIX Blog{% else %} | HSNLOGIX{% endif %}{% else %}HSNLOGIX{% endif %}</title>
 
-  <!-- Same stylesheets as the main site, so header/footer/fonts match exactly -->
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/style-additions.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/blog.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="{{ '/style-additions.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="{{ '/blog.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2XBBSKSGBJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2XBBSKSGBJ');
-  </script>
+  {% include analytics.html %}
   {%- if page.layout == "service" %}
 
   <script type="application/ld+json">
@@ -40,11 +39,7 @@
     "@context": "https://schema.org",
     "@type": "Service",
     "serviceType": "{{ page.title | strip_html }}",
-    "provider": {
-      "@type": "Person",
-      "name": "Hussain A",
-      "url": "https://hsnlogix.com"
-    },
+    "provider": {"@id": "https://hsnlogix.com/#organization"},
     "areaServed": "Worldwide",
     "description": "{{ page.excerpt | strip_html | escape }}",
     "url": "https://hsnlogix.com{{ page.url }}"
@@ -59,175 +54,119 @@
     "@type": "CreativeWork",
     "name": "{{ page.title | strip_html | escape }}",
     "about": "{{ page.client | escape }}",
-    "author": {
-      "@type": "Person",
-      "name": "Hussain A",
-      "url": "https://hsnlogix.com"
-    },
+    "author": {"@id": "https://hsnlogix.com/team/hussain/#person"},
     "description": "{{ page.excerpt | strip_html | escape }}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",
     "url": "https://hsnlogix.com{{ page.url }}"
   }
   </script>
   {%- endif %}
+  {%- if page.layout == "post" %}
 
-  <!-- Cal.com Embed (same as the main site, needed for data-cal-link CTAs on this layout) -->
-  <script type="text/javascript">
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-
-  Cal("init", {origin:"https://cal.com"});
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.excerpt | strip_html | jsonify }},
+    "author": {"@id": "https://hsnlogix.com/team/hussain/#person"},
+    "publisher": {"@id": "https://hsnlogix.com/#organization"},
+    "image": "https://hsnlogix.com{% if page.image %}{{ page.image }}{% else %}/HSNLogix-logo.jpg{% endif %}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.date | date_to_xmlschema }}",
+    "url": "https://hsnlogix.com{{ page.url }}"
+  }
   </script>
+  {%- endif %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://hsnlogix.com/#organization",
+        "name": "HSNLOGIX",
+        "url": "https://hsnlogix.com",
+        "logo": "https://hsnlogix.com/HSNLogix-logo.jpg",
+        "sameAs": ["https://www.linkedin.com/company/hsnlogix"]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://hsnlogix.com/team/hussain/#person",
+        "name": "Hussain Ahmad",
+        "jobTitle": "Founder & Lead Shopify Developer",
+        "url": "https://hsnlogix.com/team/hussain/",
+        "worksFor": {"@id": "https://hsnlogix.com/#organization"}
+      }
+    ]
+  }
+  </script>
+
 </head>
 <body>
-  <!-- HEADER (same markup as the main site) -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <button class="menu-toggle" aria-label="Toggle menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+  {% include header.html %}
+  {% include nav-drawer.html %}
 
-      <div class="logo">
-        <a href="{{ '/' | relative_url }}">
-          <span class="logo-hsn">HSN</span>
-          <span class="logo-logix">Logix</span>
-        </a>
-      </div>
-
-      <nav class="site-header__menu">
-        <a href="{{ '/case-studies/' | relative_url }}" class="site-header__link">Case Studies</a>
-        <a href="{{ '/#testimonials' | relative_url }}" class="site-header__link">Testimonials</a>
-        <a href="{{ '/#faqs' | relative_url }}" class="site-header__link">FAQs</a>
-        <a href="{{ '/blog/' | relative_url }}" class="site-header__link">Blog</a>
-        <a href="{{ '/white-label/' | relative_url }}" class="site-header__link">For Agencies</a>
-        <a href="{{ '/#contact' | relative_url }}" class="site-header__link">Contact</a>
-      </nav>
-
-      <a href="{{ '/#contact' | relative_url }}" rel="noopener" class="cta-button header-cta">
-        <div class="button-text">
-          <p>Book a Call</p>
-        </div>
-        <div class="button-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-            <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
-          </svg>
-        </div>
-      </a>
-    </div>
-  </header>
-
-  <main class="blog-main container">
+  <main class="blog-main">
     {{ content }}
   </main>
 
-  <!-- FOOTER (same markup as the main site) -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-info">
-        <div class="footer-container">
-          <div class="footer-heading">
-            <h2 class="footer-title">Let's build a Shopify store that truly stands out.</h2>
-          </div>
-          <div class="contact-info">
-            <div class="profile-section">
-              <div class="hsn-logix-avatar">
-                <div class="hsn-logix-profile-pic">
-                  <div class="hsn-logix-img-wrapper">
-                    <img src="{{ '/hussain-profile-picture.webp' | relative_url }}" alt="Hussain A - Senior Shopify Developer">
-                  </div>
-                </div>
-              </div>
-              <div class="profile-details">
-                <div class="profile-name">
-                  <h3>Hussain A</h3>
-                  <div class="profile-role">
-                    <p>Shopify Theme Developer & Front-End Specialist</p>
-                  </div>
-                  <a href="https://www.upwork.com/freelancers/~01e91c15509859436e" target="_blank" rel="noopener" class="upwork-link">
-                    <img src="{{ '/upwork-icon.webp' | relative_url }}" alt="Upwork">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="contact-description">
-              <h3><span class="highlight">Book a free consultation</span> — I'll walk you through custom themes, integrations, and how we can <span class="highlight">elevate your store's design & conversions.</span></h3>
-            </div>
-            <div class="cta-buttons">
-              <a href="{{ '/#contact' | relative_url }}" rel="noopener" class="cta-button">
-                <div class="button-text">
-                  <p>Book a Call</p>
-                </div>
-                <div class="button-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
-                  </svg>
-                </div>
-              </a>
-              <a href="https://www.upwork.com/freelancers/~01e91c15509859436e" rel="noopener" class="cta-button" target="_blank">
-                <div class="button-text">
-                  <p>View my Upwork profile</p>
-                </div>
-                <div class="button-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-                    <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="footer-bottom">
-        <div class="footer-container">
-          <div class="footer-left">
-            <div class="footer-logo">
-              <div class="logo">
-                <a href="{{ '/' | relative_url }}">
-                  <span class="logo-hsn">HSN</span>
-                  <span class="logo-logix">Logix</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <p class="copyright">Copyright © HSNLogix, 2026</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  {% include footer.html %}
+  {% include cookie-consent.html %}
 
   <script>
-    const toggleBtn = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".site-header__menu");
-    if (toggleBtn && navMenu) {
-      toggleBtn.addEventListener("click", () => {
-        toggleBtn.classList.toggle("active");
-        navMenu.classList.toggle("active");
-      });
-    }
+// Off-canvas nav drawer (slides in from the right)
+(function () {
+  var menuToggle = document.querySelector('.menu-toggle');
+  var navDrawer = document.getElementById('navDrawer');
+  var navOverlay = document.getElementById('navOverlay');
+  var navDrawerClose = document.getElementById('navDrawerClose');
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const header = document.querySelector(".site-header");
-      let lastScroll = 0;
-      const scrollThreshold = 50;
-      window.addEventListener("scroll", () => {
-        const currentScroll = window.scrollY;
-        if (currentScroll <= scrollThreshold) {
-          header.classList.remove("header-hidden");
-          return;
-        }
-        if (currentScroll > lastScroll) {
-          header.classList.add("header-hidden");
-        }
-        if (currentScroll < lastScroll) {
-          header.classList.remove("header-hidden");
-        }
-        lastScroll = currentScroll;
-      });
-    });
+  function openDrawer() {
+    navDrawer.classList.add('active');
+    navOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
+  }
+  function closeDrawer() {
+    navDrawer.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
+  if (menuToggle) menuToggle.addEventListener('click', openDrawer);
+  if (navDrawerClose) navDrawerClose.addEventListener('click', closeDrawer);
+  if (navOverlay) navOverlay.addEventListener('click', closeDrawer);
+
+  document.querySelectorAll('.nav-drawer__link').forEach(function (link) {
+    link.addEventListener('click', closeDrawer);
+  });
+})();
+
+// Transparent header: apply opaque background once page is scrolled
+(function () {
+  var header = document.querySelector('.site-header');
+  function updateHeader() {
+    if (window.scrollY > 10) {
+      header.classList.add('header-scrolled');
+    } else {
+      header.classList.remove('header-scrolled');
+    }
+  }
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+})();
   </script>
 
-  <script src="{{ '/hsnlogix-tracking.js' | relative_url }}"></script>
+  <script src="{{ '/hsnlogix-tracking.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+
+  <!-- Cal.com embed bootstrap — deferred to end of body to avoid blocking render -->
+  <script>
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://cal.com"});
+  </script>
 </body>
 </html>

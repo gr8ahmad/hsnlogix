@@ -1,0 +1,97 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://app.cal.com">
+  <link rel="preload" href="{{ '/fonts/manrope.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" type="image/png" href="{{ '/favicon-96x96.png' | relative_url }}" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}" />
+  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}" />
+  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Shopify development and growth engineering for ambitious DTC brands.{% endif %}">
+  <meta name="robots" content="{{ site.robots | default: 'index, follow' }}">
+  <link rel="canonical" href="https://hsnlogix.com{{ page.url }}">
+  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX{% else %}HSNLOGIX{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Shopify development and growth engineering for ambitious DTC brands.{% endif %}">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
+  <meta property="og:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX{% else %}HSNLOGIX{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Shopify development and growth engineering for ambitious DTC brands.{% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
+  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} | HSNLOGIX{% else %}HSNLOGIX{% endif %}</title>
+
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="{{ '/style-additions.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
+  {% include analytics.html %}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://hsnlogix.com/team/hussain/#person",
+    "name": "Hussain Ahmad",
+    "url": "https://hsnlogix.com/team/hussain/",
+    "jobTitle": "Founder & Lead Shopify Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "@id": "https://hsnlogix.com/#organization",
+      "name": "HSNLOGIX",
+      "url": "https://hsnlogix.com"
+    }
+  }
+  </script>
+
+</head>
+<body>
+  {% include header.html %}
+  {% include nav-drawer.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+
+  {% include footer.html %}
+  {% include cookie-consent.html %}
+
+  <script>
+(function () {
+  var menuToggle = document.querySelector('.menu-toggle');
+  var navDrawer = document.getElementById('navDrawer');
+  var navOverlay = document.getElementById('navOverlay');
+  var navDrawerClose = document.getElementById('navDrawerClose');
+  function openDrawer() { navDrawer.classList.add('active'); navOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true'); }
+  function closeDrawer() { navDrawer.classList.remove('active'); navOverlay.classList.remove('active'); document.body.style.overflow = ''; if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false'); }
+  if (menuToggle) menuToggle.addEventListener('click', openDrawer);
+  if (navDrawerClose) navDrawerClose.addEventListener('click', closeDrawer);
+  if (navOverlay) navOverlay.addEventListener('click', closeDrawer);
+  document.querySelectorAll('.nav-drawer__link').forEach(function (link) { link.addEventListener('click', closeDrawer); });
+})();
+(function () {
+  var header = document.querySelector('.site-header');
+  function updateHeader() {
+    if (window.scrollY > 10) { header.classList.add('header-scrolled'); }
+    else { header.classList.remove('header-scrolled'); }
+  }
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+})();
+  </script>
+
+  <script src="{{ '/hsnlogix-tracking.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+
+  <!-- Cal.com embed bootstrap — deferred to end of body to avoid blocking render -->
+  <script>
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+  Cal("init", {origin:"https://cal.com"});
+  </script>
+</body>
+</html>

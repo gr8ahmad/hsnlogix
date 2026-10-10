@@ -1,0 +1,11 @@
+<div class="service-section">
+  <h2 class="service-section-title">How It Works</h2>
+  <div class="service-steps">
+    {% for step in include.steps %}
+    <div class="wl-process-step">
+      <span class="process-step-number">{{ forloop.index }}</span>
+      <p class="process-step-desc">{{ step }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>

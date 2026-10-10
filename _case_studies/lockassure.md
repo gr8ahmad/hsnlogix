@@ -1,17 +1,29 @@
 ---
 layout: case-study
-title: "Custom Shopify Launch Site for a Construction Tech Startup — LockAssure"
+title: "Custom Shopify Launch Site for a Construction Tech Startup: LockAssure"
+seo_title: "Shopify Launch Site for LockAssure | HSNLOGIX"
 client: LockAssure
 category: Construction Tech
 platform: Shopify (Dawn, rebuilt in custom Liquid)
-role: Lead Shopify Developer
+role: Founder & Lead Shopify Developer
 timeline: "3 weeks, delivered for product reveal"
-repeat_client: "Repeat client — third Shopify build completed for this founder"
+repeat_client: "Repeat client: one of several Shopify projects completed for this founder"
 date: 2026-08-28
 image: /lockassure.webp
+image_alt: "LockAssure Shopify homepage: 'Accountability you can trust' hero over a padlocked chain-link fence, with theft and burglary stats below"
 url_live: https://lockassure.com
-excerpt: "A launch-ready site that converted visitor interest into booked demos and investor conversations from day one."
-results: "A fully functioning demo-booking and pre-order pipeline, live from day one of the product reveal, backed by a testimonial from a general superintendent with 20 years in the field crediting the system with bringing site-access incidents to zero. Delivered in 3 weeks against a fixed reveal date, with no slippage."
+excerpt: "A launch-ready site that converted visitor interest into booked demos, the kind of store a founder can confidently show to investors."
+h1: "LockAssure: Custom Shopify Launch Site for a Construction Tech Startup"
+hero_lede: "A launch-ready Shopify site for a construction tech startup, built to convert visitor interest into booked demos. Delivered in 3 weeks against a fixed reveal date."
+related_services:
+  - title: "Theme Development"
+    url: /services/theme-development/
+  - title: "App Integration"
+    url: /services/app-integration/
+next_case_study:
+  title: "Custom Vintage-Branded Shopify Store for a Soda Brand: Mavé"
+  url: /case-studies/mave/
+results: "A fully functioning demo-booking and pre-order pipeline, live from day one of the product reveal, backed by positive feedback from a general superintendent with 20 years in the field who praised the system's reliability for day-to-day site access control. Delivered in 3 weeks against a fixed reveal date, with no slippage."
 ---
 
 ## The Challenge
@@ -20,7 +32,7 @@ LockAssure needed a launch site for a product reveal, but the goal wasn't standa
 
 ## The Approach
 
-Six fully custom pages, rebuilt from the Dawn theme in Liquid to match a detailed Figma design pixel-for-pixel, no off-the-shelf sections doing the heavy lifting. Calendly was integrated directly for demo bookings, alongside a custom email capture flow built specifically for investor and early-access interest, not a generic newsletter signup. The entire build was delivered in three weeks to hit a fixed product reveal date, with zero slippage on the launch.
+Six fully custom pages, [rebuilt from the Dawn theme in Liquid]({{ '/services/theme-development/' | relative_url }}) to match a detailed Figma design pixel-for-pixel, no off-the-shelf sections doing the heavy lifting. Calendly was [integrated]({{ '/services/app-integration/' | relative_url }}) directly for demo bookings, alongside a custom email capture flow built specifically for investor and early-access interest, not a generic newsletter signup. The entire build was delivered in three weeks to hit a fixed product reveal date, with zero slippage on the launch.
 
 ## The Result
 

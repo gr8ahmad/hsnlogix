@@ -1,18 +1,20 @@
 ---
 layout: default
 title: Case Studies
+seo_title: "Shopify Case Studies | HSNLOGIX"
+description: "Real Shopify projects delivered for DTC brands: custom builds, B2B storefronts, and conversion-focused theme development."
 permalink: /case-studies/
+date: 2026-09-29
 ---
+{% include page-hero.html eyebrow="Our Work" title_pale="Shopify Case Studies" title_dark="for DTC Brands" lede="See how we build and improve Shopify stores for DTC brands: custom themes, B2B storefronts, speed work and conversion-focused changes." lede_2="Each case study covers the client, the challenge, what we built and the outcome, so you can judge the work before you talk to us." %}
+<div class="page-content">
 <div class="blog-index">
-  <h1 class="blog-index-title">Case Studies</h1>
-  <p class="blog-index-subtitle">Real client projects — the platforms, the work, and the results.</p>
-
   <div class="blog-post-list">
     {% for study in site.case_studies %}
     <a class="blog-post-card case-study-card{% if study.image %} has-image{% endif %}" href="{{ study.url | relative_url }}">
       {% if study.image %}
       <div class="blog-post-card-image">
-        <img src="{{ study.image | relative_url }}" alt="{{ study.client }}" loading="lazy">
+        <img src="{{ study.image | relative_url }}" alt="{{ study.image_alt | default: study.client }}" loading="lazy" width="500" height="375">
       </div>
       {% endif %}
       <div class="blog-post-card-content">
@@ -28,4 +30,5 @@ permalink: /case-studies/
     </a>
     {% endfor %}
   </div>
+</div>
 </div>

@@ -1,0 +1,508 @@
+---
+layout: team-profile
+title: "Hussain Ahmad | Founder & Lead Shopify Developer"
+description: "Founder & Lead Shopify Developer at HSNLOGIX. Custom Shopify themes, Shopify Plus builds, and speed optimization for DTC brands."
+permalink: /team/hussain/
+date: 2026-09-29
+---
+
+<style>
+/* ── Profile section ── */
+.profile-section {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #02090A;
+  padding: 120px 40px 100px;
+  box-sizing: border-box;
+}
+
+.profile-section__pattern {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.055) 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+.profile-section__pattern .hero-pattern__blob--dark { display: none; }
+.profile-section__pattern .hero-pattern__blob--green {
+  background: rgba(130, 255, 31, 0.10);
+  width: 600px;
+  height: 600px;
+  right: -80px;
+  top: -120px;
+  left: auto;
+}
+
+.profile-section__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+/* Photo column */
+.profile-section__photo-col {
+  flex-shrink: 0;
+}
+.profile-section__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  border: 2px solid #82FF1F;
+  box-shadow: 0 0 24px rgba(130, 255, 31, 0.18);
+  display: block;
+}
+
+/* Body column */
+.profile-section__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-section__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(130, 255, 31, 0.08);
+  border: 1px solid rgba(130, 255, 31, 0.22);
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #82FF1F;
+  margin-bottom: 20px;
+}
+.profile-section__eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #82FF1F;
+  flex-shrink: 0;
+}
+
+.profile-section__name {
+  font-family: 'Manrope', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #fff;
+  margin: 0 0 10px;
+  line-height: 1.05;
+}
+
+.profile-section__title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 24px;
+}
+
+.profile-section__upwork {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  padding: 8px 16px 8px 12px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 36px;
+  transition: border-color 0.2s, background 0.2s;
+}
+.profile-section__upwork:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.profile-section__upwork img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.profile-section__bio {
+  font-family: 'Manrope', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.68);
+  max-width: 580px;
+  margin: 0 0 40px;
+}
+.profile-section__bio .hl {
+  color: #82FF1F;
+  font-weight: 700;
+}
+
+.profile-section__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* ── Mobile ── */
+@media (max-width: 800px) {
+  .profile-section {
+    padding: 96px 24px 80px;
+  }
+  .profile-section__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .profile-section__photo {
+    width: 90px;
+    height: 90px;
+  }
+  .profile-section__name {
+    font-size: 40px;
+    letter-spacing: -1.5px;
+  }
+  .profile-section__bio {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-section__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .profile-section__actions .cta-button {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* ── Bio section ── */
+.hussain-bio {
+  background: #FFFFFF;
+  padding: 72px 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(10,10,10,0.08);
+}
+.hussain-bio__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.hussain-bio__heading {
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #0A0A0A;
+  margin: 0 0 24px;
+  letter-spacing: -0.5px;
+}
+.hussain-bio__body p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  margin: 0 0 16px;
+}
+.hussain-bio__body a {
+  color: #0A6640;
+  text-decoration: none;
+  font-weight: 600;
+}
+.hussain-bio__body a:hover {
+  text-decoration: underline;
+}
+.hussain-bio__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+.hussain-bio__link {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #0A6640;
+  text-decoration: none;
+  padding: 7px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(10,102,64,0.25);
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.hussain-bio__link:hover {
+  background: #0A6640;
+  color: #FFFFFF;
+}
+@media (max-width: 640px) {
+  .hussain-bio {
+    padding: 56px 24px;
+  }
+}
+</style>
+
+<section class="profile-section">
+  <div class="hero-pattern profile-section__pattern" aria-hidden="true">
+    <div class="hero-pattern__blob hero-pattern__blob--green"></div>
+    <div class="hero-pattern__blob hero-pattern__blob--dark"></div>
+    <div class="hero-pattern__dot hero-pattern__dot--glow" style="width:5px;height:5px;right:18%;top:25%;"></div>
+    <div class="hero-pattern__dot" style="width:8px;height:8px;left:8%;bottom:20%;"></div>
+    <div class="hero-pattern__dot hero-pattern__dot--glow" style="width:4px;height:4px;right:30%;bottom:30%;"></div>
+  </div>
+
+  <div class="profile-section__inner">
+
+    <!-- Photo -->
+    <div class="profile-section__photo-col">
+      <img
+        src="{{ '/hussain-profile-picture.webp' | relative_url }}"
+        alt="Hussain Ahmad, Founder and Lead Shopify Developer"
+        class="profile-section__photo"
+        width="200" height="257"
+      >
+    </div>
+
+    <!-- Info -->
+    <div class="profile-section__body">
+      <div class="profile-section__eyebrow">
+        <span class="profile-section__eyebrow-dot"></span>
+        Meet the Founder
+      </div>
+
+      <h1 class="profile-section__name">Hussain Ahmad</h1>
+      <p class="profile-section__title">Founder &amp; Lead Shopify Developer</p>
+
+      <a
+        href="https://www.upwork.com/freelancers/~01e91c15509859436e"
+        target="_blank"
+        rel="noopener"
+        class="profile-section__upwork"
+      >
+        <img src="{{ '/upwork-icon.webp' | relative_url }}" alt="" width="113" height="113">
+        Top Rated on Upwork
+      </a>
+
+      <p class="profile-section__bio">
+        Shopify development for DTC brands: custom themes, Shopify Plus builds, migrations and integrations.
+      </p>
+
+      <div class="profile-section__actions">
+        <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+          <div class="button-text"><p>Book a Free Strategy Call</p></div>
+          <div class="button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="hussain-bio">
+  <div class="hussain-bio__inner">
+    <h2 class="hussain-bio__heading">About Hussain</h2>
+    <div class="hussain-bio__body">
+      <p>HSNLOGIX is a founder-led Shopify development team specializing in Shopify, Shopify Plus, migrations, B2B commerce and custom Shopify functionality.</p>
+      <p>Hussain leads technical scoping and project direction, working closely with the developers throughout delivery, from planning and implementation to launch.</p>
+      <p>You work directly with the people responsible for building your store, without unnecessary layers between you and the development team.</p>
+    </div>
+    <nav class="hussain-bio__links" aria-label="Profile navigation">
+      <a href="{{ '/services/' | relative_url }}" class="hussain-bio__link">Services</a>
+      <a href="{{ '/case-studies/' | relative_url }}" class="hussain-bio__link">Case Studies</a>
+      <a href="{{ '/testimonials/' | relative_url }}" class="hussain-bio__link">Testimonials</a>
+    </nav>
+  </div>
+</section>
+
+<section class="hsnlogix-portfolio" id="testimonials">
+
+    <div class="testimonials-header">
+        <div class="header-content">
+            <div class="tag-badge">
+                <div class="tag-text">testimonials</div>
+            </div>
+            <div class="headline-container">
+                <div class="headline-part">
+                    <h2 class="headline-text">180+ Projects</h2>
+                </div>
+                <div>
+                    <h2 class="headline-text">One Mission: Growth</h2>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <p>Real stories from real businesses who achieved lasting growth with our help</p>
+        </div>
+    </div>
+
+<div id="hsnlogix-portfolio-slider">
+  <div class="hsnlogix-slider-track">
+
+    <div class="hsnlogix-slider-item">
+<div class="testimonial-card">
+  <div class="testimonial-header">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img"><path vector-effect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M12 21a9 9 0 100-18 9 9 0 000 18z"></path><path vector-effect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M12 11.73a2.97 2.97 0 100-5.94 2.97 2.97 0 000 5.94zm0 1.89c-2.88 0-5.31 2.34-5.31 5.31v.36C8.22 20.37 10.02 21 12 21c1.98 0 3.78-.63 5.31-1.71v-.36c0-2.88-2.43-5.31-5.31-5.31z"></path></svg>
+    <div class="testimonial-rating">
+      <div class="air3-rating wm-feedback-scores">
+        <svg xmlns="http://www.w3.org/2000/svg" class="air3-rating-hidden-icon" style="display:none;"><symbol id="air3-rs-t" viewBox="0 0 38 38"><path d="M21.28 2.63l3.57 9.6 9.85.55c.49.03.96.2 1.34.52.4.31.68.74.84 1.23.15.49.16 1.02.03 1.51-.14.5-.41.94-.79 1.27l-7.67 6.5 2.57 9.98c.12.5.09 1.03-.08 1.52-.17.49-.47.9-.87 1.21a2.36 2.36 0 01-2.76.06L19 30.95l-8.3 5.59a2.35 2.35 0 01-2.74-.04c-.4-.3-.7-.71-.88-1.2a2.72 2.72 0 01-.1-1.51l2.55-9.95-7.65-6.53a2.58 2.58 0 01-.79-1.27 2.7 2.7 0 01.03-1.51c.16-.49.45-.92.83-1.23.4-.31.86-.5 1.35-.52l9.85-.55 3.57-9.6c.18-.49.5-.9.9-1.19a2.37 2.37 0 012.76 0c.4.3.72.7.9 1.19z"></path></symbol></svg>
+        <div class="air3-rating-foreground" style="width:117px;"><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg></div>
+        <div aria-hidden="true" class="air3-rating-value-text">5.0</div>
+      </div>
+    </div>
+  </div>
+  <p class="testimonial-text">Glad I found Hussain. Hard to find people who are proactive in their work, get things done at all hours and don't whine and complain when you want things to be done so everything looks tip top. I will hire him on future work for sure.</p>
+  <p class="testimonial-author">Dante C</p>
+</div>
+    </div>
+
+    <div class="hsnlogix-slider-item">
+<div class="testimonial-card">
+  <div class="testimonial-header">
+    <img src="{{ '/aal-maghrabi.webp' | relative_url }}" alt="Aal Moghrabi profile photo" class="testimonial-avatar" width="48" height="48">
+    <div class="testimonial-rating">
+      <div class="air3-rating wm-feedback-scores">
+        <svg xmlns="http://www.w3.org/2000/svg" class="air3-rating-hidden-icon" style="display:none;"><symbol id="air3-rs-t" viewBox="0 0 38 38"><path d="M21.28 2.63l3.57 9.6 9.85.55c.49.03.96.2 1.34.52.4.31.68.74.84 1.23.15.49.16 1.02.03 1.51-.14.5-.41.94-.79 1.27l-7.67 6.5 2.57 9.98c.12.5.09 1.03-.08 1.52-.17.49-.47.9-.87 1.21a2.36 2.36 0 01-2.76.06L19 30.95l-8.3 5.59a2.35 2.35 0 01-2.74-.04c-.4-.3-.7-.71-.88-1.2a2.72 2.72 0 01-.1-1.51l2.55-9.95-7.65-6.53a2.58 2.58 0 01-.79-1.27 2.7 2.7 0 01.03-1.51c.16-.49.45-.92.83-1.23.4-.31.86-.5 1.35-.52l9.85-.55 3.57-9.6c.18-.49.5-.9.9-1.19a2.37 2.37 0 012.76 0c.4.3.72.7.9 1.19z"></path></symbol></svg>
+        <div class="air3-rating-foreground" style="width:117px;"><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg></div>
+        <div aria-hidden="true" class="air3-rating-value-text">5.0</div>
+      </div>
+    </div>
+  </div>
+  <p class="testimonial-text">Brilliant &amp; definitely recommend! -- We loved working with Hussain as he is very professional, talented and responsive. He's good at what he does and even though it's the first time he works on our theme, he quickly understood what's needed and handled it very smoothly as if he's been doing it for years. He builds a proper infrastructure from scratch in a clean and scalable way. Would love to collaborate again! :)</p>
+  <p class="testimonial-author">Aal MOGHRABI</p>
+</div>
+    </div>
+
+    <div class="hsnlogix-slider-item">
+<div class="testimonial-card">
+  <div class="testimonial-header">
+    <img src="{{ '/GaryM.webp' | relative_url }}" alt="Gary M profile photo" class="testimonial-avatar" width="48" height="48">
+    <div class="testimonial-rating">
+      <div class="air3-rating wm-feedback-scores">
+        <svg xmlns="http://www.w3.org/2000/svg" class="air3-rating-hidden-icon" style="display:none;"><symbol id="air3-rs-t" viewBox="0 0 38 38"><path d="M21.28 2.63l3.57 9.6 9.85.55c.49.03.96.2 1.34.52.4.31.68.74.84 1.23.15.49.16 1.02.03 1.51-.14.5-.41.94-.79 1.27l-7.67 6.5 2.57 9.98c.12.5.09 1.03-.08 1.52-.17.49-.47.9-.87 1.21a2.36 2.36 0 01-2.76.06L19 30.95l-8.3 5.59a2.35 2.35 0 01-2.74-.04c-.4-.3-.7-.71-.88-1.2a2.72 2.72 0 01-.1-1.51l2.55-9.95-7.65-6.53a2.58 2.58 0 01-.79-1.27 2.7 2.7 0 01.03-1.51c.16-.49.45-.92.83-1.23.4-.31.86-.5 1.35-.52l9.85-.55 3.57-9.6c.18-.49.5-.9.9-1.19a2.37 2.37 0 012.76 0c.4.3.72.7.9 1.19z"></path></symbol></svg>
+        <div class="air3-rating-foreground" style="width:117px;"><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg></div>
+        <div aria-hidden="true" class="air3-rating-value-text">5.0</div>
+      </div>
+    </div>
+  </div>
+  <p class="testimonial-text">This guy is an absolute magician when it comes to shopify. I have been a member here for 13 years and I know a good honest freelancer when I find one. Do yourself a huge favour and hire Hussain A he is awesome AAA+++</p>
+  <p class="testimonial-author">Gary M</p>
+</div>
+    </div>
+
+    <div class="hsnlogix-slider-item">
+<div class="testimonial-card">
+  <div class="testimonial-header">
+    <img src="{{ '/kenny.webp' | relative_url }}" alt="Kenny Dubroff profile photo" class="testimonial-avatar" width="48" height="48">
+    <div class="testimonial-rating">
+      <div class="air3-rating wm-feedback-scores">
+        <svg xmlns="http://www.w3.org/2000/svg" class="air3-rating-hidden-icon" style="display:none;"><symbol id="air3-rs-t" viewBox="0 0 38 38"><path d="M21.28 2.63l3.57 9.6 9.85.55c.49.03.96.2 1.34.52.4.31.68.74.84 1.23.15.49.16 1.02.03 1.51-.14.5-.41.94-.79 1.27l-7.67 6.5 2.57 9.98c.12.5.09 1.03-.08 1.52-.17.49-.47.9-.87 1.21a2.36 2.36 0 01-2.76.06L19 30.95l-8.3 5.59a2.35 2.35 0 01-2.74-.04c-.4-.3-.7-.71-.88-1.2a2.72 2.72 0 01-.1-1.51l2.55-9.95-7.65-6.53a2.58 2.58 0 01-.79-1.27 2.7 2.7 0 01.03-1.51c.16-.49.45-.92.83-1.23.4-.31.86-.5 1.35-.52l9.85-.55 3.57-9.6c.18-.49.5-.9.9-1.19a2.37 2.37 0 012.76 0c.4.3.72.7.9 1.19z"></path></symbol></svg>
+        <div class="air3-rating-foreground" style="width:117px;"><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg></div>
+        <div aria-hidden="true" class="air3-rating-value-text">5.0</div>
+      </div>
+    </div>
+  </div>
+  <p class="testimonial-text">Hussain was an absolute pleasure to work with, and I will hire him again in the future. He completed all requirements on time, and to my satisfaction. On the rare occasion something didn't look the way I intended, he happily went back and changed it until I was satisfied. In addition, he's very courteous and respectful. I highly recommend Hussain to anyone needing front end web design work.</p>
+  <p class="testimonial-author">Kenny Dubroff</p>
+</div>
+    </div>
+
+    <div class="hsnlogix-slider-item">
+<div class="testimonial-card">
+  <div class="testimonial-header">
+    <img src="{{ '/ShacharS.webp' | relative_url }}" alt="Shachar S profile photo" class="testimonial-avatar" width="48" height="48">
+    <div class="testimonial-rating">
+      <div class="air3-rating wm-feedback-scores">
+        <svg xmlns="http://www.w3.org/2000/svg" class="air3-rating-hidden-icon" style="display:none;"><symbol id="air3-rs-t" viewBox="0 0 38 38"><path d="M21.28 2.63l3.57 9.6 9.85.55c.49.03.96.2 1.34.52.4.31.68.74.84 1.23.15.49.16 1.02.03 1.51-.14.5-.41.94-.79 1.27l-7.67 6.5 2.57 9.98c.12.5.09 1.03-.08 1.52-.17.49-.47.9-.87 1.21a2.36 2.36 0 01-2.76.06L19 30.95l-8.3 5.59a2.35 2.35 0 01-2.74-.04c-.4-.3-.7-.71-.88-1.2a2.72 2.72 0 01-.1-1.51l2.55-9.95-7.65-6.53a2.58 2.58 0 01-.79-1.27 2.7 2.7 0 01.03-1.51c.16-.49.45-.92.83-1.23.4-.31.86-.5 1.35-.52l9.85-.55 3.57-9.6c.18-.49.5-.9.9-1.19a2.37 2.37 0 012.76 0c.4.3.72.7.9 1.19z"></path></symbol></svg>
+        <div class="air3-rating-foreground" style="width:117px;"><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg></div>
+        <div aria-hidden="true" class="air3-rating-value-text">5.0</div>
+      </div>
+    </div>
+  </div>
+  <p class="testimonial-text">It was amazing work and i really like working with Hussain. He is truely professional and very kind person. I will work with him again and recommend anyone to work with him. Thank you for a great project!</p>
+  <p class="testimonial-author">Shachar S</p>
+</div>
+    </div>
+
+    <div class="hsnlogix-slider-item">
+<div class="testimonial-card">
+  <div class="testimonial-header">
+    <img src="{{ '/andrew.webp' | relative_url }}" alt="Andrew Chwalik profile photo" class="testimonial-avatar" width="48" height="48">
+    <div class="testimonial-rating">
+      <div class="air3-rating wm-feedback-scores">
+        <svg xmlns="http://www.w3.org/2000/svg" class="air3-rating-hidden-icon" style="display:none;"><symbol id="air3-rs-t" viewBox="0 0 38 38"><path d="M21.28 2.63l3.57 9.6 9.85.55c.49.03.96.2 1.34.52.4.31.68.74.84 1.23.15.49.16 1.02.03 1.51-.14.5-.41.94-.79 1.27l-7.67 6.5 2.57 9.98c.12.5.09 1.03-.08 1.52-.17.49-.47.9-.87 1.21a2.36 2.36 0 01-2.76.06L19 30.95l-8.3 5.59a2.35 2.35 0 01-2.74-.04c-.4-.3-.7-.71-.88-1.2a2.72 2.72 0 01-.1-1.51l2.55-9.95-7.65-6.53a2.58 2.58 0 01-.79-1.27 2.7 2.7 0 01.03-1.51c.16-.49.45-.92.83-1.23.4-.31.86-.5 1.35-.52l9.85-.55 3.57-9.6c.18-.49.5-.9.9-1.19a2.37 2.37 0 012.76 0c.4.3.72.7.9 1.19z"></path></symbol></svg>
+        <div class="air3-rating-foreground" style="width:117px;"><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg></div>
+        <div aria-hidden="true" class="air3-rating-value-text">5.0</div>
+      </div>
+    </div>
+  </div>
+  <p class="testimonial-text">Huge fan of Hussain! He originally built two stunning sites from my Figma files. Everything looked solid. … He went through and made sure everything was perfectly polished to my liking. … Awesome work!</p>
+  <p class="testimonial-author">Andrew Chwalik</p>
+</div>
+    </div>
+
+    <div class="hsnlogix-slider-item">
+<div class="testimonial-card">
+  <div class="testimonial-header">
+    <img src="{{ '/craig.webp' | relative_url }}" alt="Craig Marty profile photo" class="testimonial-avatar" width="48" height="48">
+    <div class="testimonial-rating">
+      <div class="air3-rating wm-feedback-scores">
+        <svg xmlns="http://www.w3.org/2000/svg" class="air3-rating-hidden-icon" style="display:none;"><symbol id="air3-rs-t" viewBox="0 0 38 38"><path d="M21.28 2.63l3.57 9.6 9.85.55c.49.03.96.2 1.34.52.4.31.68.74.84 1.23.15.49.16 1.02.03 1.51-.14.5-.41.94-.79 1.27l-7.67 6.5 2.57 9.98c.12.5.09 1.03-.08 1.52-.17.49-.47.9-.87 1.21a2.36 2.36 0 01-2.76.06L19 30.95l-8.3 5.59a2.35 2.35 0 01-2.74-.04c-.4-.3-.7-.71-.88-1.2a2.72 2.72 0 01-.1-1.51l2.55-9.95-7.65-6.53a2.58 2.58 0 01-.79-1.27 2.7 2.7 0 01.03-1.51c.16-.49.45-.92.83-1.23.4-.31.86-.5 1.35-.52l9.85-.55 3.57-9.6c.18-.49.5-.9.9-1.19a2.37 2.37 0 012.76 0c.4.3.72.7.9 1.19z"></path></symbol></svg>
+        <div class="air3-rating-foreground" style="width:117px;"><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg><svg aria-hidden="true"><use xlink:href="#air3-rs-t"></use></svg></div>
+        <div aria-hidden="true" class="air3-rating-value-text">5.0</div>
+      </div>
+    </div>
+  </div>
+  <p class="testimonial-text">Hussain is a professional web developer. Besides that, he is also a great communicator which is a rare combination. I recommend everyone hire Hussain for website jobs.</p>
+  <p class="testimonial-author">Craig Marty</p>
+</div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var slider = document.getElementById('hsnlogix-portfolio-slider');
+    if (!slider) return;
+    var track = slider.querySelector('.hsnlogix-slider-track');
+    var items = Array.from(track.children);
+
+    var loopWidth = 0;
+    items.forEach(function (item) {
+      var style = getComputedStyle(item);
+      loopWidth += item.offsetWidth + parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+    });
+
+    items.forEach(function (item) { var clone = item.cloneNode(true); clone.setAttribute('aria-hidden', 'true'); track.appendChild(clone); });
+
+    var pos = 0, currentRate = 1, targetRate = 1;
+    var baseSpeed = window.innerWidth <= 768 ? loopWidth / 40 : loopWidth / 50;
+    var lastTime = performance.now();
+
+    function animate(time) {
+      var dt = (time - lastTime) / 1000;
+      lastTime = time;
+      currentRate += (targetRate - currentRate) * 0.25;
+      pos = (pos + baseSpeed * currentRate * dt) % loopWidth;
+      track.style.transform = 'translateX(' + (-pos) + 'px)';
+      requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+    slider.addEventListener('mouseenter', function () { targetRate = 0.35; });
+    slider.addEventListener('mouseleave', function () { targetRate = 1; });
+  });
+</script>

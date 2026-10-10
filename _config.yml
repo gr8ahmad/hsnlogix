@@ -1,5 +1,5 @@
 title: HSNLOGIX Blog
-description: Shopify and web development insights from HSNLOGIX
+description: Shopify development insights from HSNLOGIX
 url: "https://hsnlogix.com"
 baseurl: ""
 
@@ -16,6 +16,10 @@ collections:
   services:
     output: true
     permalink: /services/:path/
+
+markdown: kramdown
+kramdown:
+  parse_block_html: true
 
 plugins:
   - jekyll-sitemap
