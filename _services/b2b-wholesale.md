@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "B2B & Wholesale Commerce Setup"
+h1: "Shopify B2B & Wholesale Commerce Setup"
 seo_title: "Shopify B2B & Wholesale Commerce Setup | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Tiered pricing, margin calculators, and wholesale order flows, letting one store serve retail and B2B buyers without compromising either."

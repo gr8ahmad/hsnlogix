@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Custom Theme Development"
+h1: "Custom Shopify Theme Development"
 seo_title: "Custom Shopify Theme Development | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Custom Shopify theme development built from scratch or tailored to your brand — fast, scalable, and optimized for performance."

@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Platform Migration"
+h1: "Shopify Platform Migration Services"
 seo_title: "Shopify Platform Migration Services | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Seamless migration from WooCommerce, Wix, or Magento to Shopify, preserving SEO rankings, customer data, and order history without downtime."

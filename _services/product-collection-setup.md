@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Product & Collection Setup"
+h1: "Shopify Product & Collection Setup Services"
 seo_title: "Shopify Product & Collection Setup Services | HSNLOGIX"
 date: 2026-09-01
 excerpt: "SEO-ready Shopify product and collection setup: structured variants, metafields, and customer-friendly filtering for effortless browsing and buying."

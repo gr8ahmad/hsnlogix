@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Website Audit & Performance"
+h1: "Shopify Website Audit & Performance Optimization"
 seo_title: "Shopify Website Audit & Performance Optimization | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Shopify store audit covering Core Web Vitals, app bloat, image optimization, and render-blocking code, with a prioritized fix list that moves the needle."

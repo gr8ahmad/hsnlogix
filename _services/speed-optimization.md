@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Shopify Speed & Performance Optimization"
+h1: "Shopify Speed & Performance Optimization"
 seo_title: "Shopify Speed & Performance Optimization | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Shopify speed and performance optimization — mobile-first fixes and pixel-perfect responsiveness for faster, more conversion-friendly stores."

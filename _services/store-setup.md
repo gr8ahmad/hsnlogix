@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Store Setup & Customization"
+h1: "Shopify Store Setup Services"
 seo_title: "Shopify Store Setup Services | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Complete Shopify store setup services — product pages to checkout, configured, branded, and ready to launch fast."

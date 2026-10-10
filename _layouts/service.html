@@ -3,7 +3,8 @@ layout: default
 ---
 {% assign url_parts = page.url | split: '/' %}
 {% assign service_slug = url_parts[2] %}
-{% include page-hero.html eyebrow="Shopify Service" title_dark=page.title lede=page.intro breadcrumb_parent="Services" breadcrumb_parent_url="/services/" breadcrumb_current=page.title show_breadcrumb=true %}
+{% assign hero_h1 = page.h1 | default: page.title %}
+{% include page-hero.html eyebrow="Shopify Service" title_dark=hero_h1 lede=page.intro breadcrumb_parent="Services" breadcrumb_parent_url="/services/" breadcrumb_current=page.title show_breadcrumb=true %}
 <div class="page-content">
 <article class="blog-post service-page">
 

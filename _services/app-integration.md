@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "App Integration & Custom Features"
+h1: "Shopify App Integration & Custom Features"
 seo_title: "Shopify App Integration & Custom Features | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Custom Shopify app integrations and bespoke features — extending your store's functionality beyond default theme and app limitations."

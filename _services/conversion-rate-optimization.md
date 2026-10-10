@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Conversion Rate Optimization"
+h1: "Shopify Conversion Rate Optimization"
 seo_title: "Shopify Conversion Rate Optimization | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Data-driven Shopify CRO: funnel analysis, product page optimization, checkout friction reduction, and A/B testing to lift the visitor-to-buyer rate."

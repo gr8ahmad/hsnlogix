@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Ongoing Maintenance Retainer"
+h1: "Shopify Ongoing Maintenance Retainer"
 seo_title: "Shopify Ongoing Maintenance Retainer | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Monthly Shopify maintenance retainer: proactive monitoring, priority fixes, and dedicated developer hours so nothing breaks and improvements ship."

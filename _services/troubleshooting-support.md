@@ -1,6 +1,7 @@
 ---
 layout: service
 title: "Troubleshooting & Support"
+h1: "Shopify Troubleshooting & Emergency Support"
 seo_title: "Shopify Troubleshooting & Emergency Support | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Fast Shopify troubleshooting when things break: theme issues, app conflicts, checkout errors, and post-update regressions fixed without extended delays."
