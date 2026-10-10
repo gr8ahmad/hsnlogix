@@ -1,4 +1,4 @@
-<div id="hsnlogix-portfolio-slider">
+<div id="hsnlogix-portfolio-slider" class="hsn-auto-slider">
   <div class="hsnlogix-slider-track">
 
     <div class="hsnlogix-slider-item">
@@ -195,38 +195,40 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const slider = document.getElementById('hsnlogix-portfolio-slider');
-    if (!slider) return;
-    const track = slider.querySelector('.hsnlogix-slider-track');
-    const items = Array.from(track.children);
+    document.querySelectorAll('.hsn-auto-slider').forEach(function (slider) {
+      if (slider.dataset.sliderInit) return;
+      slider.dataset.sliderInit = '1';
+      const track = slider.querySelector('.hsnlogix-slider-track');
+      const items = Array.from(track.children);
 
-    let loopWidth = 0;
-    items.forEach(item => {
-      const style = getComputedStyle(item);
-      loopWidth += item.offsetWidth + parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-    });
+      let loopWidth = 0;
+      items.forEach(item => {
+        const style = getComputedStyle(item);
+        loopWidth += item.offsetWidth + parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+      });
 
-    items.forEach(item => { const clone = item.cloneNode(true); clone.setAttribute('aria-hidden', 'true'); track.appendChild(clone); });
+      items.forEach(item => { const clone = item.cloneNode(true); clone.setAttribute('aria-hidden', 'true'); track.appendChild(clone); });
 
-    let pos = 0;
-    let currentRate = 1, targetRate = 1;
-    const baseSpeed = window.innerWidth <= 768
-      ? loopWidth / 40
-      : loopWidth / 50;
-    let lastTime = performance.now();
+      let pos = 0;
+      let currentRate = 1, targetRate = 1;
+      const baseSpeed = window.innerWidth <= 768
+        ? loopWidth / 40
+        : loopWidth / 50;
+      let lastTime = performance.now();
 
-    function animate(time) {
-      const dt = (time - lastTime) / 1000;
-      lastTime = time;
-      currentRate += (targetRate - currentRate) * 0.25;
-      pos = (pos + baseSpeed * currentRate * dt) % loopWidth;
-      track.style.transform = `translateX(${-pos}px)`;
+      function animate(time) {
+        const dt = (time - lastTime) / 1000;
+        lastTime = time;
+        currentRate += (targetRate - currentRate) * 0.25;
+        pos = (pos + baseSpeed * currentRate * dt) % loopWidth;
+        track.style.transform = `translateX(${-pos}px)`;
+        requestAnimationFrame(animate);
+      }
+
       requestAnimationFrame(animate);
-    }
 
-    requestAnimationFrame(animate);
-
-    slider.addEventListener('mouseenter', () => targetRate = 0.35);
-    slider.addEventListener('mouseleave', () => targetRate = 1);
+      slider.addEventListener('mouseenter', () => targetRate = 0.35);
+      slider.addEventListener('mouseleave', () => targetRate = 1);
+    });
   });
 </script>
