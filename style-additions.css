@@ -1954,3 +1954,11 @@ padding: 20px 30px;
   margin-right: 6px;
   display: inline-block;
 }
+
+/* -- Phase 25C: services index groups -- */
+.services-group-heading { font-size: 20px; font-weight: 700; color: #0A1314; margin: 40px 0 4px; }
+.services-group-desc { color: rgba(2,9,10,0.55); font-size: 15px; margin: 0 0 16px; }
+.services-index-cta { text-align: center; padding: 48px 0 60px; border-top: 1px solid rgba(0,0,0,0.08); margin-top: 40px; }
+.services-index-cta h2 { font-size: 22px; font-weight: 700; color: #0A1314; margin: 0 0 10px; }
+.services-index-cta > p { color: rgba(2,9,10,0.55); font-size: 16px; margin: 0 0 24px; }
+.services-index-cta__actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
