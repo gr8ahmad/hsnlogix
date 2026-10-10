@@ -1,7 +1,7 @@
 ---
 layout: case-study
-title: "Multi-Product Shopify Site with a B2B Wholesale Flow — WholeNights"
-seo_title: "B2B Wholesale Shopify Store — WholeNights | HSNLOGIX"
+title: "Multi-Product Shopify Site with a B2B Wholesale Flow: WholeNights"
+seo_title: "B2B Wholesale Shopify Store for WholeNights | HSNLOGIX"
 client: WholeNights
 category: Sleep & Wellness
 platform: Shopify (Dawn, custom Liquid)
@@ -24,7 +24,7 @@ related_services:
   - title: "App Integration"
     url: /services/app-integration/
 next_case_study:
-  title: "Custom Shopify Store for a Premium Wall Art Brand — Laboostudio"
+  title: "Custom Shopify Store for a Premium Wall Art Brand: Laboostudio"
   url: /case-studies/laboostudio/
 results: "A fully custom wholesale flow, live and ready to onboard B2B buyers alongside the retail storefront, tiered pricing, margin calculators, and a qualification form built directly into the theme rather than bolted on as a separate app. Delivered in 2 weeks, on schedule, as the second of three Shopify builds for this client."
 ---

@@ -1,7 +1,7 @@
 ---
 layout: case-study
-title: "Custom Vintage-Branded Shopify Store for a Soda Brand — Mavé"
-seo_title: "Custom Shopify Store for Mavé — Soda Brand | HSNLOGIX"
+title: "Custom Vintage-Branded Shopify Store for a Soda Brand: Mavé"
+seo_title: "Custom Shopify Store for Mavé, Soda Brand | HSNLOGIX"
 client: Mavé
 category: Beverage / Impulse Purchase
 platform: Shopify (Dawn, deep custom Liquid)
@@ -24,7 +24,7 @@ related_services:
   - title: "App Integration"
     url: /services/app-integration/
 next_case_study:
-  title: "Multi-Product Shopify Site with a B2B Wholesale Flow — WholeNights"
+  title: "Multi-Product Shopify Site with a B2B Wholesale Flow: WholeNights"
   url: /case-studies/wholenights/
 results: "A subscribe-and-save purchase flow running alongside one-time orders, a multi-flavor 'Coming Soon' system built to drive anticipation ahead of future launches, and real customer testimonials live at launch. Delivered in 2 weeks, on schedule."
 ---

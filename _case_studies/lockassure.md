@@ -1,13 +1,13 @@
 ---
 layout: case-study
-title: "Custom Shopify Launch Site for a Construction Tech Startup — LockAssure"
+title: "Custom Shopify Launch Site for a Construction Tech Startup: LockAssure"
 seo_title: "Shopify Launch Site for LockAssure | HSNLOGIX"
 client: LockAssure
 category: Construction Tech
 platform: Shopify (Dawn, rebuilt in custom Liquid)
 role: Founder & Lead Shopify Developer
 timeline: "3 weeks, delivered for product reveal"
-repeat_client: "Repeat client — one of several Shopify projects completed for this founder"
+repeat_client: "Repeat client: one of several Shopify projects completed for this founder"
 date: 2026-08-28
 image: /lockassure.webp
 image_alt: "LockAssure Shopify homepage: 'Accountability you can trust' hero over a padlocked chain-link fence, with theft and burglary stats below"
@@ -21,7 +21,7 @@ related_services:
   - title: "App Integration"
     url: /services/app-integration/
 next_case_study:
-  title: "Custom Vintage-Branded Shopify Store for a Soda Brand — Mavé"
+  title: "Custom Vintage-Branded Shopify Store for a Soda Brand: Mavé"
   url: /case-studies/mave/
 results: "A fully functioning demo-booking and pre-order pipeline, live from day one of the product reveal, backed by positive feedback from a general superintendent with 20 years in the field who praised the system's reliability for day-to-day site access control. Delivered in 3 weeks against a fixed reveal date, with no slippage."
 ---

@@ -65,7 +65,7 @@ As of August 2026, Shopify's main plans are:
 | Basic | $39/month | $29/month | Solo entrepreneurs and small stores |
 | Grow | $105/month | $79/month | Small teams and growing businesses |
 | Advanced | $399/month | $299/month | Larger, higher-volume businesses |
-| Shopify Plus | From $2,300/month | — | Enterprise businesses |
+| Shopify Plus | From $2,300/month | N/A | Enterprise businesses |
 
 Annual billing is shown as the effective monthly price when billed annually. Shopify Plus has separate contract terms and pricing.
 
@@ -101,7 +101,7 @@ The initial development cost is only part of the total cost of running a Shopify
 
 Your budget should match the stage of your business rather than paying for complexity you don't need yet.
 
-Lighter work — store setup, audits, and troubleshooting — typically falls in the $500–$1,000 range if branding, products, content, and assets are already prepared. Custom Shopify theme development, for businesses that need a fully tailored storefront with custom sections and integrations, typically runs $1,500–$5,000+. Businesses with more complex catalogs, custom functionality, or multiple integrations should budget at the higher end. The goal is to build what your business needs today while leaving room to expand later.
+Lighter work (store setup, audits, and troubleshooting) typically falls in the $500–$1,000 range if branding, products, content, and assets are already prepared. Custom Shopify theme development, for businesses that need a fully tailored storefront with custom sections and integrations, typically runs $1,500–$5,000+. Businesses with more complex catalogs, custom functionality, or multiple integrations should budget at the higher end. The goal is to build what your business needs today while leaving room to expand later.
 
 ## Shopify vs. Alternatives: Brief Cost Comparison
 

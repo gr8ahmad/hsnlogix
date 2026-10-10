@@ -6,7 +6,7 @@ seo_title: "Shopify B2B & Wholesale Commerce Setup | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Tiered pricing, margin calculators, and wholesale order flows, letting one store serve retail and B2B buyers without compromising either."
 intro: "Serve retail and wholesale customers from one store, without compromising either experience. Tiered pricing, custom order flows, and wholesale-specific features built into your existing Shopify setup."
-problem: "Most Shopify stores are built for retail checkout — one price, one flow, one customer type. Once you add wholesale or B2B buyers into the mix, you need tiered pricing, minimum order quantities, net payment terms, and an ordering experience that doesn't feel like a consumer checkout — all without duplicating your store or maintaining two separate systems."
+problem: "Most Shopify stores are built for retail checkout: one price, one flow, one customer type. Once you add wholesale or B2B buyers into the mix, you need tiered pricing, minimum order quantities, net payment terms, and an ordering experience that doesn't feel like a consumer checkout, all without duplicating your store or maintaining two separate systems."
 includes:
   - "Tiered/wholesale pricing structures (customer-tag based, volume-based, or both)"
   - "Minimum order quantity and case-pack logic"
@@ -18,11 +18,11 @@ steps:
   - "Map your current retail setup and the exact wholesale requirements that need to layer on top of it."
   - "Design the pricing structure, access logic, and account qualification flow."
   - "Build and test the wholesale features with real wholesale accounts."
-  - "Launch with both customer types — retail and B2B — running cleanly from one store."
+  - "Launch with both customer types (retail and B2B) running cleanly from one store."
 process: "Map your current retail setup and the wholesale requirements you need layered on top → design the pricing and access logic → build and test with real wholesale accounts → launch with both customer types running cleanly on one store."
 faq:
   - question: "Who builds the B2B setup?"
-    answer: "Hussain builds it personally. For larger projects, a specialist may be brought in for specific components — but there's no account-manager layer. You're always working directly with the developer doing the work."
+    answer: "Hussain builds it personally. For larger projects, a specialist may be brought in for specific components; there is no account-manager layer. You are always working directly with the developer doing the work."
   - question: "Does the client own the code?"
     answer: "Yes, outright, after final payment. The custom logic lives in your theme with no licensing fees or restrictions."
   - question: "What does a B2B setup cost?"

@@ -15,14 +15,14 @@ includes:
   - "Bulk import/cleanup from spreadsheets or an existing messy catalog"
   - "Metafield architecture for custom product data (sizing, materials, specs)"
 steps:
-  - "Share your catalog or product list — existing store, spreadsheet, or both."
+  - "Share your catalog or product list: existing store, spreadsheet, or both."
   - "Structure proposal: variant architecture, collection logic, and metafield plan."
   - "Build and QA the full catalog to spec."
   - "Walkthrough of the finished setup so you can manage it going forward without needing a developer for routine changes."
 process: "Share your catalog or product list → structure proposal → build and QA → walkthrough of the finished setup so you can manage it going forward."
 faq:
   - question: "Who builds the catalog?"
-    answer: "Hussain does the setup personally. No account-manager layer — you're working directly with the developer doing the work."
+    answer: "Hussain does the setup personally. No account-manager layer; you are working directly with the developer doing the work."
   - question: "What does catalog setup cost?"
     answer: "Product and collection setup typically runs $500–$1,000 depending on catalog size and complexity. You'll get a clear quote upfront."
   - question: "How long does it take?"
@@ -34,6 +34,6 @@ why_matters_heading: "Why catalog architecture pays off in every sale that follo
 cta_label: "Get your catalog set up right"
 ---
 
-A well-structured catalog is one of the highest-leverage investments you can make in a Shopify store. When products are properly organized — right variants, right metafields, right collection filters — customers find what they're looking for faster, and pages rank better in search because the content is clear and consistent. The stores that struggle with catalog management usually started without a clear architecture and kept patching it as they grew. Building it right from the start, or cleaning it up properly, pays off in every sale that follows.
+A well-structured catalog is one of the highest-leverage investments you can make in a Shopify store. When products are properly organized (right variants, right metafields, right collection filters), customers find what they're looking for faster, and pages rank better in search because the content is clear and consistent. The stores that struggle with catalog management usually started without a clear architecture and kept patching it as they grew. Building it right from the start, or cleaning it up properly, pays off in every sale that follows.
 
 Once the catalog is structured and SEO-ready, [Conversion Rate Optimization]({{ '/services/conversion-rate-optimization/' | relative_url }}) can measure and improve how many of those product page visitors actually complete a purchase.
