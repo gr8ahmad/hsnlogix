@@ -13,6 +13,8 @@ image: /lockassure.webp
 image_alt: "LockAssure Shopify homepage: 'Accountability you can trust' hero over a padlocked chain-link fence, with theft and burglary stats below"
 url_live: https://lockassure.com
 excerpt: "A launch-ready site that converted visitor interest into booked demos, the kind of store a founder can confidently show to investors."
+h1: "LockAssure: Custom Shopify Launch Site for a Construction Tech Startup"
+hero_lede: "A launch-ready Shopify site for a construction tech startup, built to convert visitor interest into booked demos. Delivered in 3 weeks against a fixed reveal date."
 related_services:
   - title: "Theme Development"
     url: /services/theme-development/

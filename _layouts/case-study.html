@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-{% include page-hero.html eyebrow="Case Study" title_dark=page.title lede=page.excerpt breadcrumb_parent="Case Studies" breadcrumb_parent_url="/case-studies/" breadcrumb_current=page.client %}
+{% assign cs_h1 = page.h1 | default: page.title %}
+{% assign cs_lede = page.hero_lede | default: page.excerpt %}
+{% include page-hero.html eyebrow="Case Study" title_dark=cs_h1 lede=cs_lede breadcrumb_parent="Case Studies" breadcrumb_parent_url="/case-studies/" breadcrumb_current=page.client %}
 <div class="page-content">
 <article class="blog-post case-study">
 

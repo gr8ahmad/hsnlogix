@@ -16,6 +16,8 @@ image: /whole-nights.webp
 image_alt: "WholeNights Shopify homepage: dusk photo of a man wearing the Calma Clip sleep device, with 'Sound sleep without the sound' headline"
 url_live: https://wholenights.com/
 excerpt: "A single store that genuinely serves two different customer types without either one feeling like an afterthought."
+h1: "WholeNights: Multi-Product Shopify Site with a B2B Wholesale Flow"
+hero_lede: "A single Shopify store serving both retail and B2B wholesale customers, with tiered pricing, margin calculators and a qualification form built directly into the theme."
 related_services:
   - title: "B2B Wholesale"
     url: /services/b2b-wholesale/
