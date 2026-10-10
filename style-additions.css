@@ -1206,6 +1206,7 @@
   line-height: 1.65;
   max-width: 600px;
 }
+.page-hero__lede--2 { margin-top: 8px; }
 /* Page content container (all non-hero content on inner pages) */
 .page-content {
   max-width: var(--content-max);
