@@ -11,7 +11,7 @@ Shopify makes it easy to extend a store's functionality through apps, but conven
 
 These cumulative delays in page loading, as more apps are added to your store, can lead to reduced conversions. Users experiencing delays on a website may simply abandon the site and move on to another.
 
-The performance impact varies considerably depending on how each app is implemented, what resources it loads, and where those resources are loaded. Shopify itself recommends auditing third-party apps because they can add JavaScript that negatively affects storefront responsiveness.
+The performance impact varies considerably depending on how each app is implemented, what resources it loads, and where those resources are loaded. Third-party apps can add JavaScript that negatively affects storefront responsiveness, which is why auditing them regularly is good practice.
 
 ## The Real Cost of App Stacking
 
@@ -21,7 +21,7 @@ Here's the part most Shopify store owners never connect: the sluggishness they'v
 
 Store owners tend to assume it's their theme, their host, or just "how Shopify is." As more apps and third-party integrations are added, their combined JavaScript, network requests, and other resources can increase the amount of work the browser has to perform, causing page loading delays.
 
-That delay compounds directly into lost revenue through reduced user engagement. A store carrying additional app-driven delay isn't losing a few sales at the margins, it's losing a meaningful share of every visitor who arrives.
+That delay compounds directly into lost revenue through reduced user engagement. A store carrying additional app-driven delay can lose visitors who leave before the page is usable.
 
 Interactivity matters alongside load time too. Slower response to a tap, click, or filter selection tends to cost conversions in the same way slow page loads do, even after accounting for load time separately.
 
@@ -47,7 +47,7 @@ Instead, the entire experience was built with [custom Liquid theme development](
 
 ## When an Additional App Actually Makes Sense
 
-It's also important to realize that app stacking is not inherently bad, that would be an oversimplification. It becomes an unnecessary burden on website performance when an app adds page-loading time, contributes to lower conversions, and provides functionality that could be achieved just as effectively with custom code.
+It's also important to realize that app stacking is not inherently bad. Saying so would be an oversimplification. It becomes an unnecessary burden on website performance when an app adds page-loading time, contributes to lower conversions, and provides functionality that could be achieved just as effectively with custom code.
 
 Apps make sense when they connect a store to something genuinely external, a real third-party service that Shopify itself has no native way to provide. Payment gateways beyond Shopify's own checkout, real-time shipping-rate calculations from a specific carrier, syncing inventory with a physical point-of-sale system or an external warehouse, or pulling live data from a service that lives outside the store entirely, these require an actual connection to someone else's infrastructure, and building that from scratch in Liquid would mean rebuilding a piece of a business no ecommerce agency should be reinventing.
 

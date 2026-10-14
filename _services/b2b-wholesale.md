@@ -1,8 +1,8 @@
 ---
 layout: service
-title: "B2B & Wholesale Commerce Setup"
-h1: "Shopify B2B & Wholesale Commerce Setup"
-seo_title: "Shopify B2B & Wholesale Commerce Setup | HSNLOGIX"
+title: "B2B & Wholesale Setup"
+h1: "Shopify B2B & Wholesale Setup"
+seo_title: "Shopify B2B & Wholesale Setup | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Tiered pricing, margin calculators, and wholesale order flows, letting one store serve retail and B2B buyers without compromising either."
 intro: "Serve retail and wholesale customers from one store, without compromising either experience. Tiered pricing, custom order flows, and wholesale-specific features built into your existing Shopify setup."
