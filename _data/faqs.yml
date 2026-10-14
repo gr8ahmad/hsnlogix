@@ -4,11 +4,11 @@
 
 - number: "02"
   question: "Do you provide ongoing support after the project?"
-  answer: "Yes! We offer ongoing maintenance and support for Shopify stores. This can include performance improvements, bug fixes, layout tweaks, and updates to keep your theme running smoothly as your business evolves."
+  answer: "Yes. We offer ongoing maintenance and support for Shopify stores. This can include performance improvements, bug fixes, layout tweaks, and updates to keep your theme running smoothly as your business evolves."
 
 - number: "03"
   question: "Can you follow my existing brand guidelines?"
-  answer: "Definitely. We make sure your Shopify store fully aligns with your brand's look and feel, colors, typography, layout, and visual tone. Whether you already have detailed brand guidelines or just a reference design, we can implement them precisely and maintain consistency across all pages."
+  answer: "Yes. We make sure your Shopify store fully aligns with your brand's look and feel, colors, typography, layout, and visual tone. Whether you already have detailed brand guidelines or just a reference design, we can implement them precisely and maintain consistency across all pages."
 
 - number: "04"
   question: "How do you handle revisions and feedback?"
@@ -21,3 +21,15 @@
 - number: "06"
   question: "How much does a migration development project typically cost?"
   answer: "Migration development projects typically range from $500 to $1,500, depending on the platforms involved, store size, data requirements, integrations, and overall migration scope. We will confirm the exact cost after reviewing your current store and requirements."
+
+- number: "07"
+  question: "Can I edit the store myself after launch?"
+  answer: "Yes. Themes are built so you can change content, images and basic settings in the Shopify theme editor without a developer. We hand over short documentation covering what you can edit and what is best left to us."
+
+- number: "08"
+  question: "Which time zones do you work in?"
+  answer: "We are based in Pakistan (PKT) and regularly work with clients in the US, UK, Canada and Singapore. We schedule calls and check-ins within your working hours, and replies arrive within one business day."
+
+- number: "09"
+  question: "Do you work with Shopify Plus stores?"
+  answer: "Yes. We build and customize Shopify Plus stores, including large catalogs, B2B and wholesale flows and complex integrations. Shopify Plus projects are quoted individually after a short scoping call."

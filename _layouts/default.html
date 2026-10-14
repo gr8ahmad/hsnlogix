@@ -120,36 +120,8 @@
   {% include footer.html %}
   {% include cookie-consent.html %}
 
+  {% include nav-drawer-js.html %}
   <script>
-// Off-canvas nav drawer (slides in from the right)
-(function () {
-  var menuToggle = document.querySelector('.menu-toggle');
-  var navDrawer = document.getElementById('navDrawer');
-  var navOverlay = document.getElementById('navOverlay');
-  var navDrawerClose = document.getElementById('navDrawerClose');
-
-  function openDrawer() {
-    navDrawer.classList.add('active');
-    navOverlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
-    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
-  }
-  function closeDrawer() {
-    navDrawer.classList.remove('active');
-    navOverlay.classList.remove('active');
-    document.body.style.overflow = '';
-    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
-  }
-
-  if (menuToggle) menuToggle.addEventListener('click', openDrawer);
-  if (navDrawerClose) navDrawerClose.addEventListener('click', closeDrawer);
-  if (navOverlay) navOverlay.addEventListener('click', closeDrawer);
-
-  document.querySelectorAll('.nav-drawer__link').forEach(function (link) {
-    link.addEventListener('click', closeDrawer);
-  });
-})();
-
 // Transparent header: apply opaque background once page is scrolled
 (function () {
   var header = document.querySelector('.site-header');

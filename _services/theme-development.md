@@ -29,9 +29,20 @@ faq:
   - question: "What support is included after launch?"
     answer: "Every project includes a post-launch window with 2–3 rounds of revisions. For ongoing support beyond that, the Maintenance Retainer keeps a developer watching your store monthly."
 problem_heading: "Why off-the-shelf themes hold your store back"
-why_matters_heading: "Why a custom Shopify theme pays off"
+why_matters_heading: "Timeline, pricing and what you get"
 proof_case_study: "Laboostudio"
-cta_label: "Start your custom theme"
+cta_label: "Book a free theme strategy call"
 ---
 
-A generic theme can only take a store so far. Off-the-shelf templates are built to work for thousands of different businesses at once, which means they rarely fit any one brand precisely, and every unused feature they carry still adds weight to the page. A custom theme is built around what your store actually needs, nothing more, which is often the difference between a store that merely looks fine and one that's fast enough and clear enough to convert.
+A custom theme project typically takes **1 to 4 weeks**, depending on scope and how much custom functionality the store needs. Custom Shopify builds typically run **$1,500 to $5,000+**, with the final figure set after a short scoping call, so you know the number before any work starts.
+
+**What a build is held to**
+
+- Custom Liquid sections built around your store, with no unnecessary app dependencies.
+- Performance-conscious and mobile-first from day one, tested across devices and browsers before launch.
+- Launch documentation, so your team can make basic edits without a developer.
+- Clean code that is yours to modify and extend after final payment.
+
+> "He's good at what he does and even though it's the first time he works on our theme, he quickly understood what's needed and handled it very smoothly as if he's been doing it for years. He builds a proper infrastructure from scratch in a clean and scalable way."
+>
+> Aal Moghrabi, Upwork client review
