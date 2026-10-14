@@ -3,3 +3,10 @@ _site_staging/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+
+node_modules/
+originals/
+package.json
+package-lock.json
+resize_images.mjs
+*.tmp
