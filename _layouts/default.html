@@ -18,6 +18,7 @@
   <link rel="canonical" href="https://hsnlogix.com{{ page.url }}">
   <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }}{% else %}HSNLOGIX{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | truncatewords: 25, '' }}{% else %}Shopify development insights from HSNLOGIX.{% endif %}">
+  <meta property="og:site_name" content="HSNLOGIX">
   <meta property="og:type" content="{% if page.layout == 'post' or page.layout == 'case-study' %}article{% else %}website{% endif %}">
   <meta property="og:url" content="https://hsnlogix.com{{ page.url }}">
   <meta property="og:image" content="{% if page.image %}https://hsnlogix.com{{ page.image }}{% else %}https://hsnlogix.com/HSNLogix-logo.jpg{% endif %}">
@@ -84,11 +85,12 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": "ProfessionalService",
         "@id": "https://hsnlogix.com/#organization",
         "name": "HSNLOGIX",
         "url": "https://hsnlogix.com",
         "logo": "https://hsnlogix.com/HSNLogix-logo.jpg",
+        "email": "hussain@hsnlogix.com",
         "sameAs": ["https://www.linkedin.com/company/hsnlogix"]
       },
       {
@@ -97,6 +99,7 @@
         "name": "Hussain Ahmad",
         "jobTitle": "Founder & Lead Shopify Developer",
         "url": "https://hsnlogix.com/team/hussain/",
+        "sameAs": ["https://www.upwork.com/freelancers/~01e91c15509859436e"],
         "worksFor": {"@id": "https://hsnlogix.com/#organization"}
       }
     ]
@@ -105,10 +108,11 @@
 
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   {% include header.html %}
   {% include nav-drawer.html %}
 
-  <main class="blog-main">
+  <main class="blog-main" id="main">
     {{ content }}
   </main>
 
@@ -163,10 +167,6 @@
 
   <script src="{{ '/hsnlogix-tracking.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
 
-  <!-- Cal.com embed bootstrap — deferred to end of body to avoid blocking render -->
-  <script>
-  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", {origin:"https://cal.com"});
-  </script>
+  {% include cal-embed.html %}
 </body>
 </html>

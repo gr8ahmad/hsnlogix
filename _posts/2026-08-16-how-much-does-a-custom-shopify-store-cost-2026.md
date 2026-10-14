@@ -3,7 +3,7 @@ layout: post
 title: "How Much Does a Custom Shopify Store Actually Cost in 2026?"
 seo_title: "Custom Shopify Store Cost in 2026 | HSNLOGIX Blog"
 date: 2026-08-16
-image:
+image: /blog-images/featured-shopify-cost-2026.webp
 excerpt: "Discover how much a custom Shopify store costs in 2026, including Shopify plans, themes, development, custom functionality, apps, integrations, and ongoing maintenance. Compare realistic Shopify development budgets by store complexity and business stage."
 description: "What a custom Shopify store costs in 2026: Shopify plans, themes, development, apps and ongoing maintenance, with realistic budgets by business stage."
 ---
@@ -20,7 +20,7 @@ In this guide, we will break down what actually goes into the cost of a custom S
 
 ## The Real Four Cost Components
 
-![Four cost components of a Shopify store: subscription, theme and design, custom development, apps and maintenance]({{ '/blog-images/inbody-1-cost-components.webp' | relative_url }})
+<img src="{{ '/blog-images/inbody-1-cost-components.webp' | relative_url }}" alt="Four cost components of a Shopify store: subscription, theme and design, custom development, apps and maintenance" width="1200" height="500" loading="lazy" decoding="async">
 
 **1. Shopify subscription**
 
