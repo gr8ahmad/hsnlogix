@@ -1,25 +1,21 @@
 {%- comment -%}
   Usage: {% include testimonial-slider.html mode="grid" %}  (static grid, default)
-         {% include testimonial-slider.html mode="carousel" %}  (swipe or arrow buttons, no auto-motion)
+         {% include testimonial-slider.html mode="marquee" %}  (auto-scrolling strip, pauses on hover or focus)
   Reviews live in _data/testimonials.yml
 {%- endcomment -%}
 {% assign tm_mode = include.mode | default: "grid" %}
 <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <symbol id="tm-star" viewBox="0 0 38 38"><path d="M21.28 2.63l3.57 9.6 9.85.55c.49.03.96.2 1.34.52.4.31.68.74.84 1.23.15.49.16 1.02.03 1.51-.14.5-.41.94-.79 1.27l-7.67 6.5 2.57 9.98c.12.5.09 1.03-.08 1.52-.17.49-.47.9-.87 1.21a2.36 2.36 0 01-2.76.06L19 30.95l-8.3 5.59a2.35 2.35 0 01-2.74-.04c-.4-.3-.7-.71-.88-1.2a2.72 2.72 0 01-.1-1.51l2.55-9.95-7.65-6.53a2.58 2.58 0 01-.79-1.27 2.7 2.7 0 01.03-1.51c.16-.49.45-.92.83-1.23.4-.31.86-.5 1.35-.52l9.85-.55 3.57-9.6c.18-.49.5-.9.9-1.19a2.37 2.37 0 012.76 0c.4.3.72.7.9 1.19z"/></symbol>
 </svg>
-{% if tm_mode == "carousel" %}
-<div class="tm-carousel" data-tm-carousel>
-  <div class="tm-carousel__controls">
-    <button type="button" class="tm-carousel__btn" data-tm-prev aria-label="Previous reviews">&larr;</button>
-    <button type="button" class="tm-carousel__btn" data-tm-next aria-label="Next reviews">&rarr;</button>
-  </div>
-  <ul class="tm-list tm-list--carousel" tabindex="0" aria-label="Client reviews">
+{% if tm_mode == "marquee" %}
+<div id="hsnlogix-portfolio-slider" class="hsn-auto-slider" role="region" aria-label="Client reviews">
+  <div class="hsnlogix-slider-track">
 {% else %}
 <div class="page-content">
   <ul class="tm-list tm-list--grid">
 {% endif %}
 {% for t in site.data.testimonials %}
-    <li class="tm-item">
+    {% if tm_mode == "marquee" %}<div class="hsnlogix-slider-item">{% else %}<li class="tm-item">{% endif %}
       <div class="testimonial-card">
         <div class="testimonial-header">
           {% if t.avatar != "" and t.avatar %}
@@ -38,21 +34,49 @@
         <p class="testimonial-text">{{ t.text }}</p>
         <p class="testimonial-author">{{ t.name }}</p>
       </div>
-    </li>
+    {% if tm_mode == "marquee" %}</div>{% else %}</li>{% endif %}
 {% endfor %}
-  </ul>
-{% if tm_mode == "carousel" %}
-</div>
+{% if tm_mode == "marquee" %}  </div>
+</div>{% else %}  </ul>
+</div>{% endif %}
+{% if tm_mode == "marquee" %}
 <script>
-(function () {
-  document.querySelectorAll('[data-tm-carousel]').forEach(function (root) {
-    var list = root.querySelector('.tm-list');
-    function step(dir) { list.scrollBy({ left: dir * Math.max(280, list.clientWidth * 0.8), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); }
-    root.querySelector('[data-tm-prev]').addEventListener('click', function () { step(-1); });
-    root.querySelector('[data-tm-next]').addEventListener('click', function () { step(1); });
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.querySelectorAll('.hsn-auto-slider').forEach(function (slider) {
+      if (slider.dataset.sliderInit) return;
+      slider.dataset.sliderInit = '1';
+      var track = slider.querySelector('.hsnlogix-slider-track');
+      var items = Array.from(track.children);
+      var loopWidth = 0;
+      items.forEach(function (item) {
+        var style = getComputedStyle(item);
+        loopWidth += item.offsetWidth + parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+      });
+      items.forEach(function (item) { var clone = item.cloneNode(true); clone.setAttribute('aria-hidden', 'true'); track.appendChild(clone); });
+
+      var pos = 0, currentRate = 1, targetRate = 1;
+      var baseSpeed = window.innerWidth <= 768 ? loopWidth / 40 : loopWidth / 50;
+      var lastTime = performance.now();
+      function animate(time) {
+        var dt = (time - lastTime) / 1000;
+        lastTime = time;
+        currentRate += (targetRate - currentRate) * 0.25;
+      if (targetRate === 0 && currentRate < 0.01) currentRate = 0;
+        pos = (pos + baseSpeed * currentRate * dt) % loopWidth;
+        track.style.transform = 'translateX(' + (-pos) + 'px)';
+        requestAnimationFrame(animate);
+      }
+      requestAnimationFrame(animate);
+
+      // Pause while the pointer is over the strip or keyboard focus is inside it
+      slider.addEventListener('mouseenter', function () { targetRate = 0; });
+      slider.addEventListener('mouseleave', function () { targetRate = 1; });
+      slider.addEventListener('focusin', function () { targetRate = 0; });
+      slider.addEventListener('focusout', function () { targetRate = 1; });
+      slider.addEventListener('touchstart', function () { targetRate = 0; }, { passive: true });
+      slider.addEventListener('touchend', function () { targetRate = 1; }, { passive: true });
+    });
   });
-})();
 </script>
-{% else %}
-</div>
 {% endif %}

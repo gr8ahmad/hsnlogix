@@ -113,7 +113,6 @@ date: 2026-09-29
         </div>
         <!-- Stats ticker pinned to the bottom of the hero -->
         <div class="stats-ticker" id="hsnlogix-stats-ticker">
-            <button type="button" class="ticker-pause" id="ticker-pause" aria-pressed="false">Pause</button>
             <div class="stats-container">
                 <section class="ticker-section">
                     <ul class="ticker-list">
@@ -190,31 +189,25 @@ date: 2026-09-29
       ? loopWidth / 30
       : loopWidth / 38;
     let lastTime = performance.now();
-    let paused = false;
-    const pauseBtn = document.getElementById('ticker-pause');
-    pauseBtn.addEventListener('click', () => {
-      paused = !paused;
-      pauseBtn.setAttribute('aria-pressed', paused ? 'true' : 'false');
-      pauseBtn.textContent = paused ? 'Play' : 'Pause';
-    });
-
     function animate(time) {
       const dt = (time - lastTime) / 500;
       lastTime = time;
       currentRate += (targetRate - currentRate) * 0.25;
+      if (targetRate === 0 && currentRate < 0.01) currentRate = 0;
 
-      if (!paused) {
-        pos = (pos - baseSpeed * currentRate * dt) % loopWidth;
-        track.style.transform = `translateX(${pos}px)`;
-      }
+      pos = (pos - baseSpeed * currentRate * dt) % loopWidth;
+      track.style.transform = `translateX(${pos}px)`;
 
       requestAnimationFrame(animate);
     }
 
     requestAnimationFrame(animate);
 
-    ticker.addEventListener('mouseenter', () => targetRate = 0.35);
+    // Pause while hovered or focused
+    ticker.addEventListener('mouseenter', () => targetRate = 0);
     ticker.addEventListener('mouseleave', () => targetRate = 1);
+    ticker.addEventListener('touchstart', () => targetRate = 0, { passive: true });
+    ticker.addEventListener('touchend', () => targetRate = 1, { passive: true });
   });
 </script>
     </section>
@@ -677,9 +670,15 @@ date: 2026-09-29
         </div>
     </div>
 <h2 class="sr-only">What Clients Say</h2>
-{% include testimonial-slider.html mode="carousel" %}
-
-
+{% include testimonial-slider.html mode="marquee" %}
+<div class="section-cta">
+    <a href="{{ '/testimonials/' | relative_url }}" class="cta-button cta-button--secondary">
+        <div class="button-text"><p>Read all client reviews</p></div>
+        <div class="button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+        </div>
+    </a>
+</div>
 </section>
 
 {% if site.posts.size > 0 %}
@@ -694,7 +693,6 @@ date: 2026-09-29
           <h2 class="headline-text">Latest from the Blog</h2>
         </div>
       </div>
-      <a href="{{ '/blog/' | relative_url }}" class="blog-strip-all-link">View all posts &rarr;</a>
     </div>
     <div class="blog-strip-cards">
       {% for post in site.posts limit:2 %}
@@ -704,6 +702,14 @@ date: 2026-09-29
         <p class="blog-strip-card__excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
       </a>
       {% endfor %}
+    </div>
+    <div class="section-cta">
+      <a href="{{ '/blog/' | relative_url }}" class="cta-button cta-button--secondary">
+        <div class="button-text"><p>View all posts</p></div>
+        <div class="button-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+        </div>
+      </a>
     </div>
   </div>
 </section>
