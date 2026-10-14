@@ -102,7 +102,8 @@ date: 2026-10-09
         </div>
       </a>
       <p class="contact-page__alt-email-label">Or email directly:</p>
-      <p class="contact-page__alt-email">hussain@hsnlogix.com</p>
+      <p class="contact-page__alt-email"><a href="mailto:hussain@hsnlogix.com" class="contact-page__alt-email-link">hussain@hsnlogix.com</a></p>
+      <p class="contact-page__reply-note">We usually reply within 1 business day.</p>
     </div>
 
   </div>
@@ -125,7 +126,7 @@ date: 2026-10-09
   "@type": "ContactPage",
   "name": "Contact HSNLOGIX",
   "url": "https://hsnlogix.com/contact/",
-  "isPartOf": {"@id": "https://hsnlogix.com/#organization"}
+  "mainEntity": {"@id": "https://hsnlogix.com/#organization"}
 }
 </script>
 
@@ -158,6 +159,7 @@ date: 2026-10-09
       statusEl.textContent = '';
       statusEl.className   = 'contact-form__status';
       submitBtn.disabled   = true;
+      submitBtn.textContent = 'Sending...';
 
       fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(form) })
         .then(function (res) { return res.json(); })
@@ -166,6 +168,8 @@ date: 2026-10-09
             statusEl.textContent = 'Thanks, your message was sent.';
             statusEl.className   = 'contact-form__status contact-form__status--success';
             form.reset();
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Send message';
             try {
               if (localStorage.getItem('hsn_consent') === 'granted' && typeof gtag === 'function') {
                 gtag('event', 'generate_lead', { event_category: 'conversion', event_label: 'discuss_your_store' });
@@ -177,6 +181,7 @@ date: 2026-10-09
           statusEl.textContent = 'Something went wrong. Please try again or email hussain@hsnlogix.com.';
           statusEl.className   = 'contact-form__status contact-form__status--error';
           submitBtn.disabled   = false;
+          submitBtn.textContent = 'Send message';
         });
     });
   });

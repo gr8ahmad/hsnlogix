@@ -1,0 +1,20 @@
+<!-- Cal.com embed: loaded after the page is idle or on first interaction, so it never blocks first render.
+     Until it loads, booking links still work as normal links to cal.com/hsnlogix. -->
+<script>
+(function () {
+  var started = false;
+  function loadCal() {
+    if (started) return;
+    started = true;
+    (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    Cal("init", {origin: "https://cal.com"});
+  }
+  ["pointerdown", "keydown", "scroll", "touchstart"].forEach(function (ev) {
+    window.addEventListener(ev, loadCal, { once: true, passive: true });
+  });
+  window.addEventListener("load", function () {
+    if ("requestIdleCallback" in window) { requestIdleCallback(loadCal, { timeout: 4000 }); }
+    else { setTimeout(loadCal, 3000); }
+  });
+})();
+</script>

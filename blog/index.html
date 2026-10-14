@@ -14,13 +14,13 @@ date: 2026-09-29
     <a class="blog-post-card{% if post.image %} has-image{% endif %}" href="{{ post.url | relative_url }}">
       {% if post.image %}
       <div class="blog-post-card-image">
-        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+        <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" width="1200" height="675" loading="lazy" decoding="async">
       </div>
       {% endif %}
       <div class="blog-post-card-content">
         <h2>{{ post.title }}</h2>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
-        <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 28 }}</p>
         <span class="blog-read-more">Read more &rarr;</span>
       </div>
     </a>

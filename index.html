@@ -22,6 +22,11 @@ date: 2026-09-29
 <meta property="og:image" content="https://hsnlogix.com/HSNLogix-logo.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://hsnlogix.com/">
+<meta property="og:site_name" content="HSNLOGIX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shopify Development Agency | HSNLOGIX">
+<meta name="twitter:description" content="HSNLOGIX: Shopify specialists building custom themes, faster load times and smoother checkouts for DTC brands that have outgrown off-the-shelf themes and apps.">
+<meta name="twitter:image" content="https://hsnlogix.com/HSNLogix-logo.jpg">
   <title>Shopify Development Agency | HSNLOGIX</title>
 
   <link rel="stylesheet" href="style.css?v={{ site.time | date: '%s' }}">
@@ -33,16 +38,28 @@ date: 2026-09-29
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://hsnlogix.com/#organization",
-  "name": "HSNLOGIX",
-  "url": "https://hsnlogix.com",
-  "logo": "https://hsnlogix.com/HSNLogix-logo.jpg",
-  "description": "Shopify specialists building custom themes, faster load times and smoother checkouts for DTC brands that have outgrown off-the-shelf themes and apps.",
-  "sameAs": [
-    "https://www.linkedin.com/company/hsnlogix"
-  ],
-  "founder": {"@id": "https://hsnlogix.com/team/hussain/#person"}
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://hsnlogix.com/#organization",
+      "name": "HSNLOGIX",
+      "url": "https://hsnlogix.com",
+      "logo": "https://hsnlogix.com/HSNLogix-logo.jpg",
+      "email": "hussain@hsnlogix.com",
+      "description": "Shopify specialists building custom themes, faster load times and smoother checkouts for DTC brands that have outgrown off-the-shelf themes and apps.",
+      "sameAs": ["https://www.linkedin.com/company/hsnlogix"],
+      "founder": {"@id": "https://hsnlogix.com/team/hussain/#person"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://hsnlogix.com/team/hussain/#person",
+      "name": "Hussain Ahmad",
+      "jobTitle": "Founder & Lead Shopify Developer",
+      "url": "https://hsnlogix.com/team/hussain/",
+      "sameAs": ["https://www.upwork.com/freelancers/~01e91c15509859436e"],
+      "worksFor": {"@id": "https://hsnlogix.com/#organization"}
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -67,10 +84,12 @@ date: 2026-09-29
 
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <!-- HEADER -->
 {% include header.html %}
 {% include nav-drawer.html %}
 
+  <main id="main">
     <!-- Customer-first hero (sits above the personal hero and stats ticker) -->
     <section class="customer-hero">
         <!-- Pattern 1: dot-grid + glow blobs + accent dots -->
@@ -207,7 +226,6 @@ date: 2026-09-29
 </script>
     </section>
 
-  <main>
 
 <section class="services-section" id="services">
     <div class="services-container container">
@@ -690,7 +708,7 @@ date: 2026-09-29
       <a href="{{ post.url | relative_url }}" class="blog-strip-card">
         <p class="blog-strip-card__date">{{ post.date | date: "%B %-d, %Y" }}</p>
         <h3 class="blog-strip-card__title">{{ post.title }}</h3>
-        <p class="blog-strip-card__excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        <p class="blog-strip-card__excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 22 }}</p>
       </a>
       {% endfor %}
     </div>
@@ -1145,10 +1163,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script src="hsnlogix-tracking.js?v={{ site.time | date: '%s' }}"></script>
 
-<!-- Cal.com embed bootstrap — deferred to end of body to avoid blocking render -->
-<script>
-(function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", {origin:"https://cal.com"});
-</script>
+{% include cal-embed.html %}
 </body>
 </html>
