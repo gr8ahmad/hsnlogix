@@ -26,7 +26,7 @@ Sometimes a button that looks broken is the store doing exactly what it was told
 - The variant that fails has stock. Shopify treats an item as out of stock when its inventory is tracked and the level is zero or below, and by default customers cannot buy it.
 - You are testing the exact variant that fails, because inventory is set per variant.
 
-If you use several locations, watch for this trap: a location that fulfills online orders with no stock keeps the item sold out online, even when another location that does not fulfill online orders has plenty. To let customers buy past zero stock, turn on Continue selling when out of stock in the Inventory section of the product or variant. It only works when Track quantity is on. Shopify covers both points in its guide to [selling out of stock products](https://help.shopify.com/manual/products/inventory/getting-started-with-inventory/selling-when-out-of-stock).
+If you use several locations, watch for this trap: a location that fulfills online orders with no stock keeps the item sold out online, even when another location that does not fulfill online orders has plenty. To let customers buy past zero stock, turn on Continue selling when out of stock in the Inventory section of the product or variant. It only works when inventory tracking is on (the Track quantity or Inventory tracked setting, depending on where you look in the admin). Shopify covers both points in its guide to [selling out of stock products](https://help.shopify.com/manual/products/inventory/getting-started-with-inventory/selling-when-out-of-stock).
 
 Two more cases to rule out:
 
