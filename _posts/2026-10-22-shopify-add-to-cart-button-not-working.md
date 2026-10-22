@@ -13,6 +13,16 @@ If your Shopify add to cart button is not working, the cause is usually one of f
 
 Before you start, write down exactly what happens. Is the button missing, greyed out with "Sold out", unresponsive when clicked, or broken only on mobile? The symptom tells you which steps matter most.
 
+## Match your symptom to the right check
+
+Most add to cart problems fall into one of five patterns. Use this list to jump to the steps most likely to help:
+
+- **Add to cart button missing or not showing:** check that the product is active and available on the Online Store (step 2), then your theme's button colors and settings (step 4).
+- **Button greyed out or showing "Sold out" when you have stock:** check the exact variant, your inventory locations and your markets (step 2).
+- **Button not clickable, or nothing happens when you click it:** look for an app conflict, a pop-up covering the button, or a JavaScript error (steps 4, 5 and 6).
+- **Add to cart not working on mobile only:** start with the device checks and the mobile view of your theme (steps 1 and 4).
+- **Button works on some products but not others:** compare product templates and variants (steps 2 and 3).
+
 ## 1. Rule out a device, browser or network problem
 
 A fault that shows up only on your own device is not a store problem, which is why Shopify's [theme troubleshooting guide](https://help.shopify.com/en/manual/online-store/themes/theme-support/troubleshooting) begins with local checks. Clear your cache and cookies, then test in a private window, a second browser and a second device. Switch to mobile data, update your browser, and make sure no VPN, firewall or ad blocker is getting in the way. If the button works everywhere except one device, your store is probably fine.
@@ -70,6 +80,28 @@ If you know which file was changed before the problem started, open it in the co
 Test in a private window on desktop and on a real phone, using more than one product and more than one variant. Confirm that the cart updates and that you can reach checkout. No single fix works for every store, because themes, apps and settings differ. If the problem returns later, repeat the checks above and note which step changes the result.
 
 <img src="{{ '/blog-images/inbody-add-to-cart-troubleshooting-flowchart.webp' | relative_url }}" alt="Flowchart: does the button work in a fresh theme? No points to your admin settings and apps, yes points to your theme code or settings." width="1200" height="700" loading="lazy" decoding="async">
+
+## Frequently asked questions
+
+### Why is my Shopify add to cart button greyed out?
+
+Usually the selected variant is sold out or unavailable, or no variant has been selected yet. Check inventory for that exact variant, including which locations fulfill online orders, and make sure the product is available in the customer's market (step 2).
+
+### Why is my add to cart button missing on Shopify?
+
+The most common reasons are a product that is not active or not available on the Online Store sales channel, a market catalog that excludes the product, or theme button colors that make the button invisible (steps 2 and 4).
+
+### Why does add to cart work on desktop but not on mobile?
+
+Check your theme's mobile settings first, then look for a chat widget, cookie banner or pop-up sitting over the button on small screens. Test on a real phone as well as in the theme editor's mobile view (step 4).
+
+### Can a Shopify app break the add to cart button?
+
+Yes. Apps that change the product page or cart can conflict with your theme or with each other. Switch the suspect app off under App embeds in the theme editor and test again in a private window (step 5).
+
+### How do I tell whether my theme or an app is the problem?
+
+Preview a free Shopify theme and test the button there. If it works in the fresh theme, the problem is in your theme code or settings. If it fails there too, look at your admin settings and apps (step 7).
 
 ## When to bring in a Shopify developer
 

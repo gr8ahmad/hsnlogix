@@ -36,4 +36,6 @@ cta_label: "Get help now"
 
 Most Shopify issues have a root cause that's fixable in hours once someone who knows the platform looks at it properly. The problem is getting to that person without days of ticket queues, non-answers, and having to explain your store setup from scratch each time. One direct conversation with a developer who knows what they're looking at is usually enough to diagnose and scope a fix, even for issues that have been sitting unresolved for weeks.
 
+Want to rule out the simple causes first? Our guide to a [Shopify add to cart button not working]({{ '/blog/shopify-add-to-cart-button-not-working/' | relative_url }}) walks through seven checks, from the quickest and safest to the most technical.
+
 If the same kinds of issues keep surfacing after the fix, [Ongoing Maintenance Retainer]({{ '/services/maintenance-retainer/' | relative_url }}) keeps a developer watching your store proactively, catching problems before customers ever see them.
