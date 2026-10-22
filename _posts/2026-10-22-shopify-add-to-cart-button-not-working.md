@@ -3,6 +3,7 @@ layout: post
 title: "Shopify Add to Cart Button Not Working? 7 Ways to Fix It"
 seo_title: "Shopify Add to Cart Button Not Working? 7 Fixes | HSNLOGIX"
 date: 2026-10-22
+author: sania
 image: /blog-images/featured-shopify-add-to-cart-not-working.webp
 excerpt: "Shopify add to cart button not working? Seven checks from safest to most technical: browser, inventory and markets, templates, theme settings, apps, JavaScript errors and your theme code."
 description: "Shopify add to cart button not working? Work through seven fixes in order, from device and inventory checks to app conflicts, console errors and theme code."

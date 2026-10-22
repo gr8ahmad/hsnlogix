@@ -1,0 +1,12 @@
+hussain:
+  name: "Hussain Ahmad"
+  short_name: "Hussain"
+  role: "Founder & Lead Shopify Developer, HSNLOGIX"
+  url: /team/hussain/
+  bio: "Hussain has been building Shopify stores for DTC brands for 7+ years."
+sania:
+  name: "Sania Hashim"
+  short_name: "Sania"
+  role: "SEO & Marketing, HSNLOGIX"
+  bio: ""
+  reviewed_by: hussain

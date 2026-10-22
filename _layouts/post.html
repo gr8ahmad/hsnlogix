@@ -3,9 +3,12 @@ layout: default
 ---
 {% include page-hero.html eyebrow="Blog" title_dark=page.title breadcrumb_parent="Blog" breadcrumb_parent_url="/blog/" breadcrumb_current=page.title show_breadcrumb=true %}
 <div class="page-content">
+{%- assign author_key = page.author | default: 'hussain' -%}
+{%- assign author = site.data.authors[author_key] -%}
+{%- assign reviewer = site.data.authors[author.reviewed_by] -%}
 <article class="blog-post">
   <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
-  <p class="blog-post-author">Written by <a href="{{ '/team/hussain/' | relative_url }}">Hussain Ahmad</a></p>
+  <p class="blog-post-author">Written by {% if author.url %}<a href="{{ author.url | relative_url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% if reviewer %}, reviewed by <a href="{{ reviewer.url | relative_url }}">{{ reviewer.name }}</a>{% endif %}</p>
   {% if page.image %}
   <div class="blog-post-featured-image">
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" width="1200" height="675">
@@ -16,9 +19,9 @@ layout: default
   </div>
 
   <aside class="post-author" aria-label="About the author">
-    <p class="post-author__name">Hussain Ahmad</p>
-    <p class="post-author__role">Founder &amp; Lead Shopify Developer, HSNLOGIX</p>
-    <p class="post-author__bio">Hussain has been building Shopify stores for DTC brands for 7+ years. <a href="{{ '/team/hussain/' | relative_url }}">Read his profile</a> or see <a href="{{ '/case-studies/' | relative_url }}">recent case studies</a>.</p>
+    <p class="post-author__name">{{ author.name }}</p>
+    <p class="post-author__role">{{ author.role }}</p>
+    <p class="post-author__bio">{{ author.bio }}{% if author.url %} <a href="{{ author.url | relative_url }}">Read {{ author.short_name | default: author.name }}'s profile</a>.{% endif %}{% if reviewer %} Reviewed by <a href="{{ reviewer.url | relative_url }}">{{ reviewer.name }}</a>, {{ reviewer.role }}.{% endif %} See <a href="{{ '/case-studies/' | relative_url }}">recent case studies</a>.</p>
   </aside>
 
   <div class="post-cta">
