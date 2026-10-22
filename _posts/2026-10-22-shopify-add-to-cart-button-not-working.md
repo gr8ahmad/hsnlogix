@@ -43,6 +43,8 @@ Two more cases to rule out:
 - **Markets.** If you sell in more than one market, a product has to be in the catalog assigned to a customer's market before that customer can see and buy it. Shopify's [catalog documentation](https://help.shopify.com/en/manual/markets/customizations/catalogs) says shoppers who open a product that is unavailable in their market are redirected to your homepage. Some merchants report a 404 page instead, so check market availability before assuming the button is broken.
 - **B2B.** If you sell to business customers, quantity rules on a catalog (minimums, maximums or increments) can stop a buyer from adding certain quantities.
 
+<img src="{{ '/blog-images/inbody-add-to-cart-inventory-check.webp' | relative_url }}" alt="Checklist graphic: product status Active, sales channel Online Store, and a variant with inventory 0 that shows as sold out." width="1200" height="675" loading="lazy" decoding="async">
+
 ## 3. Compare products and templates
 
 Test three or four different products. If the button fails on only some of them, check which product template each one uses in the admin, because different templates can show different layouts and settings. If every product fails, suspect your theme, an app or a site-wide script instead.
@@ -53,11 +55,15 @@ If the button is not visible at all, look at your theme's button color settings.
 
 If it fails only on mobile, switch the theme editor to the mobile view, review the product section's mobile settings, then confirm on a real phone. If the button seems unclickable in one spot, a chat widget, cookie banner or pop-up may be sitting on top of it. Turn those off temporarily and test again.
 
+<img src="{{ '/blog-images/inbody-add-to-cart-mobile-overlay.webp' | relative_url }}" alt="Phone mockup where a chat widget and a cookie banner cover the add to cart button." width="1200" height="675" loading="lazy" decoding="async">
+
 ## 5. Test apps for a conflict with your theme
 
 Apps that change the product page or the cart are a common cause. An app can attach to your theme as an app block, as an app embed, or through code added directly to theme files. In the theme editor, open App embeds, switch off the app you suspect, save, and test in a private window. If the app has no embed, check its settings or documentation.
 
 If you installed or updated an app just before the problem began, uninstalling it temporarily is a fair test, and Shopify's troubleshooting guide suggests it. Read the app's documentation first, because removing an app can delete its settings or data. If the button still fails after removal, the app is probably not the cause. One caution from our own work: some apps leave code behind in theme files after they are removed, so a developer may need to look for leftovers.
+
+<img src="{{ '/blog-images/inbody-add-to-cart-app-embeds.webp' | relative_url }}" alt="App embeds list with one app switched off to test for a conflict." width="1200" height="675" loading="lazy" decoding="async">
 
 ## 6. Look for a JavaScript error and a failed cart request
 
@@ -69,17 +75,21 @@ Most themes add items to the cart with JavaScript that talks to Shopify's Cart A
 
 A 422 status means Shopify refused the request, so read the response message. Shopify's [Cart API reference](https://shopify.dev/docs/api/ajax/reference/cart) lists two common causes: the product is sold out, or all of its remaining stock is already in the cart. A 422 is its own clue, separate from console errors, and does not by itself prove your JavaScript is broken. The file name in a console error usually shows whether your theme or an app is responsible. Fixing it generally means editing Liquid or JavaScript, which is not beginner work.
 
+<img src="{{ '/blog-images/inbody-add-to-cart-console-network.webp' | relative_url }}" alt="Browser console showing a red JavaScript error and the Network tab showing a cart/add.js request with a 422 status." width="1200" height="675" loading="lazy" decoding="async">
+
 ## 7. Test a fresh theme, then repair your code
 
 Add a free theme from the Shopify Theme Store (you do not need to publish it) and use Actions, then Preview, to test the button there. If it works in the fresh theme but not in yours, the problem is in your theme code or settings. If it fails in every theme, look at your admin settings and apps again. If it fails even in an updated, unmodified copy of your own theme, contact the theme's support team.
 
 If you know which file was changed before the problem started, open it in the code editor (Online Store, Themes, Actions, Edit code) and restore an earlier version from the file's history. Restoring an old version replaces the file as it is now, and the history is limited, so copy the current contents first. Duplicate your theme as a backup before any code edit, and only edit code if you know HTML, CSS and basic Liquid.
 
+<img src="{{ '/blog-images/inbody-add-to-cart-restore-version.webp' | relative_url }}" alt="Three steps: duplicate your theme, open the file history, restore an earlier version." width="1200" height="675" loading="lazy" decoding="async">
+
 ## How to confirm the fix worked
 
 Test in a private window on desktop and on a real phone, using more than one product and more than one variant. Confirm that the cart updates and that you can reach checkout. No single fix works for every store, because themes, apps and settings differ. If the problem returns later, repeat the checks above and note which step changes the result.
 
-<img src="{{ '/blog-images/inbody-add-to-cart-troubleshooting-flowchart.webp' | relative_url }}" alt="Flowchart: does the button work in a fresh theme? No points to your admin settings and apps, yes points to your theme code or settings." width="1200" height="700" loading="lazy" decoding="async">
+<img src="{{ '/blog-images/inbody-add-to-cart-troubleshooting-flowchart.webp' | relative_url }}" alt="Flowchart: does the button work in a fresh theme? No points to your admin settings and apps, yes points to your theme code or settings." width="1200" height="675" loading="lazy" decoding="async">
 
 ## Frequently asked questions
 
