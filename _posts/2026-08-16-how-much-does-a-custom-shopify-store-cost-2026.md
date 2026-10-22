@@ -20,7 +20,7 @@ In this guide, we will break down what actually goes into the cost of a custom S
 
 ## The Real Four Cost Components
 
-<img src="{{ '/blog-images/inbody-1-cost-components.webp' | relative_url }}" alt="Four cost components of a Shopify store: subscription, theme and design, custom development, apps and maintenance" width="1200" height="500" loading="lazy" decoding="async">
+<img src="{{ '/blog-images/inbody-1-cost-components.webp' | relative_url }}" alt="Four cost components of a Shopify store: subscription, theme and design, custom development, apps and maintenance" width="1200" height="540" loading="lazy" decoding="async">
 
 **1. Shopify subscription**
 

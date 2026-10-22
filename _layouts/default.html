@@ -70,7 +70,16 @@
     "@type": "BlogPosting",
     "headline": {{ page.title | jsonify }},
     "description": {{ page.excerpt | strip_html | jsonify }},
-    "author": {"@id": "https://hsnlogix.com/team/hussain/#person"},
+    {%- assign post_author_key = page.author | default: 'hussain' %}
+    {%- assign post_author = site.data.authors[post_author_key] %}
+    {%- if post_author.url %}
+    "author": {"@id": "https://hsnlogix.com{{ post_author.url }}#person"},
+    {%- else %}
+    "author": {"@type": "Person", "name": {{ post_author.name | jsonify }}, "jobTitle": {{ post_author.role | jsonify }}, "worksFor": {"@id": "https://hsnlogix.com/#organization"}},
+    {%- endif %}
+    {%- if post_author.reviewed_by %}
+    "editor": {"@id": "https://hsnlogix.com{{ site.data.authors[post_author.reviewed_by].url }}#person"},
+    {%- endif %}
     "publisher": {"@id": "https://hsnlogix.com/#organization"},
     "image": "https://hsnlogix.com{% if page.image %}{{ page.image }}{% else %}/HSNLogix-logo.jpg{% endif %}",
     "datePublished": "{{ page.date | date_to_xmlschema }}",

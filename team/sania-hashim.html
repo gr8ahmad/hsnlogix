@@ -1,0 +1,96 @@
+---
+layout: team-profile
+title: "Sania Hashim | SEO Content Writer & Marketing Specialist"
+description: "Sania Hashim is the SEO Content Writer & Marketing Specialist at HSNLOGIX, writing practical Shopify and ecommerce guides that help stores grow organic traffic."
+permalink: /team/sania-hashim/
+image: /sania-hashim.webp
+date: 2026-10-22
+---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://hsnlogix.com/team/sania-hashim/#person",
+  "name": "Sania Hashim",
+  "jobTitle": "SEO Content Writer & Marketing Specialist",
+  "url": "https://hsnlogix.com/team/sania-hashim/",
+  "image": "https://hsnlogix.com/sania-hashim.webp",
+  "worksFor": {"@id": "https://hsnlogix.com/#organization"}
+}
+</script>
+
+<section class="profile-section">
+  <div class="hero-pattern profile-section__pattern" aria-hidden="true">
+    <div class="hero-pattern__blob hero-pattern__blob--green"></div>
+    <div class="hero-pattern__blob hero-pattern__blob--dark"></div>
+    <div class="hero-pattern__dot hero-pattern__dot--glow" style="width:5px;height:5px;right:18%;top:25%;"></div>
+    <div class="hero-pattern__dot" style="width:8px;height:8px;left:8%;bottom:20%;"></div>
+    <div class="hero-pattern__dot hero-pattern__dot--glow" style="width:4px;height:4px;right:30%;bottom:30%;"></div>
+  </div>
+
+  <div class="profile-section__inner">
+
+    <div class="profile-section__photo-col">
+      <img
+        src="{{ '/sania-hashim.webp' | relative_url }}"
+        alt="Sania Hashim, SEO Content Writer and Marketing Specialist"
+        class="profile-section__photo"
+        width="480" height="480"
+      >
+    </div>
+
+    <div class="profile-section__body">
+      <div class="profile-section__eyebrow">
+        <span class="profile-section__eyebrow-dot"></span>
+        Meet the Team
+      </div>
+
+      <h1 class="profile-section__name">Sania Hashim</h1>
+      <p class="profile-section__title">SEO Content Writer &amp; Marketing Specialist</p>
+
+      <p class="profile-section__bio">
+        Practical, search-focused guides on Shopify, ecommerce and <span class="hl">technical website issues</span>.
+      </p>
+
+      <div class="profile-section__actions">
+        <a href="https://cal.com/hsnlogix" data-cal-link="hsnlogix" data-cal-config='{"layout":"month_view"}' rel="noopener" class="cta-button">
+          <div class="button-text"><p>Book a Free Strategy Call</p></div>
+          <div class="button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+              <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="hussain-bio">
+  <div class="hussain-bio__inner">
+    <h2 class="hussain-bio__heading">About Sania</h2>
+    <div class="hussain-bio__body">
+      <p>Sania Hashim is an SEO Content Writer at HSNLOGIX, specializing in keyword research, SEO content strategy and content optimization.</p>
+      <p>She creates helpful, search-focused articles on Shopify, ecommerce and technical website issues to help businesses improve their online visibility and organic growth.</p>
+      <p>She has 3+ years of experience in SEO and ecommerce, focusing on accurate, actionable content that meets users' needs.</p>
+    </div>
+    {%- assign sania_posts = site.posts | where: "author", "sania" %}
+    {%- if sania_posts.size > 0 %}
+
+    <h2 class="hussain-bio__heading" style="margin-top:40px;">Articles by Sania</h2>
+    <ul class="hussain-bio__body" style="margin:0 0 8px 20px;">
+      {%- for post in sania_posts %}
+      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
+
+    <nav class="hussain-bio__links" aria-label="Profile navigation">
+      <a href="{{ '/blog/' | relative_url }}" class="hussain-bio__link">Blog</a>
+      <a href="{{ '/services/' | relative_url }}" class="hussain-bio__link">Services</a>
+      <a href="{{ '/contact/' | relative_url }}" class="hussain-bio__link">Contact HSNLOGIX</a>
+    </nav>
+  </div>
+</section>
