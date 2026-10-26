@@ -5,7 +5,7 @@ h1: "Custom Shopify Theme Development"
 seo_title: "Custom Shopify Theme Development | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Custom Shopify theme development built from scratch or tailored to your brand, fast, scalable, and optimized for performance."
-intro: "A theme built around your brand and your business, not a template with your logo dropped in. Custom Shopify theme development from scratch, or a deep rebuild of what you already have."
+intro: "A theme built around your brand and your business, not a template with your logo dropped in. Custom Shopify theme development from scratch, or a deep rebuild of what you already have. Built faster with our AI-powered development workflow."
 problem: "Off-the-shelf themes are built to work for thousands of different stores, which means they're rarely built well for any one of them. You end up stacking apps to get functionality the theme doesn't have, fighting the theme's structure to get the layout you actually want, and carrying page weight from features you'll never use. A custom theme is built around exactly what your store needs, nothing more, nothing forced into place."
 includes:
   - "Custom theme design and development, built from scratch or rebuilt from an existing theme"

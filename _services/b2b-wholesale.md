@@ -5,7 +5,7 @@ h1: "Shopify B2B & Wholesale Setup"
 seo_title: "Shopify B2B & Wholesale Setup | HSNLOGIX"
 date: 2026-09-01
 excerpt: "Tiered pricing, margin calculators, and wholesale order flows, letting one store serve retail and B2B buyers without compromising either."
-intro: "Serve retail and wholesale customers from one store, without compromising either experience. Tiered pricing, custom order flows, and wholesale-specific features built into your existing Shopify setup."
+intro: "Serve retail and wholesale customers from one store, without compromising either experience. Tiered pricing, custom order flows, and wholesale-specific features built into your existing Shopify setup. Built with an AI-powered workflow and senior review on complex pricing logic."
 problem: "Most Shopify stores are built for retail checkout: one price, one flow, one customer type. Once you add wholesale or B2B buyers into the mix, you need tiered pricing, minimum order quantities, net payment terms, and an ordering experience that doesn't feel like a consumer checkout, all without duplicating your store or maintaining two separate systems."
 includes:
   - "Tiered/wholesale pricing structures (customer-tag based, volume-based, or both)"

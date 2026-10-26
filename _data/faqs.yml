@@ -33,3 +33,7 @@
 - number: "09"
   question: "Do you work with Shopify Plus stores?"
   answer: "Yes. We build and customize Shopify Plus stores, including large catalogs, B2B and wholesale flows and complex integrations. Shopify Plus projects are quoted individually after a short scoping call."
+
+- number: "10"
+  question: "Do you use AI to build Shopify stores?"
+  answer: "Yes. Our development workflow is AI-powered, using tools like Claude and Cursor AI to plan, write and review code faster. Every change is still scoped, checked and tested by experienced Shopify developers, so you get faster delivery and cleaner code without cutting corners."
